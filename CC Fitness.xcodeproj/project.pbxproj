@@ -7,6 +7,22 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		DF0974781D3CB3A900889EE4 /* MainMenuVC.m in Sources */ = {isa = PBXBuildFile; fileRef = DF0974771D3CB3A900889EE4 /* MainMenuVC.m */; };
+		DF2116991D47514500A00A32 /* ToolsVC.m in Sources */ = {isa = PBXBuildFile; fileRef = DF2116981D47514500A00A32 /* ToolsVC.m */; };
+		DF43F5CC1D3741BC005E4C02 /* LoginService.m in Sources */ = {isa = PBXBuildFile; fileRef = DF43F5CB1D3741BC005E4C02 /* LoginService.m */; };
+		DF45C0D41D41B7C8007D4E5A /* Learn.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DF45C0D31D41B7C8007D4E5A /* Learn.storyboard */; };
+		DF45C0D71D41B824007D4E5A /* LearnTVC.m in Sources */ = {isa = PBXBuildFile; fileRef = DF45C0D61D41B824007D4E5A /* LearnTVC.m */; };
+		DF9892761D618921003ABA96 /* Pushups.m in Sources */ = {isa = PBXBuildFile; fileRef = DF9892751D618921003ABA96 /* Pushups.m */; };
+		DF9892791D618F70003ABA96 /* Crunches.m in Sources */ = {isa = PBXBuildFile; fileRef = DF9892781D618F70003ABA96 /* Crunches.m */; };
+		DF98927C1D6192A0003ABA96 /* SquatJumps.m in Sources */ = {isa = PBXBuildFile; fileRef = DF98927B1D6192A0003ABA96 /* SquatJumps.m */; };
+		DF98927F1D6195A5003ABA96 /* ForwardLunge.m in Sources */ = {isa = PBXBuildFile; fileRef = DF98927E1D6195A5003ABA96 /* ForwardLunge.m */; };
+		DF9892821D61995F003ABA96 /* HealthyFoods.m in Sources */ = {isa = PBXBuildFile; fileRef = DF9892811D61995F003ABA96 /* HealthyFoods.m */; };
+		DF9A63DD1D45DE1B00A12B5A /* BMI.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DF9A63DC1D45DE1B00A12B5A /* BMI.storyboard */; };
+		DF9A63E01D45DE5500A12B5A /* BMIViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DF9A63DF1D45DE5500A12B5A /* BMIViewController.m */; };
+		DF9A63E31D45E5A900A12B5A /* BMICalculation.m in Sources */ = {isa = PBXBuildFile; fileRef = DF9A63E21D45E5A900A12B5A /* BMICalculation.m */; };
+		DFB3785A1D4F179F00C94498 /* KeepFitTVC.m in Sources */ = {isa = PBXBuildFile; fileRef = DFB378591D4F179F00C94498 /* KeepFitTVC.m */; };
+		DFB3785D1D4F330400C94498 /* HomeWorkoutsTVC.m in Sources */ = {isa = PBXBuildFile; fileRef = DFB3785C1D4F330400C94498 /* HomeWorkoutsTVC.m */; };
+		DFB5626B1D5C32580055D236 /* Supermans.m in Sources */ = {isa = PBXBuildFile; fileRef = DFB5626A1D5C32580055D236 /* Supermans.m */; };
 		E57BC0A61D34CF3A00488F18 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E57BC0A51D34CF3A00488F18 /* main.m */; };
 		E57BC0A91D34CF3A00488F18 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E57BC0A81D34CF3A00488F18 /* AppDelegate.m */; };
 		E57BC0AC1D34CF3A00488F18 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E57BC0AB1D34CF3A00488F18 /* ViewController.m */; };
@@ -15,6 +31,8 @@
 		E57BC0B41D34CF3A00488F18 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E57BC0B21D34CF3A00488F18 /* LaunchScreen.storyboard */; };
 		E57BC0BF1D34CF3A00488F18 /* CC_FitnessTests.m in Sources */ = {isa = PBXBuildFile; fileRef = E57BC0BE1D34CF3A00488F18 /* CC_FitnessTests.m */; };
 		E57BC0CA1D34CF3A00488F18 /* CC_FitnessUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = E57BC0C91D34CF3A00488F18 /* CC_FitnessUITests.m */; };
+		E57BC0DC1D34DD2400488F18 /* LoginVC.m in Sources */ = {isa = PBXBuildFile; fileRef = E57BC0DB1D34DD2400488F18 /* LoginVC.m */; };
+		E57BC0E01D34DEC100488F18 /* Portal.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E57BC0DF1D34DEC100488F18 /* Portal.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,6 +53,36 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		DF0974761D3CB3A900889EE4 /* MainMenuVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MainMenuVC.h; path = ../MainMenuVC.h; sourceTree = "<group>"; };
+		DF0974771D3CB3A900889EE4 /* MainMenuVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MainMenuVC.m; path = ../MainMenuVC.m; sourceTree = "<group>"; };
+		DF2116971D47514500A00A32 /* ToolsVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ToolsVC.h; sourceTree = "<group>"; };
+		DF2116981D47514500A00A32 /* ToolsVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ToolsVC.m; sourceTree = "<group>"; };
+		DF43F5CA1D3741BC005E4C02 /* LoginService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginService.h; sourceTree = "<group>"; };
+		DF43F5CB1D3741BC005E4C02 /* LoginService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginService.m; sourceTree = "<group>"; };
+		DF45C0D31D41B7C8007D4E5A /* Learn.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Learn.storyboard; sourceTree = "<group>"; };
+		DF45C0D51D41B824007D4E5A /* LearnTVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LearnTVC.h; sourceTree = "<group>"; };
+		DF45C0D61D41B824007D4E5A /* LearnTVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LearnTVC.m; sourceTree = "<group>"; };
+		DF9892741D618921003ABA96 /* Pushups.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Pushups.h; sourceTree = "<group>"; };
+		DF9892751D618921003ABA96 /* Pushups.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Pushups.m; sourceTree = "<group>"; };
+		DF9892771D618F70003ABA96 /* Crunches.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Crunches.h; sourceTree = "<group>"; };
+		DF9892781D618F70003ABA96 /* Crunches.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Crunches.m; sourceTree = "<group>"; };
+		DF98927A1D6192A0003ABA96 /* SquatJumps.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SquatJumps.h; sourceTree = "<group>"; };
+		DF98927B1D6192A0003ABA96 /* SquatJumps.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SquatJumps.m; sourceTree = "<group>"; };
+		DF98927D1D6195A5003ABA96 /* ForwardLunge.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ForwardLunge.h; sourceTree = "<group>"; };
+		DF98927E1D6195A5003ABA96 /* ForwardLunge.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ForwardLunge.m; sourceTree = "<group>"; };
+		DF9892801D61995F003ABA96 /* HealthyFoods.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HealthyFoods.h; sourceTree = "<group>"; };
+		DF9892811D61995F003ABA96 /* HealthyFoods.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HealthyFoods.m; sourceTree = "<group>"; };
+		DF9A63DC1D45DE1B00A12B5A /* BMI.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = BMI.storyboard; sourceTree = "<group>"; };
+		DF9A63DE1D45DE5500A12B5A /* BMIViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BMIViewController.h; sourceTree = "<group>"; };
+		DF9A63DF1D45DE5500A12B5A /* BMIViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BMIViewController.m; sourceTree = "<group>"; };
+		DF9A63E11D45E5A900A12B5A /* BMICalculation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BMICalculation.h; sourceTree = "<group>"; };
+		DF9A63E21D45E5A900A12B5A /* BMICalculation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BMICalculation.m; sourceTree = "<group>"; };
+		DFB378581D4F179F00C94498 /* KeepFitTVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KeepFitTVC.h; sourceTree = "<group>"; };
+		DFB378591D4F179F00C94498 /* KeepFitTVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KeepFitTVC.m; sourceTree = "<group>"; };
+		DFB3785B1D4F330400C94498 /* HomeWorkoutsTVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomeWorkoutsTVC.h; sourceTree = "<group>"; };
+		DFB3785C1D4F330400C94498 /* HomeWorkoutsTVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomeWorkoutsTVC.m; sourceTree = "<group>"; };
+		DFB562691D5C32580055D236 /* Supermans.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Supermans.h; sourceTree = "<group>"; };
+		DFB5626A1D5C32580055D236 /* Supermans.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Supermans.m; sourceTree = "<group>"; };
 		E57BC0A11D34CF3A00488F18 /* CC Fitness.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "CC Fitness.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E57BC0A51D34CF3A00488F18 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		E57BC0A71D34CF3A00488F18 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -51,6 +99,9 @@
 		E57BC0C51D34CF3A00488F18 /* CC FitnessUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "CC FitnessUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E57BC0C91D34CF3A00488F18 /* CC_FitnessUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CC_FitnessUITests.m; sourceTree = "<group>"; };
 		E57BC0CB1D34CF3A00488F18 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E57BC0DA1D34DD2400488F18 /* LoginVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LoginVC.h; path = ../LoginVC.h; sourceTree = "<group>"; };
+		E57BC0DB1D34DD2400488F18 /* LoginVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = LoginVC.m; path = ../LoginVC.m; sourceTree = "<group>"; };
+		E57BC0DF1D34DEC100488F18 /* Portal.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Portal.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,6 +129,44 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		DF45C0D21D41B7BA007D4E5A /* Learn */ = {
+			isa = PBXGroup;
+			children = (
+				DF45C0D31D41B7C8007D4E5A /* Learn.storyboard */,
+				DF45C0D51D41B824007D4E5A /* LearnTVC.h */,
+				DF45C0D61D41B824007D4E5A /* LearnTVC.m */,
+				DFB378581D4F179F00C94498 /* KeepFitTVC.h */,
+				DFB378591D4F179F00C94498 /* KeepFitTVC.m */,
+				DFB3785B1D4F330400C94498 /* HomeWorkoutsTVC.h */,
+				DFB3785C1D4F330400C94498 /* HomeWorkoutsTVC.m */,
+				DFB562691D5C32580055D236 /* Supermans.h */,
+				DFB5626A1D5C32580055D236 /* Supermans.m */,
+				DF9892741D618921003ABA96 /* Pushups.h */,
+				DF9892751D618921003ABA96 /* Pushups.m */,
+				DF9892771D618F70003ABA96 /* Crunches.h */,
+				DF9892781D618F70003ABA96 /* Crunches.m */,
+				DF98927A1D6192A0003ABA96 /* SquatJumps.h */,
+				DF98927B1D6192A0003ABA96 /* SquatJumps.m */,
+				DF98927D1D6195A5003ABA96 /* ForwardLunge.h */,
+				DF98927E1D6195A5003ABA96 /* ForwardLunge.m */,
+				DF9892801D61995F003ABA96 /* HealthyFoods.h */,
+				DF9892811D61995F003ABA96 /* HealthyFoods.m */,
+			);
+			name = Learn;
+			sourceTree = "<group>";
+		};
+		DF9A63DB1D45DE0100A12B5A /* BMI Calculator */ = {
+			isa = PBXGroup;
+			children = (
+				DF9A63DC1D45DE1B00A12B5A /* BMI.storyboard */,
+				DF9A63DE1D45DE5500A12B5A /* BMIViewController.h */,
+				DF9A63DF1D45DE5500A12B5A /* BMIViewController.m */,
+				DF9A63E11D45E5A900A12B5A /* BMICalculation.h */,
+				DF9A63E21D45E5A900A12B5A /* BMICalculation.m */,
+			);
+			name = "BMI Calculator";
+			sourceTree = "<group>";
+		};
 		E57BC0981D34CF3A00488F18 = {
 			isa = PBXGroup;
 			children = (
@@ -101,11 +190,14 @@
 		E57BC0A31D34CF3A00488F18 /* CC Fitness */ = {
 			isa = PBXGroup;
 			children = (
+				DF9A63DB1D45DE0100A12B5A /* BMI Calculator */,
+				DF45C0D21D41B7BA007D4E5A /* Learn */,
+				E57BC0DE1D34DE5F00488F18 /* Portal */,
+				E57BC0DD1D34DE2500488F18 /* Main */,
 				E57BC0A71D34CF3A00488F18 /* AppDelegate.h */,
 				E57BC0A81D34CF3A00488F18 /* AppDelegate.m */,
 				E57BC0AA1D34CF3A00488F18 /* ViewController.h */,
 				E57BC0AB1D34CF3A00488F18 /* ViewController.m */,
-				E57BC0AD1D34CF3A00488F18 /* Main.storyboard */,
 				E57BC0B01D34CF3A00488F18 /* Assets.xcassets */,
 				E57BC0B21D34CF3A00488F18 /* LaunchScreen.storyboard */,
 				E57BC0B51D34CF3A00488F18 /* Info.plist */,
@@ -138,6 +230,30 @@
 				E57BC0CB1D34CF3A00488F18 /* Info.plist */,
 			);
 			path = "CC FitnessUITests";
+			sourceTree = "<group>";
+		};
+		E57BC0DD1D34DE2500488F18 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				DF43F5CA1D3741BC005E4C02 /* LoginService.h */,
+				DF43F5CB1D3741BC005E4C02 /* LoginService.m */,
+				E57BC0DB1D34DD2400488F18 /* LoginVC.m */,
+				E57BC0AD1D34CF3A00488F18 /* Main.storyboard */,
+				E57BC0DA1D34DD2400488F18 /* LoginVC.h */,
+			);
+			name = Main;
+			sourceTree = "<group>";
+		};
+		E57BC0DE1D34DE5F00488F18 /* Portal */ = {
+			isa = PBXGroup;
+			children = (
+				DF0974761D3CB3A900889EE4 /* MainMenuVC.h */,
+				DF0974771D3CB3A900889EE4 /* MainMenuVC.m */,
+				E57BC0DF1D34DEC100488F18 /* Portal.storyboard */,
+				DF2116971D47514500A00A32 /* ToolsVC.h */,
+				DF2116981D47514500A00A32 /* ToolsVC.m */,
+			);
+			name = Portal;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -202,11 +318,12 @@
 		E57BC0991D34CF3A00488F18 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0730;
+				LastUpgradeCheck = 0820;
 				ORGANIZATIONNAME = Hongxuan;
 				TargetAttributes = {
 					E57BC0A01D34CF3A00488F18 = {
 						CreatedOnToolsVersion = 7.3.1;
+						DevelopmentTeam = 2JXQK2V99D;
 					};
 					E57BC0B91D34CF3A00488F18 = {
 						CreatedOnToolsVersion = 7.3.1;
@@ -245,6 +362,9 @@
 			files = (
 				E57BC0B41D34CF3A00488F18 /* LaunchScreen.storyboard in Resources */,
 				E57BC0B11D34CF3A00488F18 /* Assets.xcassets in Resources */,
+				DF45C0D41D41B7C8007D4E5A /* Learn.storyboard in Resources */,
+				DF9A63DD1D45DE1B00A12B5A /* BMI.storyboard in Resources */,
+				E57BC0E01D34DEC100488F18 /* Portal.storyboard in Resources */,
 				E57BC0AF1D34CF3A00488F18 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -270,9 +390,24 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DF9892761D618921003ABA96 /* Pushups.m in Sources */,
 				E57BC0AC1D34CF3A00488F18 /* ViewController.m in Sources */,
+				DF43F5CC1D3741BC005E4C02 /* LoginService.m in Sources */,
+				DF9892791D618F70003ABA96 /* Crunches.m in Sources */,
+				DF98927C1D6192A0003ABA96 /* SquatJumps.m in Sources */,
+				DF9892821D61995F003ABA96 /* HealthyFoods.m in Sources */,
+				DF2116991D47514500A00A32 /* ToolsVC.m in Sources */,
 				E57BC0A91D34CF3A00488F18 /* AppDelegate.m in Sources */,
+				DFB5626B1D5C32580055D236 /* Supermans.m in Sources */,
+				DFB3785D1D4F330400C94498 /* HomeWorkoutsTVC.m in Sources */,
+				DF45C0D71D41B824007D4E5A /* LearnTVC.m in Sources */,
+				E57BC0DC1D34DD2400488F18 /* LoginVC.m in Sources */,
+				DF9A63E01D45DE5500A12B5A /* BMIViewController.m in Sources */,
+				DF0974781D3CB3A900889EE4 /* MainMenuVC.m in Sources */,
+				DF9A63E31D45E5A900A12B5A /* BMICalculation.m in Sources */,
+				DFB3785A1D4F179F00C94498 /* KeepFitTVC.m in Sources */,
 				E57BC0A61D34CF3A00488F18 /* main.m in Sources */,
+				DF98927F1D6195A5003ABA96 /* ForwardLunge.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -341,8 +476,10 @@
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
@@ -385,8 +522,10 @@
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
@@ -413,10 +552,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = "CC Fitness/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "sg.edu.ite.CC-Fitness";
+				PRODUCT_BUNDLE_IDENTIFIER = "sg.edu.itee.CC-Fitness";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Debug;
 		};
@@ -424,10 +567,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = "CC Fitness/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "sg.edu.ite.CC-Fitness";
+				PRODUCT_BUNDLE_IDENTIFIER = "sg.edu.itee.CC-Fitness";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Release;
 		};
@@ -496,6 +643,7 @@
 				E57BC0D01D34CF3A00488F18 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		E57BC0D11D34CF3A00488F18 /* Build configuration list for PBXNativeTarget "CC FitnessTests" */ = {
 			isa = XCConfigurationList;
@@ -504,6 +652,7 @@
 				E57BC0D31D34CF3A00488F18 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		E57BC0D41D34CF3A00488F18 /* Build configuration list for PBXNativeTarget "CC FitnessUITests" */ = {
 			isa = XCConfigurationList;
@@ -512,6 +661,7 @@
 				E57BC0D61D34CF3A00488F18 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

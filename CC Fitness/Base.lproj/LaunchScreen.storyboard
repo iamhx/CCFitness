@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8150" systemVersion="15A204g" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" initialViewController="01J-lp-oVM">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10116" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" initialViewController="01J-lp-oVM">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8122"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
@@ -15,13 +15,97 @@
                     <view key="view" contentMode="scaleToFill" id="Ze5-6b-2t3">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <animations/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="radial-gradient-background-wallpaper-4" translatesAutoresizingMaskIntoConstraints="NO" id="6Nh-u5-zK5">
+                                <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="© CC Fitness 2016 All Rights Reserved" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FiD-S5-FRI">
+                                <rect key="frame" x="-42" y="-21" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="17"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="cclogo3" translatesAutoresizingMaskIntoConstraints="NO" id="ADG-Js-x0V">
+                                <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                                <color key="backgroundColor" white="1" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="95" id="O3B-w8-C9u">
+                                        <variation key="heightClass=regular-widthClass=compact" constant="225"/>
+                                    </constraint>
+                                    <constraint firstAttribute="height" constant="95" id="twG-aF-sTs">
+                                        <variation key="heightClass=regular-widthClass=compact" constant="225"/>
+                                    </constraint>
+                                </constraints>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="O3B-w8-C9u"/>
+                                        <exclude reference="twG-aF-sTs"/>
+                                    </mask>
+                                </variation>
+                                <variation key="heightClass=regular-widthClass=compact">
+                                    <mask key="constraints">
+                                        <include reference="O3B-w8-C9u"/>
+                                        <include reference="twG-aF-sTs"/>
+                                    </mask>
+                                </variation>
+                            </imageView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="6Nh-u5-zK5" firstAttribute="bottom" secondItem="xb3-aO-Qok" secondAttribute="top" id="1Do-ws-OHk"/>
+                            <constraint firstItem="6Nh-u5-zK5" firstAttribute="top" secondItem="Ze5-6b-2t3" secondAttribute="top" id="2iR-Hl-tjM"/>
+                            <constraint firstItem="ADG-Js-x0V" firstAttribute="top" secondItem="Llm-lL-Icb" secondAttribute="bottom" constant="133" id="CcV-id-mWa">
+                                <variation key="heightClass=regular-widthClass=compact" constant="181"/>
+                            </constraint>
+                            <constraint firstItem="xb3-aO-Qok" firstAttribute="top" secondItem="FiD-S5-FRI" secondAttribute="bottom" constant="8" symbolic="YES" id="G0f-HK-DHM"/>
+                            <constraint firstItem="6Nh-u5-zK5" firstAttribute="leading" secondItem="Ze5-6b-2t3" secondAttribute="leading" id="HcU-t1-Lpz"/>
+                            <constraint firstItem="ADG-Js-x0V" firstAttribute="centerX" secondItem="FiD-S5-FRI" secondAttribute="centerX" id="QSe-vh-SbH"/>
+                            <constraint firstItem="6Nh-u5-zK5" firstAttribute="centerX" secondItem="FiD-S5-FRI" secondAttribute="centerX" id="f54-cq-vmj"/>
+                            <constraint firstAttribute="trailing" secondItem="6Nh-u5-zK5" secondAttribute="trailing" id="qsN-7k-Eoy"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="subviews">
+                                <exclude reference="6Nh-u5-zK5"/>
+                                <exclude reference="FiD-S5-FRI"/>
+                                <exclude reference="ADG-Js-x0V"/>
+                            </mask>
+                            <mask key="constraints">
+                                <exclude reference="G0f-HK-DHM"/>
+                                <exclude reference="1Do-ws-OHk"/>
+                                <exclude reference="2iR-Hl-tjM"/>
+                                <exclude reference="HcU-t1-Lpz"/>
+                                <exclude reference="f54-cq-vmj"/>
+                                <exclude reference="qsN-7k-Eoy"/>
+                                <exclude reference="CcV-id-mWa"/>
+                                <exclude reference="QSe-vh-SbH"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=regular-widthClass=compact">
+                            <mask key="subviews">
+                                <include reference="6Nh-u5-zK5"/>
+                                <include reference="FiD-S5-FRI"/>
+                                <include reference="ADG-Js-x0V"/>
+                            </mask>
+                            <mask key="constraints">
+                                <include reference="G0f-HK-DHM"/>
+                                <include reference="1Do-ws-OHk"/>
+                                <include reference="2iR-Hl-tjM"/>
+                                <include reference="HcU-t1-Lpz"/>
+                                <include reference="f54-cq-vmj"/>
+                                <include reference="qsN-7k-Eoy"/>
+                                <include reference="CcV-id-mWa"/>
+                                <include reference="QSe-vh-SbH"/>
+                            </mask>
+                        </variation>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="iYj-Kq-Ea1" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="53" y="375"/>
+            <point key="canvasLocation" x="52.5" y="375"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="cclogo3" width="1071" height="1071"/>
+        <image name="radial-gradient-background-wallpaper-4" width="1024" height="768"/>
+    </resources>
 </document>
