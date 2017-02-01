@@ -29,8 +29,6 @@
 		E57BC0AF1D34CF3A00488F18 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E57BC0AD1D34CF3A00488F18 /* Main.storyboard */; };
 		E57BC0B11D34CF3A00488F18 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E57BC0B01D34CF3A00488F18 /* Assets.xcassets */; };
 		E57BC0B41D34CF3A00488F18 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E57BC0B21D34CF3A00488F18 /* LaunchScreen.storyboard */; };
-		E57BC0BF1D34CF3A00488F18 /* CC_FitnessTests.m in Sources */ = {isa = PBXBuildFile; fileRef = E57BC0BE1D34CF3A00488F18 /* CC_FitnessTests.m */; };
-		E57BC0CA1D34CF3A00488F18 /* CC_FitnessUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = E57BC0C91D34CF3A00488F18 /* CC_FitnessUITests.m */; };
 		E57BC0DC1D34DD2400488F18 /* LoginVC.m in Sources */ = {isa = PBXBuildFile; fileRef = E57BC0DB1D34DD2400488F18 /* LoginVC.m */; };
 		E57BC0E01D34DEC100488F18 /* Portal.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E57BC0DF1D34DEC100488F18 /* Portal.storyboard */; };
 /* End PBXBuildFile section */
@@ -94,11 +92,7 @@
 		E57BC0B31D34CF3A00488F18 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E57BC0B51D34CF3A00488F18 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E57BC0BA1D34CF3A00488F18 /* CC FitnessTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "CC FitnessTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		E57BC0BE1D34CF3A00488F18 /* CC_FitnessTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CC_FitnessTests.m; sourceTree = "<group>"; };
-		E57BC0C01D34CF3A00488F18 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E57BC0C51D34CF3A00488F18 /* CC FitnessUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "CC FitnessUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		E57BC0C91D34CF3A00488F18 /* CC_FitnessUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CC_FitnessUITests.m; sourceTree = "<group>"; };
-		E57BC0CB1D34CF3A00488F18 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E57BC0DA1D34DD2400488F18 /* LoginVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LoginVC.h; path = ../LoginVC.h; sourceTree = "<group>"; };
 		E57BC0DB1D34DD2400488F18 /* LoginVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = LoginVC.m; path = ../LoginVC.m; sourceTree = "<group>"; };
 		E57BC0DF1D34DEC100488F18 /* Portal.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Portal.storyboard; sourceTree = "<group>"; };
@@ -171,8 +165,6 @@
 			isa = PBXGroup;
 			children = (
 				E57BC0A31D34CF3A00488F18 /* CC Fitness */,
-				E57BC0BD1D34CF3A00488F18 /* CC FitnessTests */,
-				E57BC0C81D34CF3A00488F18 /* CC FitnessUITests */,
 				E57BC0A21D34CF3A00488F18 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -212,24 +204,6 @@
 				E57BC0A51D34CF3A00488F18 /* main.m */,
 			);
 			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
-		E57BC0BD1D34CF3A00488F18 /* CC FitnessTests */ = {
-			isa = PBXGroup;
-			children = (
-				E57BC0BE1D34CF3A00488F18 /* CC_FitnessTests.m */,
-				E57BC0C01D34CF3A00488F18 /* Info.plist */,
-			);
-			path = "CC FitnessTests";
-			sourceTree = "<group>";
-		};
-		E57BC0C81D34CF3A00488F18 /* CC FitnessUITests */ = {
-			isa = PBXGroup;
-			children = (
-				E57BC0C91D34CF3A00488F18 /* CC_FitnessUITests.m */,
-				E57BC0CB1D34CF3A00488F18 /* Info.plist */,
-			);
-			path = "CC FitnessUITests";
 			sourceTree = "<group>";
 		};
 		E57BC0DD1D34DE2500488F18 /* Main */ = {
@@ -323,7 +297,7 @@
 				TargetAttributes = {
 					E57BC0A01D34CF3A00488F18 = {
 						CreatedOnToolsVersion = 7.3.1;
-						DevelopmentTeam = 2JXQK2V99D;
+						DevelopmentTeam = EVC7K5F9LC;
 					};
 					E57BC0B91D34CF3A00488F18 = {
 						CreatedOnToolsVersion = 7.3.1;
@@ -415,7 +389,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E57BC0BF1D34CF3A00488F18 /* CC_FitnessTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -423,7 +396,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E57BC0CA1D34CF3A00488F18 /* CC_FitnessUITests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -554,6 +526,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = EVC7K5F9LC;
 				INFOPLIST_FILE = "CC Fitness/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -569,6 +542,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = EVC7K5F9LC;
 				INFOPLIST_FILE = "CC Fitness/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
