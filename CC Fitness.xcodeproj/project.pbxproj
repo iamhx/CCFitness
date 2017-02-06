@@ -25,6 +25,8 @@
 		DFB5626B1D5C32580055D236 /* Supermans.m in Sources */ = {isa = PBXBuildFile; fileRef = DFB5626A1D5C32580055D236 /* Supermans.m */; };
 		DFB80E741E4842F400B651DF /* FindAGym.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DFB80E731E4842F400B651DF /* FindAGym.storyboard */; };
 		DFB80E771E48431B00B651DF /* FindAGymViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DFB80E761E48431B00B651DF /* FindAGymViewController.m */; };
+		DFB80E7A1E48483400B651DF /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DFB80E791E48483400B651DF /* CoreLocation.framework */; };
+		DFB80E7C1E48483800B651DF /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DFB80E7B1E48483800B651DF /* MapKit.framework */; };
 		E57BC0A61D34CF3A00488F18 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E57BC0A51D34CF3A00488F18 /* main.m */; };
 		E57BC0A91D34CF3A00488F18 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E57BC0A81D34CF3A00488F18 /* AppDelegate.m */; };
 		E57BC0AC1D34CF3A00488F18 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E57BC0AB1D34CF3A00488F18 /* ViewController.m */; };
@@ -86,6 +88,8 @@
 		DFB80E731E4842F400B651DF /* FindAGym.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = FindAGym.storyboard; sourceTree = "<group>"; };
 		DFB80E751E48431B00B651DF /* FindAGymViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FindAGymViewController.h; sourceTree = "<group>"; };
 		DFB80E761E48431B00B651DF /* FindAGymViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FindAGymViewController.m; sourceTree = "<group>"; };
+		DFB80E791E48483400B651DF /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		DFB80E7B1E48483800B651DF /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		E57BC0A11D34CF3A00488F18 /* CC Fitness.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "CC Fitness.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E57BC0A51D34CF3A00488F18 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		E57BC0A71D34CF3A00488F18 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -108,6 +112,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DFB80E7C1E48483800B651DF /* MapKit.framework in Frameworks */,
+				DFB80E7A1E48483400B651DF /* CoreLocation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -176,11 +182,21 @@
 			name = "Find A Gym";
 			sourceTree = "<group>";
 		};
+		DFB80E781E48483300B651DF /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				DFB80E7B1E48483800B651DF /* MapKit.framework */,
+				DFB80E791E48483400B651DF /* CoreLocation.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		E57BC0981D34CF3A00488F18 = {
 			isa = PBXGroup;
 			children = (
 				E57BC0A31D34CF3A00488F18 /* CC Fitness */,
 				E57BC0A21D34CF3A00488F18 /* Products */,
+				DFB80E781E48483300B651DF /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};

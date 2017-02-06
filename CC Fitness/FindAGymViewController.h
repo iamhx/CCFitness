@@ -7,7 +7,12 @@
 //
 
 #import "ViewController.h"
+#import <CoreLocation/CoreLocation.h>
+#import <MapKit/MapKit.h>
 
-@interface FindAGymViewController : ViewController
+@interface FindAGymViewController : ViewController <MKMapViewDelegate>
+
+- (IBAction)btnBack:(id)sender;
+@property (weak, nonatomic) IBOutlet MKMapView *myMap;
 
 @end

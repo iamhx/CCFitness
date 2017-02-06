@@ -17,6 +17,9 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+    self.myMap.delegate = self;
+    
+    //Annotations yet to implement
 }
 
 - (void)didReceiveMemoryWarning {
@@ -34,4 +37,31 @@
 }
 */
 
+- (void) viewWillDisappear:(BOOL)animated {
+    
+    self.myMap.showsUserLocation = NO;
+}
+
+- (void)mapView:(MKMapView *)mapView didUpdateUserLocation:(MKUserLocation *)userLocation {
+    
+    MKCoordinateRegion region;
+    
+    region.center = userLocation.coordinate;
+    
+    //Zooms in to 5km
+    region.span = MKCoordinateSpanMake(0.04504, 0.04504);
+    
+    [self.myMap setRegion:region animated:YES];
+}
+
+
+
+- (IBAction)btnBack:(id)sender {
+    
+    UIStoryboard *portalStoryboard = [UIStoryboard storyboardWithName:@"Portal" bundle:nil];
+    UIViewController *portalVC = [portalStoryboard instantiateViewControllerWithIdentifier:@"Portal"];
+    
+    portalVC.modalTransitionStyle = UIModalTransitionStyleFlipHorizontal;
+    [self presentViewController:portalVC animated:YES completion:nil];
+}
 @end
