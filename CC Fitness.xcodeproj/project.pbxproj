@@ -23,6 +23,8 @@
 		DFB3785A1D4F179F00C94498 /* KeepFitTVC.m in Sources */ = {isa = PBXBuildFile; fileRef = DFB378591D4F179F00C94498 /* KeepFitTVC.m */; };
 		DFB3785D1D4F330400C94498 /* HomeWorkoutsTVC.m in Sources */ = {isa = PBXBuildFile; fileRef = DFB3785C1D4F330400C94498 /* HomeWorkoutsTVC.m */; };
 		DFB5626B1D5C32580055D236 /* Supermans.m in Sources */ = {isa = PBXBuildFile; fileRef = DFB5626A1D5C32580055D236 /* Supermans.m */; };
+		DFB80E741E4842F400B651DF /* FindAGym.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DFB80E731E4842F400B651DF /* FindAGym.storyboard */; };
+		DFB80E771E48431B00B651DF /* FindAGymViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DFB80E761E48431B00B651DF /* FindAGymViewController.m */; };
 		E57BC0A61D34CF3A00488F18 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E57BC0A51D34CF3A00488F18 /* main.m */; };
 		E57BC0A91D34CF3A00488F18 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E57BC0A81D34CF3A00488F18 /* AppDelegate.m */; };
 		E57BC0AC1D34CF3A00488F18 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E57BC0AB1D34CF3A00488F18 /* ViewController.m */; };
@@ -81,6 +83,9 @@
 		DFB3785C1D4F330400C94498 /* HomeWorkoutsTVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomeWorkoutsTVC.m; sourceTree = "<group>"; };
 		DFB562691D5C32580055D236 /* Supermans.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Supermans.h; sourceTree = "<group>"; };
 		DFB5626A1D5C32580055D236 /* Supermans.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Supermans.m; sourceTree = "<group>"; };
+		DFB80E731E4842F400B651DF /* FindAGym.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = FindAGym.storyboard; sourceTree = "<group>"; };
+		DFB80E751E48431B00B651DF /* FindAGymViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FindAGymViewController.h; sourceTree = "<group>"; };
+		DFB80E761E48431B00B651DF /* FindAGymViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FindAGymViewController.m; sourceTree = "<group>"; };
 		E57BC0A11D34CF3A00488F18 /* CC Fitness.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "CC Fitness.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E57BC0A51D34CF3A00488F18 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		E57BC0A71D34CF3A00488F18 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -161,6 +166,16 @@
 			name = "BMI Calculator";
 			sourceTree = "<group>";
 		};
+		DFB80E721E4842D600B651DF /* Find A Gym */ = {
+			isa = PBXGroup;
+			children = (
+				DFB80E731E4842F400B651DF /* FindAGym.storyboard */,
+				DFB80E751E48431B00B651DF /* FindAGymViewController.h */,
+				DFB80E761E48431B00B651DF /* FindAGymViewController.m */,
+			);
+			name = "Find A Gym";
+			sourceTree = "<group>";
+		};
 		E57BC0981D34CF3A00488F18 = {
 			isa = PBXGroup;
 			children = (
@@ -182,6 +197,7 @@
 		E57BC0A31D34CF3A00488F18 /* CC Fitness */ = {
 			isa = PBXGroup;
 			children = (
+				DFB80E721E4842D600B651DF /* Find A Gym */,
 				DF9A63DB1D45DE0100A12B5A /* BMI Calculator */,
 				DF45C0D21D41B7BA007D4E5A /* Learn */,
 				E57BC0DE1D34DE5F00488F18 /* Portal */,
@@ -297,6 +313,7 @@
 				TargetAttributes = {
 					E57BC0A01D34CF3A00488F18 = {
 						CreatedOnToolsVersion = 7.3.1;
+						DevelopmentTeam = EVC7K5F9LC;
 						ProvisioningStyle = Automatic;
 					};
 					E57BC0B91D34CF3A00488F18 = {
@@ -337,6 +354,7 @@
 				E57BC0B41D34CF3A00488F18 /* LaunchScreen.storyboard in Resources */,
 				E57BC0B11D34CF3A00488F18 /* Assets.xcassets in Resources */,
 				DF45C0D41D41B7C8007D4E5A /* Learn.storyboard in Resources */,
+				DFB80E741E4842F400B651DF /* FindAGym.storyboard in Resources */,
 				DF9A63DD1D45DE1B00A12B5A /* BMI.storyboard in Resources */,
 				E57BC0E01D34DEC100488F18 /* Portal.storyboard in Resources */,
 				E57BC0AF1D34CF3A00488F18 /* Main.storyboard in Resources */,
@@ -372,6 +390,7 @@
 				DF9892821D61995F003ABA96 /* HealthyFoods.m in Sources */,
 				DF2116991D47514500A00A32 /* ToolsVC.m in Sources */,
 				E57BC0A91D34CF3A00488F18 /* AppDelegate.m in Sources */,
+				DFB80E771E48431B00B651DF /* FindAGymViewController.m in Sources */,
 				DFB5626B1D5C32580055D236 /* Supermans.m in Sources */,
 				DFB3785D1D4F330400C94498 /* HomeWorkoutsTVC.m in Sources */,
 				DF45C0D71D41B824007D4E5A /* LearnTVC.m in Sources */,
@@ -526,7 +545,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = EVC7K5F9LC;
 				INFOPLIST_FILE = "CC Fitness/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -542,7 +561,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = EVC7K5F9LC;
 				INFOPLIST_FILE = "CC Fitness/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
