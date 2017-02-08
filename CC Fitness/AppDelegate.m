@@ -17,8 +17,8 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
     
+    //Initialize location manager to request access to location services
      locationManager = [[CLLocationManager alloc]init];
-
      [locationManager requestWhenInUseAuthorization];
     
     return YES;

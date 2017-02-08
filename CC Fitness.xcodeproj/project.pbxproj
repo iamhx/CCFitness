@@ -35,6 +35,7 @@
 		E57BC0B41D34CF3A00488F18 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E57BC0B21D34CF3A00488F18 /* LaunchScreen.storyboard */; };
 		E57BC0DC1D34DD2400488F18 /* LoginVC.m in Sources */ = {isa = PBXBuildFile; fileRef = E57BC0DB1D34DD2400488F18 /* LoginVC.m */; };
 		E57BC0E01D34DEC100488F18 /* Portal.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E57BC0DF1D34DEC100488F18 /* Portal.storyboard */; };
+		E5CE8A9D1E4ADC9300966617 /* CustomAnnotation.m in Sources */ = {isa = PBXBuildFile; fileRef = E5CE8A9C1E4ADC9300966617 /* CustomAnnotation.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -105,6 +106,8 @@
 		E57BC0DA1D34DD2400488F18 /* LoginVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LoginVC.h; path = ../LoginVC.h; sourceTree = "<group>"; };
 		E57BC0DB1D34DD2400488F18 /* LoginVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = LoginVC.m; path = ../LoginVC.m; sourceTree = "<group>"; };
 		E57BC0DF1D34DEC100488F18 /* Portal.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Portal.storyboard; sourceTree = "<group>"; };
+		E5CE8A9B1E4ADC9300966617 /* CustomAnnotation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomAnnotation.h; sourceTree = "<group>"; };
+		E5CE8A9C1E4ADC9300966617 /* CustomAnnotation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomAnnotation.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -178,6 +181,8 @@
 				DFB80E731E4842F400B651DF /* FindAGym.storyboard */,
 				DFB80E751E48431B00B651DF /* FindAGymViewController.h */,
 				DFB80E761E48431B00B651DF /* FindAGymViewController.m */,
+				E5CE8A9B1E4ADC9300966617 /* CustomAnnotation.h */,
+				E5CE8A9C1E4ADC9300966617 /* CustomAnnotation.m */,
 			);
 			name = "Find A Gym";
 			sourceTree = "<group>";
@@ -413,6 +418,7 @@
 				E57BC0DC1D34DD2400488F18 /* LoginVC.m in Sources */,
 				DF9A63E01D45DE5500A12B5A /* BMIViewController.m in Sources */,
 				DF0974781D3CB3A900889EE4 /* MainMenuVC.m in Sources */,
+				E5CE8A9D1E4ADC9300966617 /* CustomAnnotation.m in Sources */,
 				DF9A63E31D45E5A900A12B5A /* BMICalculation.m in Sources */,
 				DFB3785A1D4F179F00C94498 /* KeepFitTVC.m in Sources */,
 				E57BC0A61D34CF3A00488F18 /* main.m in Sources */,

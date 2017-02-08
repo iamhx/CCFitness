@@ -7,6 +7,7 @@
 //
 
 #import "FindAGymViewController.h"
+#import "CustomAnnotation.h"
 
 @interface FindAGymViewController ()
 
@@ -17,6 +18,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+    
     self.myMap.delegate = self;
     
     //Annotations yet to implement
@@ -41,6 +43,43 @@
     
     //Stop using location services on view disappearing
     self.myMap.showsUserLocation = NO;
+}
+
+- (MKAnnotationView *)mapView:(MKMapView *)mapView viewForAnnotation:(id<MKAnnotation>)annotation
+{
+    //If class is UserLocation, return nil
+    if ([annotation isKindOfClass:[MKUserLocation class]])
+    {
+        return nil;
+    }
+    
+    //If class is CustomAnnotation
+    if ([annotation isKindOfClass:[CustomAnnotation class]])
+    {
+        //Dequeue existing pin view first
+        MKPinAnnotationView *pinView = (MKPinAnnotationView *)[mapView dequeueReusableAnnotationViewWithIdentifier:@"CustomPinAnnotationView"];
+        
+        if (!pinView)
+        {
+            //Create pin view if there is no existing one
+            pinView = [[MKPinAnnotationView alloc]initWithAnnotation:annotation reuseIdentifier:@"CustomPinAnnotationView"];
+            pinView.pinTintColor = [UIColor purpleColor];
+            pinView.animatesDrop = YES;
+            pinView.canShowCallout = YES;
+            
+            //Callout action yet to implement
+        }
+        else
+        {
+            pinView.annotation = annotation;
+        }
+        
+        return pinView;
+    }
+    else
+    {
+        return nil;
+    }
 }
 
 - (void)mapView:(MKMapView *)mapView didUpdateUserLocation:(MKUserLocation *)userLocation {
