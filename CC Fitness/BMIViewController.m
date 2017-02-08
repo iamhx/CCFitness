@@ -140,7 +140,7 @@
 - (IBAction)btnBack:(id)sender {
     
     UIStoryboard *portalStoryboard = [UIStoryboard storyboardWithName:@"Portal" bundle:nil];
-    UIViewController *portalVC = [portalStoryboard instantiateViewControllerWithIdentifier:@"Portal"];
+    UIViewController *portalVC = [portalStoryboard instantiateViewControllerWithIdentifier:@"ToolsID"];
     
     portalVC.modalTransitionStyle = UIModalTransitionStyleFlipHorizontal;
     [self presentViewController:portalVC animated:YES completion:nil];
