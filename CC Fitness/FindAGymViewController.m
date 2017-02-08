@@ -21,13 +21,28 @@
     
     self.myMap.delegate = self;
     
-    //Annotations yet to implement
+    //Pass array from the called method to use it in a for each loop
+    NSMutableArray *AllAnnotations = [CustomAnnotation GetAllAnnotations];
+    
+    for (CustomAnnotation *annotation in AllAnnotations)
+    {
+        [self.myMap addAnnotation:annotation];
+
+    }
+    
 }
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
+
+- (void) viewWillDisappear:(BOOL)animated {
+    
+    //Stop using location services on view disappearing
+    self.myMap.showsUserLocation = NO;
+}
+
 
 /*
 #pragma mark - Navigation
@@ -39,11 +54,7 @@
 }
 */
 
-- (void) viewWillDisappear:(BOOL)animated {
-    
-    //Stop using location services on view disappearing
-    self.myMap.showsUserLocation = NO;
-}
+
 
 - (MKAnnotationView *)mapView:(MKMapView *)mapView viewForAnnotation:(id<MKAnnotation>)annotation
 {
