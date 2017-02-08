@@ -11,6 +11,9 @@
 #import <MapKit/MapKit.h>
 
 @interface FindAGymViewController : ViewController <MKMapViewDelegate>
+{
+    CLLocationManager *locationManager;
+}
 
 - (IBAction)btnBack:(id)sender;
 @property (weak, nonatomic) IBOutlet MKMapView *myMap;

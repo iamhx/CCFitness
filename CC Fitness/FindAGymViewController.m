@@ -19,7 +19,9 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     
+    locationManager = [[CLLocationManager alloc]init];
     self.myMap.delegate = self;
+    
     
     //Pass array from the called method to use it in a for each loop
     NSMutableArray *AllAnnotations = [CustomAnnotation GetAllAnnotations];
@@ -29,6 +31,11 @@
         [self.myMap addAnnotation:annotation];
 
     }
+    
+    [self setMapRegion];
+    
+    //Animation stopped working
+    
     
 }
 
@@ -54,6 +61,19 @@
 }
 */
 
+
+- (void)setMapRegion
+{
+    MKCoordinateRegion region;
+    
+    region.center = locationManager.location.coordinate;
+    
+    //Zooms in to 5km
+    region.span = MKCoordinateSpanMake(0.04504, 0.04504);
+    
+    [self.myMap setRegion:region animated:YES];
+
+}
 
 
 - (MKAnnotationView *)mapView:(MKMapView *)mapView viewForAnnotation:(id<MKAnnotation>)annotation
@@ -93,7 +113,10 @@
     }
 }
 
-- (void)mapView:(MKMapView *)mapView didUpdateUserLocation:(MKUserLocation *)userLocation {
+
+
+/*- (void)mapView:(MKMapView *)mapView didUpdateUserLocation:(MKUserLocation *)userLocation {
+    
     
     MKCoordinateRegion region;
     
@@ -103,7 +126,8 @@
     region.span = MKCoordinateSpanMake(0.04504, 0.04504);
     
     [self.myMap setRegion:region animated:YES];
-}
+    
+}*/
 
 
 
