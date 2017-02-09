@@ -20,9 +20,10 @@
     // Do any additional setup after loading the view.
     
     locationManager = [[CLLocationManager alloc]init];
-    self.myMap.delegate = self;
-    
-    
+    self.myMap.delegate = self; //For CustomAnnotation method
+    locationManager.delegate = self; //For zooming in method
+    [locationManager startUpdatingLocation];
+
     //Pass array from the called method to use it in a for each loop
     NSMutableArray *AllAnnotations = [CustomAnnotation GetAllAnnotations];
     
@@ -31,11 +32,6 @@
         [self.myMap addAnnotation:annotation];
 
     }
-    
-    [self setMapRegion];
-    
-    //Animation stopped working
-    
     
 }
 
@@ -61,8 +57,7 @@
 }
 */
 
-
-- (void)setMapRegion
+- (void)locationManager:(CLLocationManager *)manager didUpdateLocations:(NSArray<CLLocation *> *)locations
 {
     MKCoordinateRegion region;
     
@@ -72,8 +67,11 @@
     region.span = MKCoordinateSpanMake(0.04504, 0.04504);
     
     [self.myMap setRegion:region animated:YES];
-
+    
+    //After zooming in, stop updating location to stop calling the delegate method.
+    [locationManager stopUpdatingLocation];
 }
+
 
 
 - (MKAnnotationView *)mapView:(MKMapView *)mapView viewForAnnotation:(id<MKAnnotation>)annotation
@@ -112,23 +110,6 @@
         return nil;
     }
 }
-
-
-
-/*- (void)mapView:(MKMapView *)mapView didUpdateUserLocation:(MKUserLocation *)userLocation {
-    
-    
-    MKCoordinateRegion region;
-    
-    region.center = userLocation.coordinate;
-    
-    //Zooms in to 5km
-    region.span = MKCoordinateSpanMake(0.04504, 0.04504);
-    
-    [self.myMap setRegion:region animated:YES];
-    
-}*/
-
 
 
 - (IBAction)btnBack:(id)sender {

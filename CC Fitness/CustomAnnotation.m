@@ -57,7 +57,7 @@
     
     [AllAnnotations addObject:[[CustomAnnotation alloc]initWithLocation:CLLocationCoordinate2DMake(1.3968, 103.8867) title:@"Sengkang ActiveSG Gym" andSubtitle:@"57 Anchorvale Road"]];
     
-    [AllAnnotations addObject:[[CustomAnnotation alloc]initWithLocation:CLLocationCoordinate2DMake(1.3547, 103.9399) title:@"Tampines ActiveSG Gym" andSubtitle:@"505, Tampines Swimming Complex, Tampines Avenue 5"]];
+    [AllAnnotations addObject:[[CustomAnnotation alloc]initWithLocation:CLLocationCoordinate2DMake(1.3547, 103.9399) title:@"Tampines ActiveSG Gym" andSubtitle:@"505, Tampines Avenue 5 Swimming Complex"]];
     
     [AllAnnotations addObject:[[CustomAnnotation alloc]initWithLocation:CLLocationCoordinate2DMake(1.4350, 103.7804) title:@"Woodlands ActiveSG Gym" andSubtitle:@"1 Woodlands Street 13"]];
     

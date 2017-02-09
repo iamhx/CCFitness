@@ -10,7 +10,7 @@
 #import <CoreLocation/CoreLocation.h>
 #import <MapKit/MapKit.h>
 
-@interface FindAGymViewController : ViewController <MKMapViewDelegate>
+@interface FindAGymViewController : ViewController <MKMapViewDelegate, CLLocationManagerDelegate>
 {
     CLLocationManager *locationManager;
 }
