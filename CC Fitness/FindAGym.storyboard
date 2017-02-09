@@ -40,7 +40,32 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="LJ5-35-kk0" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-23.199999999999999" y="-142.57871064467767"/>
+            <point key="canvasLocation" x="-226" y="-143"/>
+        </scene>
+        <!--Gym Details-->
+        <scene sceneID="qaM-Fy-a8K">
+            <objects>
+                <viewController title="Gym Details" id="rU4-hN-NQ7" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="uaq-YM-Cld"/>
+                        <viewControllerLayoutGuide type="bottom" id="4sw-2s-XVd"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="3ZG-wI-Qp3">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qn2-Wa-sUj">
+                                <rect key="frame" x="138" y="178" width="98" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Get Directions"/>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="iIy-g8-bIM" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="462" y="-143"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="WDo-x7-HpT">

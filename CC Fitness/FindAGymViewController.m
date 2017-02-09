@@ -97,6 +97,18 @@
             pinView.canShowCallout = YES;
             
             //Callout action yet to implement
+            
+            // Because this is an iOS app, add the detail disclosure button to display details about the annotation in another view.
+            UIButton *rightButton = [UIButton buttonWithType:UIButtonTypeDetailDisclosure];
+            [rightButton addTarget:nil action:nil forControlEvents:UIControlEventTouchUpInside];
+            
+            pinView.rightCalloutAccessoryView = rightButton;
+            
+            // Add a custom image to the left side of the callout.
+            UIImageView *myCustomImage = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"activesg.png"]];
+            
+            pinView.leftCalloutAccessoryView = myCustomImage;
+            
         }
         else
         {
