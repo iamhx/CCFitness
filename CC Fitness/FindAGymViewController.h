@@ -13,6 +13,8 @@
 @interface FindAGymViewController : ViewController <MKMapViewDelegate, CLLocationManagerDelegate>
 {
     CLLocationManager *locationManager;
+    __block BOOL prompted; //If location services prompt has not shown
+
 }
 
 - (IBAction)btnBack:(id)sender;

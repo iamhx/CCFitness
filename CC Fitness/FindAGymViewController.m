@@ -10,8 +10,9 @@
 #import "CustomAnnotation.h"
 
 @interface FindAGymViewController ()
-
 @end
+
+
 
 @implementation FindAGymViewController
 
@@ -19,9 +20,11 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     
+    prompted = NO;
     locationManager = [[CLLocationManager alloc]init];
     self.myMap.delegate = self; //For CustomAnnotation method
     locationManager.delegate = self; //For zooming in method
+    
     [locationManager startUpdatingLocation];
 
     //Pass array from the called method to use it in a for each loop
@@ -56,6 +59,44 @@
     // Pass the selected object to the new view controller.
 }
 */
+
+-(void)locationManager:(CLLocationManager *)manager didFailWithError:(NSError *)error{
+    
+    if (!prompted)
+    {
+        UIAlertController *alert = [UIAlertController
+                                    alertControllerWithTitle:@"Could not find current location"
+                                    message:@"Please turn on location services to allow maps to determine your location."
+                                    preferredStyle:UIAlertControllerStyleAlert];
+        
+        
+        
+        UIAlertAction *cancelButton = [UIAlertAction
+                                       actionWithTitle:@"Cancel"
+                                       style:UIAlertActionStyleCancel
+                                       handler:^(UIAlertAction * action) {
+                                       }];
+        
+        [alert addAction:cancelButton];
+        
+        
+        UIAlertAction *settingsButton = [UIAlertAction
+                                         actionWithTitle:@"Open Settings"
+                                         style:UIAlertActionStyleDefault
+                                         handler:^(UIAlertAction * action) {
+                                             NSURL *url = [NSURL URLWithString:UIApplicationOpenSettingsURLString];
+                                             
+                                             [[UIApplication sharedApplication]openURL:url];
+                                         }];
+        
+        [alert addAction:settingsButton];
+        
+        [self presentViewController:alert animated:YES completion:^(void) {prompted = YES;}];
+    
+    }
+
+}
+
 
 - (void)locationManager:(CLLocationManager *)manager didUpdateLocations:(NSArray<CLLocation *> *)locations
 {
