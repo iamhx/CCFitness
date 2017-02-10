@@ -22,7 +22,6 @@
     self.lblTitle.text = self.myTitle;
     self.lblSubtitle.text = self.mySubtitle;
     
-    NSLog(@"%f, %f", self.coordinate.latitude, self.coordinate.longitude);
     
 }
 

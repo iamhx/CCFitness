@@ -137,7 +137,7 @@
         {
             //Create pin view if there is no existing one
             pinView = [[MKPinAnnotationView alloc]initWithAnnotation:annotation reuseIdentifier:@"CustomPinAnnotationView"];
-            pinView.pinTintColor = [UIColor purpleColor];
+            pinView.pinTintColor = [UIColor colorWithRed:212.0/255 green:108.0/255 blue:247.0/255 alpha:1.0];
             pinView.animatesDrop = YES;
             pinView.canShowCallout = YES;
             
@@ -188,7 +188,6 @@
     
 }
 
-
 - (void)mapView:(MKMapView *)mapView annotationView:(MKAnnotationView *)view
 calloutAccessoryControlTapped:(UIControl *)control
 {
@@ -207,5 +206,23 @@ calloutAccessoryControlTapped:(UIControl *)control
     
     portalVC.modalTransitionStyle = UIModalTransitionStyleFlipHorizontal;
     [self presentViewController:portalVC animated:YES completion:nil];
+}
+
+
+- (IBAction)btnMapType:(id)sender {
+    
+    if ([sender selectedSegmentIndex] == 0)
+    {
+        self.myMap.mapType = MKMapTypeStandard;
+    }
+    else if ([sender selectedSegmentIndex] == 1)
+    {
+        self.myMap.mapType = MKMapTypeSatellite;
+    }
+    else if ([sender selectedSegmentIndex] == 2)
+    {
+        self.myMap.mapType = MKMapTypeHybrid;
+    }
+    
 }
 @end

@@ -19,6 +19,7 @@
 
 - (IBAction)btnBack:(id)sender;
 @property (weak, nonatomic) IBOutlet MKMapView *myMap;
+- (IBAction)btnMapType:(id)sender;
 
 
 
