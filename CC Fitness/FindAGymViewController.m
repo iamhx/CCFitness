@@ -19,6 +19,8 @@
 @implementation FindAGymViewController
 {
     NSString *annotationTitle;
+    NSString *annotationSubtitle;
+    CLLocationCoordinate2D annotationCoordinates;
 }
 
 
@@ -56,18 +58,8 @@
 }
 
 
-/*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
-}
-*/
-
--(void)locationManager:(CLLocationManager *)manager didFailWithError:(NSError *)error{
-    
+- (void)promptUserForLocationSettings
+{
     if (!prompted)
     {
         UIAlertController *alert = [UIAlertController
@@ -98,8 +90,14 @@
         [alert addAction:settingsButton];
         
         [self presentViewController:alert animated:YES completion:^(void) {prompted = YES;}];
-    
+        
     }
+
+}
+
+-(void)locationManager:(CLLocationManager *)manager didFailWithError:(NSError *)error{
+    
+    [self promptUserForLocationSettings];
 
 }
 
@@ -119,27 +117,6 @@
     [locationManager stopUpdatingLocation];
 }
 
-
-- (void)mapView:(MKMapView *)mapView annotationView:(MKAnnotationView *)view
-calloutAccessoryControlTapped:(UIControl *)control
-{
-    annotationTitle = view.annotation.title;
-    
-    [self performSegueWithIdentifier:@"gymDetails" sender:self];
-    
-}
-
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    
-    if([segue.identifier isEqualToString: @"gymDetails"])
-    {
-        GymDetailsVC *vc = segue.destinationViewController;
-        
-        vc.myTitle = annotationTitle;
-        
-    }
-    
-}
 
 
 - (MKAnnotationView *)mapView:(MKMapView *)mapView viewForAnnotation:(id<MKAnnotation>)annotation
@@ -190,6 +167,38 @@ calloutAccessoryControlTapped:(UIControl *)control
     }
 }
 
+
+#pragma mark - Navigation
+
+// In a storyboard-based application, you will often want to do a little preparation before navigation
+// Get the new view controller using [segue destinationViewController].
+// Pass the selected object to the new view controller.
+
+- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
+    
+    if([segue.identifier isEqualToString: @"gymDetails"])
+    {
+        GymDetailsVC *vc = segue.destinationViewController;
+        
+        vc.myTitle = annotationTitle;
+        vc.mySubtitle = annotationSubtitle;
+        vc.coordinate = annotationCoordinates;
+        
+    }
+    
+}
+
+
+- (void)mapView:(MKMapView *)mapView annotationView:(MKAnnotationView *)view
+calloutAccessoryControlTapped:(UIControl *)control
+{
+    annotationTitle = view.annotation.title;
+    annotationSubtitle = view.annotation.subtitle;
+    annotationCoordinates = view.annotation.coordinate;
+    
+    [self performSegueWithIdentifier:@"gymDetails" sender:self];
+    
+}
 
 - (IBAction)btnBack:(id)sender {
     

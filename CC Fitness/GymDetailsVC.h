@@ -13,9 +13,14 @@
 
 
 @property (weak, nonatomic) IBOutlet UILabel *lblTitle;
+
+@property (weak, nonatomic) IBOutlet UILabel *lblSubtitle;
+
+
 @property (nonatomic, copy) NSString *myTitle;
-@property (nonatomic, readonly) CLLocationCoordinate2D coordinate;
 @property (nonatomic, copy) NSString *mySubtitle;
+@property (nonatomic, assign) CLLocationCoordinate2D coordinate;
+
 
 
 @end
