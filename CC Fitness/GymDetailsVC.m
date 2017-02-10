@@ -42,8 +42,36 @@
 
 - (IBAction)btnGetDirections:(id)sender {
     
-    NSString* directionsURL = [NSString stringWithFormat:@"http://maps.apple.com/?saddr=%f,%f&daddr=%f,%f", self.CLCoordinate.latitude, self.CLCoordinate.longitude, self.pointCoordinate.latitude, self.pointCoordinate.longitude];
-    
-    [[UIApplication sharedApplication] openURL: [NSURL URLWithString: directionsURL]];
+    [self promptToOpenDefaultAppGoogleMaps];
 }
+
+
+- (void)promptToOpenDefaultAppGoogleMaps
+{
+    
+    //Default directions app is Google Maps
+    if ([[UIApplication sharedApplication] canOpenURL:[NSURL URLWithString:@"comgooglemaps://"]])
+    {
+        
+        NSString *directionsURLGoogle = [NSString stringWithFormat:@"comgooglemaps://?saddr=My%%20Location&daddr=%f,%f", self.pointCoordinate.latitude, self.pointCoordinate.longitude];
+        
+        [[UIApplication sharedApplication] openURL: [NSURL URLWithString:directionsURLGoogle]];
+
+    }
+    
+    //Use Apple Maps if Google Maps is not installed
+    else if ([[UIApplication sharedApplication] canOpenURL:[NSURL URLWithString:@"http://maps.apple.com"]])
+    {
+        NSString* directionsURLApple = [NSString stringWithFormat:@"http://maps.apple.com/?saddr=Current%%20Location&daddr=%f,%f", self.pointCoordinate.latitude, self.pointCoordinate.longitude];
+        
+        [[UIApplication sharedApplication] openURL: [NSURL URLWithString: directionsURLApple]];
+        
+    }
+    
+    else
+    {
+        NSLog(@"Could not get directions");
+    }
+}
+
 @end

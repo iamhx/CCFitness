@@ -18,10 +18,11 @@
 
 @implementation FindAGymViewController
 {
+    
+    //Declare variables to pass annotation properties to view controller
     NSString *annotationTitle;
     NSString *annotationSubtitle;
     CLLocationCoordinate2D annotationCoordinates;
-    CLLocationCoordinate2D currentLocationCoordinates;
 }
 
 
@@ -31,9 +32,8 @@
     
     prompted = NO;
     locationManager = [[CLLocationManager alloc]init];
-    self.myMap.delegate = self; //For CustomAnnotation method
-    locationManager.delegate = self; //For zooming in method
-    
+    self.myMap.delegate = self;
+    locationManager.delegate = self;
     [locationManager startUpdatingLocation];
 
     //Pass array from the called method to use it in a for each loop
@@ -74,8 +74,6 @@
                                     message:@"Please turn on location services to allow maps to determine your location."
                                     preferredStyle:UIAlertControllerStyleAlert];
         
-        
-        
         UIAlertAction *cancelButton = [UIAlertAction
                                        actionWithTitle:@"Cancel"
                                        style:UIAlertActionStyleCancel
@@ -83,7 +81,6 @@
                                        }];
         
         [alert addAction:cancelButton];
-        
         
         UIAlertAction *settingsButton = [UIAlertAction
                                          actionWithTitle:@"Open Settings"
@@ -99,7 +96,6 @@
         [self presentViewController:alert animated:YES completion:^(void) {prompted = YES;}];
         
     }
-
 }
 
 -(void)locationManager:(CLLocationManager *)manager didFailWithError:(NSError *)error{
@@ -190,8 +186,6 @@
         vc.myTitle = annotationTitle;
         vc.mySubtitle = annotationSubtitle;
         vc.pointCoordinate = annotationCoordinates;
-        vc.CLCoordinate = self.myMap.userLocation.coordinate;
-        
     }
     
 }
