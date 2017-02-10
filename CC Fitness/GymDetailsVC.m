@@ -40,4 +40,10 @@
 }
 */
 
+- (IBAction)btnGetDirections:(id)sender {
+    
+    NSString* directionsURL = [NSString stringWithFormat:@"http://maps.apple.com/?saddr=%f,%f&daddr=%f,%f", self.CLCoordinate.latitude, self.CLCoordinate.longitude, self.pointCoordinate.latitude, self.pointCoordinate.longitude];
+    
+    [[UIApplication sharedApplication] openURL: [NSURL URLWithString: directionsURL]];
+}
 @end

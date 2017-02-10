@@ -19,8 +19,11 @@
 
 @property (nonatomic, copy) NSString *myTitle;
 @property (nonatomic, copy) NSString *mySubtitle;
-@property (nonatomic, assign) CLLocationCoordinate2D coordinate;
+@property (nonatomic, assign) CLLocationCoordinate2D pointCoordinate;
+@property (nonatomic, assign) CLLocationCoordinate2D CLCoordinate;
 
+
+- (IBAction)btnGetDirections:(id)sender;
 
 
 @end

@@ -21,6 +21,7 @@
     NSString *annotationTitle;
     NSString *annotationSubtitle;
     CLLocationCoordinate2D annotationCoordinates;
+    CLLocationCoordinate2D currentLocationCoordinates;
 }
 
 
@@ -53,8 +54,14 @@
 
 - (void) viewWillDisappear:(BOOL)animated {
     
-    //Stop using location services on view disappearing
+    //Stop using location services when leaving view
     self.myMap.showsUserLocation = NO;
+}
+
+- (void) viewWillAppear:(BOOL)animated
+{
+    //Start using location services again when back to the view
+    self.myMap.showsUserLocation = YES;
 }
 
 
@@ -182,7 +189,8 @@
         
         vc.myTitle = annotationTitle;
         vc.mySubtitle = annotationSubtitle;
-        vc.coordinate = annotationCoordinates;
+        vc.pointCoordinate = annotationCoordinates;
+        vc.CLCoordinate = self.myMap.userLocation.coordinate;
         
     }
     
