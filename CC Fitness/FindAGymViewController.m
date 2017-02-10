@@ -73,6 +73,13 @@
 }
 
 
+- (void)mapView:(MKMapView *)mapView annotationView:(MKAnnotationView *)view
+calloutAccessoryControlTapped:(UIControl *)control
+{
+    [self performSegueWithIdentifier:@"gymDetails" sender:self];
+    
+}
+
 
 - (MKAnnotationView *)mapView:(MKMapView *)mapView viewForAnnotation:(id<MKAnnotation>)annotation
 {
@@ -96,17 +103,16 @@
             pinView.animatesDrop = YES;
             pinView.canShowCallout = YES;
             
-            //Callout action yet to implement
-            
             // Because this is an iOS app, add the detail disclosure button to display details about the annotation in another view.
             UIButton *rightButton = [UIButton buttonWithType:UIButtonTypeDetailDisclosure];
-            [rightButton addTarget:nil action:nil forControlEvents:UIControlEventTouchUpInside];
             
+            //action is nil because the selector mapView:annotationView:calloutAccessoryControlTapped is being called twice.
+            //Warning message states that action cannot be nil however.
+            [rightButton addTarget:nil action:nil forControlEvents:UIControlEventTouchUpInside];
             pinView.rightCalloutAccessoryView = rightButton;
             
             // Add a custom image to the left side of the callout.
             UIImageView *myCustomImage = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"activesg.png"]];
-            
             pinView.leftCalloutAccessoryView = myCustomImage;
             
         }

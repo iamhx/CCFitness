@@ -571,7 +571,7 @@
 				INFOPLIST_FILE = "CC Fitness/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "sg.edu.itee.CC-Fitness";
+				PRODUCT_BUNDLE_IDENTIFIER = "sg.edu.ite.CC-Fitness";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 			};
@@ -587,7 +587,7 @@
 				INFOPLIST_FILE = "CC Fitness/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "sg.edu.itee.CC-Fitness";
+				PRODUCT_BUNDLE_IDENTIFIER = "sg.edu.ite.CC-Fitness";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 			};
