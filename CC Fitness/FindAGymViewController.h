@@ -14,10 +14,12 @@
 {
     CLLocationManager *locationManager;
     __block BOOL prompted; //If location services prompt has not shown
-
+    
 }
 
 - (IBAction)btnBack:(id)sender;
 @property (weak, nonatomic) IBOutlet MKMapView *myMap;
+
+
 
 @end

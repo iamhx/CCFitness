@@ -27,6 +27,7 @@
 		DFB80E771E48431B00B651DF /* FindAGymViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DFB80E761E48431B00B651DF /* FindAGymViewController.m */; };
 		DFB80E7A1E48483400B651DF /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DFB80E791E48483400B651DF /* CoreLocation.framework */; };
 		DFB80E7C1E48483800B651DF /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DFB80E7B1E48483800B651DF /* MapKit.framework */; };
+		E55647D81E4DB8C3001726B6 /* GymDetailsVC.m in Sources */ = {isa = PBXBuildFile; fileRef = E55647D71E4DB8C3001726B6 /* GymDetailsVC.m */; };
 		E57BC0A61D34CF3A00488F18 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E57BC0A51D34CF3A00488F18 /* main.m */; };
 		E57BC0A91D34CF3A00488F18 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E57BC0A81D34CF3A00488F18 /* AppDelegate.m */; };
 		E57BC0AC1D34CF3A00488F18 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E57BC0AB1D34CF3A00488F18 /* ViewController.m */; };
@@ -91,6 +92,8 @@
 		DFB80E761E48431B00B651DF /* FindAGymViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FindAGymViewController.m; sourceTree = "<group>"; };
 		DFB80E791E48483400B651DF /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 		DFB80E7B1E48483800B651DF /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		E55647D61E4DB8C3001726B6 /* GymDetailsVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GymDetailsVC.h; sourceTree = "<group>"; };
+		E55647D71E4DB8C3001726B6 /* GymDetailsVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GymDetailsVC.m; sourceTree = "<group>"; };
 		E57BC0A11D34CF3A00488F18 /* CC Fitness.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "CC Fitness.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E57BC0A51D34CF3A00488F18 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		E57BC0A71D34CF3A00488F18 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -183,6 +186,8 @@
 				DFB80E761E48431B00B651DF /* FindAGymViewController.m */,
 				E5CE8A9B1E4ADC9300966617 /* CustomAnnotation.h */,
 				E5CE8A9C1E4ADC9300966617 /* CustomAnnotation.m */,
+				E55647D61E4DB8C3001726B6 /* GymDetailsVC.h */,
+				E55647D71E4DB8C3001726B6 /* GymDetailsVC.m */,
 			);
 			name = "Find A Gym";
 			sourceTree = "<group>";
@@ -423,6 +428,7 @@
 				DFB3785A1D4F179F00C94498 /* KeepFitTVC.m in Sources */,
 				E57BC0A61D34CF3A00488F18 /* main.m in Sources */,
 				DF98927F1D6195A5003ABA96 /* ForwardLunge.m in Sources */,
+				E55647D81E4DB8C3001726B6 /* GymDetailsVC.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

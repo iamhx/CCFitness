@@ -33,7 +33,7 @@
     
     [AllAnnotations addObject:[[CustomAnnotation alloc]initWithLocation:CLLocationCoordinate2DMake(1.3553, 103.8508) title:@"Bishan ActiveSG Gym" andSubtitle:@"5 Bishan Street 14"]];
     
-    [AllAnnotations addObject:[[CustomAnnotation alloc]initWithLocation:CLLocationCoordinate2DMake(1.3307, 103.8515) title:@"Toa Payoh" andSubtitle:@"301 Lorong 6 Toa Payoh"]];
+    [AllAnnotations addObject:[[CustomAnnotation alloc]initWithLocation:CLLocationCoordinate2DMake(1.3307, 103.8515) title:@"Toa Payoh ActiveSG Gym" andSubtitle:@"301 Lorong 6 Toa Payoh"]];
     
     [AllAnnotations addObject:[[CustomAnnotation alloc]initWithLocation:CLLocationCoordinate2DMake(1.3259, 103.9383) title:@"Bedok ActiveSG Gym" andSubtitle:@"5 Bedok North Street 2"]];
     

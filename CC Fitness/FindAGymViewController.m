@@ -8,13 +8,19 @@
 
 #import "FindAGymViewController.h"
 #import "CustomAnnotation.h"
+#import "GymDetailsVC.h"
 
 @interface FindAGymViewController ()
+
 @end
 
 
 
 @implementation FindAGymViewController
+{
+    NSString *annotationTitle;
+}
+
 
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -117,7 +123,21 @@
 - (void)mapView:(MKMapView *)mapView annotationView:(MKAnnotationView *)view
 calloutAccessoryControlTapped:(UIControl *)control
 {
+    annotationTitle = view.annotation.title;
+    
     [self performSegueWithIdentifier:@"gymDetails" sender:self];
+    
+}
+
+- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
+    
+    if([segue.identifier isEqualToString: @"gymDetails"])
+    {
+        GymDetailsVC *vc = segue.destinationViewController;
+        
+        vc.myTitle = annotationTitle;
+        
+    }
     
 }
 
