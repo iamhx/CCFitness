@@ -48,4 +48,14 @@
     [self presentViewController:calcVC animated:YES completion:nil];
     
 }
+
+- (IBAction)btnFind:(id)sender {
+    
+    UIStoryboard *findAGymStoryboard = [UIStoryboard storyboardWithName:@"FindAGym" bundle:nil];
+    UIViewController *gymVC = [findAGymStoryboard instantiateViewControllerWithIdentifier:@"FindAGymID"];
+    
+    gymVC.modalTransitionStyle = UIModalTransitionStyleFlipHorizontal;
+    [self presentViewController:gymVC animated:YES completion:nil];
+
+}
 @end

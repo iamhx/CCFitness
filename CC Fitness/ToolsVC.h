@@ -11,5 +11,6 @@
 @interface ToolsVC : UIViewController
 - (IBAction)btnBack:(id)sender;
 - (IBAction)btnBMICalc:(id)sender;
+- (IBAction)btnFind:(id)sender;
 
 @end
