@@ -12,6 +12,10 @@
 		DF43F5CC1D3741BC005E4C02 /* LoginService.m in Sources */ = {isa = PBXBuildFile; fileRef = DF43F5CB1D3741BC005E4C02 /* LoginService.m */; };
 		DF45C0D41D41B7C8007D4E5A /* Learn.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DF45C0D31D41B7C8007D4E5A /* Learn.storyboard */; };
 		DF45C0D71D41B824007D4E5A /* LearnTVC.m in Sources */ = {isa = PBXBuildFile; fileRef = DF45C0D61D41B824007D4E5A /* LearnTVC.m */; };
+		DF971F991E52A6EC0035738E /* ccfitness_db.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = DF971F971E52A6EC0035738E /* ccfitness_db.xcdatamodeld */; };
+		DF971FA31E52A9AD0035738E /* UserCredentials+CoreDataClass.m in Sources */ = {isa = PBXBuildFile; fileRef = DF971FA01E52A9AD0035738E /* UserCredentials+CoreDataClass.m */; };
+		DF971FA41E52A9AD0035738E /* UserCredentials+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = DF971FA21E52A9AD0035738E /* UserCredentials+CoreDataProperties.m */; };
+		DF971FAA1E52B6730035738E /* registerVC.m in Sources */ = {isa = PBXBuildFile; fileRef = DF971FA91E52B6730035738E /* registerVC.m */; };
 		DF9892761D618921003ABA96 /* Pushups.m in Sources */ = {isa = PBXBuildFile; fileRef = DF9892751D618921003ABA96 /* Pushups.m */; };
 		DF9892791D618F70003ABA96 /* Crunches.m in Sources */ = {isa = PBXBuildFile; fileRef = DF9892781D618F70003ABA96 /* Crunches.m */; };
 		DF98927C1D6192A0003ABA96 /* SquatJumps.m in Sources */ = {isa = PBXBuildFile; fileRef = DF98927B1D6192A0003ABA96 /* SquatJumps.m */; };
@@ -66,6 +70,13 @@
 		DF45C0D31D41B7C8007D4E5A /* Learn.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Learn.storyboard; sourceTree = "<group>"; };
 		DF45C0D51D41B824007D4E5A /* LearnTVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LearnTVC.h; sourceTree = "<group>"; };
 		DF45C0D61D41B824007D4E5A /* LearnTVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LearnTVC.m; sourceTree = "<group>"; };
+		DF971F981E52A6EC0035738E /* ccfitness_db.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = ccfitness_db.xcdatamodel; sourceTree = "<group>"; };
+		DF971F9F1E52A9AD0035738E /* UserCredentials+CoreDataClass.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UserCredentials+CoreDataClass.h"; sourceTree = "<group>"; };
+		DF971FA01E52A9AD0035738E /* UserCredentials+CoreDataClass.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UserCredentials+CoreDataClass.m"; sourceTree = "<group>"; };
+		DF971FA11E52A9AD0035738E /* UserCredentials+CoreDataProperties.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UserCredentials+CoreDataProperties.h"; sourceTree = "<group>"; };
+		DF971FA21E52A9AD0035738E /* UserCredentials+CoreDataProperties.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UserCredentials+CoreDataProperties.m"; sourceTree = "<group>"; };
+		DF971FA81E52B6730035738E /* registerVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = registerVC.h; sourceTree = "<group>"; };
+		DF971FA91E52B6730035738E /* registerVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = registerVC.m; sourceTree = "<group>"; };
 		DF9892741D618921003ABA96 /* Pushups.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Pushups.h; sourceTree = "<group>"; };
 		DF9892751D618921003ABA96 /* Pushups.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Pushups.m; sourceTree = "<group>"; };
 		DF9892771D618F70003ABA96 /* Crunches.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Crunches.h; sourceTree = "<group>"; };
@@ -166,6 +177,18 @@
 			name = Learn;
 			sourceTree = "<group>";
 		};
+		DF971F9A1E52A7750035738E /* CoreData Files */ = {
+			isa = PBXGroup;
+			children = (
+				DF971F9F1E52A9AD0035738E /* UserCredentials+CoreDataClass.h */,
+				DF971FA01E52A9AD0035738E /* UserCredentials+CoreDataClass.m */,
+				DF971FA11E52A9AD0035738E /* UserCredentials+CoreDataProperties.h */,
+				DF971FA21E52A9AD0035738E /* UserCredentials+CoreDataProperties.m */,
+				DF971F971E52A6EC0035738E /* ccfitness_db.xcdatamodeld */,
+			);
+			name = "CoreData Files";
+			sourceTree = "<group>";
+		};
 		DF9A63DB1D45DE0100A12B5A /* BMI Calculator */ = {
 			isa = PBXGroup;
 			children = (
@@ -223,6 +246,7 @@
 		E57BC0A31D34CF3A00488F18 /* CC Fitness */ = {
 			isa = PBXGroup;
 			children = (
+				DF971F9A1E52A7750035738E /* CoreData Files */,
 				DFB80E721E4842D600B651DF /* Find A Gym */,
 				DF9A63DB1D45DE0100A12B5A /* BMI Calculator */,
 				DF45C0D21D41B7BA007D4E5A /* Learn */,
@@ -256,6 +280,8 @@
 				E57BC0DB1D34DD2400488F18 /* LoginVC.m */,
 				E57BC0AD1D34CF3A00488F18 /* Main.storyboard */,
 				E57BC0DA1D34DD2400488F18 /* LoginVC.h */,
+				DF971FA81E52B6730035738E /* registerVC.h */,
+				DF971FA91E52B6730035738E /* registerVC.m */,
 			);
 			name = Main;
 			sourceTree = "<group>";
@@ -339,7 +365,8 @@
 				TargetAttributes = {
 					E57BC0A01D34CF3A00488F18 = {
 						CreatedOnToolsVersion = 7.3.1;
-						DevelopmentTeam = EVC7K5F9LC;
+						DevelopmentTeam = 2JXQK2V99D;
+						LastSwiftMigration = 0820;
 						ProvisioningStyle = Automatic;
 					};
 					E57BC0B91D34CF3A00488F18 = {
@@ -426,9 +453,13 @@
 				E5CE8A9D1E4ADC9300966617 /* CustomAnnotation.m in Sources */,
 				DF9A63E31D45E5A900A12B5A /* BMICalculation.m in Sources */,
 				DFB3785A1D4F179F00C94498 /* KeepFitTVC.m in Sources */,
+				DF971FAA1E52B6730035738E /* registerVC.m in Sources */,
+				DF971FA31E52A9AD0035738E /* UserCredentials+CoreDataClass.m in Sources */,
 				E57BC0A61D34CF3A00488F18 /* main.m in Sources */,
 				DF98927F1D6195A5003ABA96 /* ForwardLunge.m in Sources */,
+				DF971F991E52A6EC0035738E /* ccfitness_db.xcdatamodeld in Sources */,
 				E55647D81E4DB8C3001726B6 /* GymDetailsVC.m in Sources */,
+				DF971FA41E52A9AD0035738E /* UserCredentials+CoreDataProperties.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -571,15 +602,18 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				DEVELOPMENT_TEAM = EVC7K5F9LC;
+				DEVELOPMENT_TEAM = 2JXQK2V99D;
 				INFOPLIST_FILE = "CC Fitness/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "sg.edu.ite.CC-Fitness";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.hx.CC-Fitness";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
 		};
@@ -587,15 +621,17 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				DEVELOPMENT_TEAM = EVC7K5F9LC;
+				DEVELOPMENT_TEAM = 2JXQK2V99D;
 				INFOPLIST_FILE = "CC Fitness/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "sg.edu.ite.CC-Fitness";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.hx.CC-Fitness";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
 		};
@@ -685,6 +721,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		DF971F971E52A6EC0035738E /* ccfitness_db.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				DF971F981E52A6EC0035738E /* ccfitness_db.xcdatamodel */,
+			);
+			currentVersion = DF971F981E52A6EC0035738E /* ccfitness_db.xcdatamodel */;
+			path = ccfitness_db.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = E57BC0991D34CF3A00488F18 /* Project object */;
 }
