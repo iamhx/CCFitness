@@ -6,11 +6,10 @@
 //  Copyright © 2017 Hongxuan. All rights reserved.
 //
 
-#import "ViewController.h"
 #import <CoreLocation/CoreLocation.h>
 #import <MapKit/MapKit.h>
 
-@interface FindAGymViewController : ViewController <MKMapViewDelegate, CLLocationManagerDelegate>
+@interface FindAGymViewController : UIViewController <MKMapViewDelegate, CLLocationManagerDelegate>
 {
     CLLocationManager *locationManager;
     __block BOOL prompted; //If location services prompt has not shown
