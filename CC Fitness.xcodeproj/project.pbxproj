@@ -40,6 +40,7 @@
 		E57BC0DC1D34DD2400488F18 /* LoginVC.m in Sources */ = {isa = PBXBuildFile; fileRef = E57BC0DB1D34DD2400488F18 /* LoginVC.m */; };
 		E57BC0E01D34DEC100488F18 /* Portal.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E57BC0DF1D34DEC100488F18 /* Portal.storyboard */; };
 		E5CE8A9D1E4ADC9300966617 /* CustomAnnotation.m in Sources */ = {isa = PBXBuildFile; fileRef = E5CE8A9C1E4ADC9300966617 /* CustomAnnotation.m */; };
+		E5DE131B1E54591D002732F0 /* ConfirmSignUpVC.m in Sources */ = {isa = PBXBuildFile; fileRef = E5DE131A1E54591D002732F0 /* ConfirmSignUpVC.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -119,6 +120,8 @@
 		E57BC0DF1D34DEC100488F18 /* Portal.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Portal.storyboard; sourceTree = "<group>"; };
 		E5CE8A9B1E4ADC9300966617 /* CustomAnnotation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomAnnotation.h; sourceTree = "<group>"; };
 		E5CE8A9C1E4ADC9300966617 /* CustomAnnotation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomAnnotation.m; sourceTree = "<group>"; };
+		E5DE13191E54591D002732F0 /* ConfirmSignUpVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ConfirmSignUpVC.h; sourceTree = "<group>"; };
+		E5DE131A1E54591D002732F0 /* ConfirmSignUpVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ConfirmSignUpVC.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -277,6 +280,8 @@
 				E57BC0DA1D34DD2400488F18 /* LoginVC.h */,
 				DF971FA81E52B6730035738E /* registerVC.h */,
 				DF971FA91E52B6730035738E /* registerVC.m */,
+				E5DE13191E54591D002732F0 /* ConfirmSignUpVC.h */,
+				E5DE131A1E54591D002732F0 /* ConfirmSignUpVC.m */,
 			);
 			name = Main;
 			sourceTree = "<group>";
@@ -431,6 +436,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				DF9892761D618921003ABA96 /* Pushups.m in Sources */,
+				E5DE131B1E54591D002732F0 /* ConfirmSignUpVC.m in Sources */,
 				DF43F5CC1D3741BC005E4C02 /* LoginService.m in Sources */,
 				DF9892791D618F70003ABA96 /* Crunches.m in Sources */,
 				DF98927C1D6192A0003ABA96 /* SquatJumps.m in Sources */,

@@ -4,6 +4,7 @@
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
+        <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
         <capability name="Alignment constraints with different attributes" minToolsVersion="5.1"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
@@ -319,10 +320,10 @@
             </objects>
             <point key="canvasLocation" x="3161" y="-376"/>
         </scene>
-        <!--RegisterVC-->
+        <!--Confirm Sign UpVC-->
         <scene sceneID="wfz-h5-Urb">
             <objects>
-                <viewController id="tCz-Nx-Mro" customClass="registerVC" sceneMemberID="viewController">
+                <viewController id="tCz-Nx-Mro" customClass="ConfirmSignUpVC" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="Olt-If-bDH"/>
                         <viewControllerLayoutGuide type="bottom" id="YW2-p6-dGz"/>
@@ -350,7 +351,7 @@
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                                 <connections>
-                                    <action selector="btnSignUp:" destination="tCz-Nx-Mro" eventType="touchUpInside" id="aAR-mY-oc0"/>
+                                    <action selector="btnSignUp:" destination="tCz-Nx-Mro" eventType="touchUpInside" id="mgJ-Zh-B8I"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2OI-7V-nab">
@@ -411,9 +412,8 @@
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="lblconfirmPass" destination="WOV-oN-xdg" id="TEn-De-UFr"/>
-                        <outlet property="lblregPassword" destination="GtQ-nz-d9e" id="UFT-lm-kcZ"/>
-                        <segue destination="BYZ-38-t0r" kind="show" identifier="segueSignUp" id="gcg-HO-hK0"/>
+                        <outlet property="lblconfirmPass" destination="WOV-oN-xdg" id="oUw-Xl-umW"/>
+                        <outlet property="lblregPassword" destination="GtQ-nz-d9e" id="V47-f7-pLF"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="JMR-0C-at1" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -444,6 +444,6 @@
         <image name="loginbg3" width="2126" height="1412"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="gcg-HO-hK0"/>
+        <segue reference="djL-9r-fyd"/>
     </inferredMetricsTieBreakers>
 </document>
