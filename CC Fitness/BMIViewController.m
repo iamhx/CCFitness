@@ -36,11 +36,18 @@
     [[self.view window]endEditing:YES];
 }
 
--(void) alertStatus:(NSString *)msg :(NSString *)title : (int)tag {
-    UIAlertView *alertView = [[UIAlertView alloc]initWithTitle:title message:msg delegate:self cancelButtonTitle:@"Ok" otherButtonTitles:nil, nil];
+
+- (void)alertWithMessage: (NSString *)msg
+{
+    UIAlertController* alert = [UIAlertController alertControllerWithTitle:@"Invalid Input"
+                                                                   message:msg
+                                                            preferredStyle:UIAlertControllerStyleAlert];
     
-    alertView.tag = tag;
-    [alertView show];
+    UIAlertAction* defaultAction = [UIAlertAction actionWithTitle:@"OK" style:UIAlertActionStyleDefault
+                                                          handler:^(UIAlertAction * action) {}];
+    
+    [alert addAction:defaultAction];
+    [self presentViewController:alert animated:YES completion:nil];
 }
 
 
@@ -63,17 +70,18 @@
     
     if ([self.txtHeight.text  isEqualToString: @""] || [self.txtWeight.text  isEqualToString: @""])
     {
-        [self alertStatus:@"Please enter your height or weight." :@"Invalid Input" :0];
+        [self alertWithMessage:@"Please enter your height or weight."];
     }
     
     else if ([self.txtHeight.text floatValue] < 134.0 || [self.txtHeight.text floatValue] > 241.0)
     {
-        [self alertStatus:@"Please enter your height between 134 and 241cm." :@"Invalid Input" :0];
+        [self alertWithMessage:@"Please enter your height between 134 and 241cm."];
+        
     }
     
     else if ([self.txtWeight.text floatValue] < 35.0 || [self.txtWeight.text floatValue] > 200.0)
     {
-        [self alertStatus:@"Please enter your weight between 35 and 200kg." :@"Invalid Input" :0];
+        [self alertWithMessage:@"Please enter your weight between 35 and 200kg."];
     }
     
     else

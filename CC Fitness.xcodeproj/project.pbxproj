@@ -9,9 +9,10 @@
 /* Begin PBXBuildFile section */
 		DF0974781D3CB3A900889EE4 /* MainMenuVC.m in Sources */ = {isa = PBXBuildFile; fileRef = DF0974771D3CB3A900889EE4 /* MainMenuVC.m */; };
 		DF2116991D47514500A00A32 /* ToolsVC.m in Sources */ = {isa = PBXBuildFile; fileRef = DF2116981D47514500A00A32 /* ToolsVC.m */; };
-		DF43F5CC1D3741BC005E4C02 /* LoginService.m in Sources */ = {isa = PBXBuildFile; fileRef = DF43F5CB1D3741BC005E4C02 /* LoginService.m */; };
 		DF45C0D41D41B7C8007D4E5A /* Learn.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DF45C0D31D41B7C8007D4E5A /* Learn.storyboard */; };
 		DF45C0D71D41B824007D4E5A /* LearnTVC.m in Sources */ = {isa = PBXBuildFile; fileRef = DF45C0D61D41B824007D4E5A /* LearnTVC.m */; };
+		DF971F991E52A6EC0035738E /* ccfitness_db.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = DF971F971E52A6EC0035738E /* ccfitness_db.xcdatamodeld */; };
+		DF971FAA1E52B6730035738E /* registerVC.m in Sources */ = {isa = PBXBuildFile; fileRef = DF971FA91E52B6730035738E /* registerVC.m */; };
 		DF9892761D618921003ABA96 /* Pushups.m in Sources */ = {isa = PBXBuildFile; fileRef = DF9892751D618921003ABA96 /* Pushups.m */; };
 		DF9892791D618F70003ABA96 /* Crunches.m in Sources */ = {isa = PBXBuildFile; fileRef = DF9892781D618F70003ABA96 /* Crunches.m */; };
 		DF98927C1D6192A0003ABA96 /* SquatJumps.m in Sources */ = {isa = PBXBuildFile; fileRef = DF98927B1D6192A0003ABA96 /* SquatJumps.m */; };
@@ -27,16 +28,18 @@
 		DFB80E771E48431B00B651DF /* FindAGymViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DFB80E761E48431B00B651DF /* FindAGymViewController.m */; };
 		DFB80E7A1E48483400B651DF /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DFB80E791E48483400B651DF /* CoreLocation.framework */; };
 		DFB80E7C1E48483800B651DF /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DFB80E7B1E48483800B651DF /* MapKit.framework */; };
+		E548BEE01E54429400A484F9 /* UserCredentials+CoreDataClass.m in Sources */ = {isa = PBXBuildFile; fileRef = E548BEDD1E54429400A484F9 /* UserCredentials+CoreDataClass.m */; };
+		E548BEE11E54429400A484F9 /* UserCredentials+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = E548BEDF1E54429400A484F9 /* UserCredentials+CoreDataProperties.m */; };
 		E55647D81E4DB8C3001726B6 /* GymDetailsVC.m in Sources */ = {isa = PBXBuildFile; fileRef = E55647D71E4DB8C3001726B6 /* GymDetailsVC.m */; };
 		E57BC0A61D34CF3A00488F18 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E57BC0A51D34CF3A00488F18 /* main.m */; };
 		E57BC0A91D34CF3A00488F18 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E57BC0A81D34CF3A00488F18 /* AppDelegate.m */; };
-		E57BC0AC1D34CF3A00488F18 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E57BC0AB1D34CF3A00488F18 /* ViewController.m */; };
 		E57BC0AF1D34CF3A00488F18 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E57BC0AD1D34CF3A00488F18 /* Main.storyboard */; };
 		E57BC0B11D34CF3A00488F18 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E57BC0B01D34CF3A00488F18 /* Assets.xcassets */; };
 		E57BC0B41D34CF3A00488F18 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E57BC0B21D34CF3A00488F18 /* LaunchScreen.storyboard */; };
 		E57BC0DC1D34DD2400488F18 /* LoginVC.m in Sources */ = {isa = PBXBuildFile; fileRef = E57BC0DB1D34DD2400488F18 /* LoginVC.m */; };
 		E57BC0E01D34DEC100488F18 /* Portal.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E57BC0DF1D34DEC100488F18 /* Portal.storyboard */; };
 		E5CE8A9D1E4ADC9300966617 /* CustomAnnotation.m in Sources */ = {isa = PBXBuildFile; fileRef = E5CE8A9C1E4ADC9300966617 /* CustomAnnotation.m */; };
+		E5DE131B1E54591D002732F0 /* ConfirmSignUpVC.m in Sources */ = {isa = PBXBuildFile; fileRef = E5DE131A1E54591D002732F0 /* ConfirmSignUpVC.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -61,11 +64,12 @@
 		DF0974771D3CB3A900889EE4 /* MainMenuVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MainMenuVC.m; path = ../MainMenuVC.m; sourceTree = "<group>"; };
 		DF2116971D47514500A00A32 /* ToolsVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ToolsVC.h; sourceTree = "<group>"; };
 		DF2116981D47514500A00A32 /* ToolsVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ToolsVC.m; sourceTree = "<group>"; };
-		DF43F5CA1D3741BC005E4C02 /* LoginService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginService.h; sourceTree = "<group>"; };
-		DF43F5CB1D3741BC005E4C02 /* LoginService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginService.m; sourceTree = "<group>"; };
 		DF45C0D31D41B7C8007D4E5A /* Learn.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Learn.storyboard; sourceTree = "<group>"; };
 		DF45C0D51D41B824007D4E5A /* LearnTVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LearnTVC.h; sourceTree = "<group>"; };
 		DF45C0D61D41B824007D4E5A /* LearnTVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LearnTVC.m; sourceTree = "<group>"; };
+		DF971F981E52A6EC0035738E /* ccfitness_db.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = ccfitness_db.xcdatamodel; sourceTree = "<group>"; };
+		DF971FA81E52B6730035738E /* registerVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = registerVC.h; sourceTree = "<group>"; };
+		DF971FA91E52B6730035738E /* registerVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = registerVC.m; sourceTree = "<group>"; };
 		DF9892741D618921003ABA96 /* Pushups.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Pushups.h; sourceTree = "<group>"; };
 		DF9892751D618921003ABA96 /* Pushups.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Pushups.m; sourceTree = "<group>"; };
 		DF9892771D618F70003ABA96 /* Crunches.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Crunches.h; sourceTree = "<group>"; };
@@ -92,14 +96,16 @@
 		DFB80E761E48431B00B651DF /* FindAGymViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FindAGymViewController.m; sourceTree = "<group>"; };
 		DFB80E791E48483400B651DF /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 		DFB80E7B1E48483800B651DF /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		E548BEDC1E54429400A484F9 /* UserCredentials+CoreDataClass.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UserCredentials+CoreDataClass.h"; sourceTree = "<group>"; };
+		E548BEDD1E54429400A484F9 /* UserCredentials+CoreDataClass.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UserCredentials+CoreDataClass.m"; sourceTree = "<group>"; };
+		E548BEDE1E54429400A484F9 /* UserCredentials+CoreDataProperties.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UserCredentials+CoreDataProperties.h"; sourceTree = "<group>"; };
+		E548BEDF1E54429400A484F9 /* UserCredentials+CoreDataProperties.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UserCredentials+CoreDataProperties.m"; sourceTree = "<group>"; };
 		E55647D61E4DB8C3001726B6 /* GymDetailsVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GymDetailsVC.h; sourceTree = "<group>"; };
 		E55647D71E4DB8C3001726B6 /* GymDetailsVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GymDetailsVC.m; sourceTree = "<group>"; };
 		E57BC0A11D34CF3A00488F18 /* CC Fitness.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "CC Fitness.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E57BC0A51D34CF3A00488F18 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		E57BC0A71D34CF3A00488F18 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		E57BC0A81D34CF3A00488F18 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		E57BC0AA1D34CF3A00488F18 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		E57BC0AB1D34CF3A00488F18 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		E57BC0AE1D34CF3A00488F18 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		E57BC0B01D34CF3A00488F18 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E57BC0B31D34CF3A00488F18 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -111,6 +117,8 @@
 		E57BC0DF1D34DEC100488F18 /* Portal.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Portal.storyboard; sourceTree = "<group>"; };
 		E5CE8A9B1E4ADC9300966617 /* CustomAnnotation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomAnnotation.h; sourceTree = "<group>"; };
 		E5CE8A9C1E4ADC9300966617 /* CustomAnnotation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomAnnotation.m; sourceTree = "<group>"; };
+		E5DE13191E54591D002732F0 /* ConfirmSignUpVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ConfirmSignUpVC.h; sourceTree = "<group>"; };
+		E5DE131A1E54591D002732F0 /* ConfirmSignUpVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ConfirmSignUpVC.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -164,6 +172,18 @@
 				DF9892811D61995F003ABA96 /* HealthyFoods.m */,
 			);
 			name = Learn;
+			sourceTree = "<group>";
+		};
+		DF971F9A1E52A7750035738E /* CoreData Files */ = {
+			isa = PBXGroup;
+			children = (
+				E548BEDC1E54429400A484F9 /* UserCredentials+CoreDataClass.h */,
+				E548BEDD1E54429400A484F9 /* UserCredentials+CoreDataClass.m */,
+				E548BEDE1E54429400A484F9 /* UserCredentials+CoreDataProperties.h */,
+				E548BEDF1E54429400A484F9 /* UserCredentials+CoreDataProperties.m */,
+				DF971F971E52A6EC0035738E /* ccfitness_db.xcdatamodeld */,
+			);
+			name = "CoreData Files";
 			sourceTree = "<group>";
 		};
 		DF9A63DB1D45DE0100A12B5A /* BMI Calculator */ = {
@@ -223,6 +243,7 @@
 		E57BC0A31D34CF3A00488F18 /* CC Fitness */ = {
 			isa = PBXGroup;
 			children = (
+				DF971F9A1E52A7750035738E /* CoreData Files */,
 				DFB80E721E4842D600B651DF /* Find A Gym */,
 				DF9A63DB1D45DE0100A12B5A /* BMI Calculator */,
 				DF45C0D21D41B7BA007D4E5A /* Learn */,
@@ -230,8 +251,6 @@
 				E57BC0DD1D34DE2500488F18 /* Main */,
 				E57BC0A71D34CF3A00488F18 /* AppDelegate.h */,
 				E57BC0A81D34CF3A00488F18 /* AppDelegate.m */,
-				E57BC0AA1D34CF3A00488F18 /* ViewController.h */,
-				E57BC0AB1D34CF3A00488F18 /* ViewController.m */,
 				E57BC0B01D34CF3A00488F18 /* Assets.xcassets */,
 				E57BC0B21D34CF3A00488F18 /* LaunchScreen.storyboard */,
 				E57BC0B51D34CF3A00488F18 /* Info.plist */,
@@ -251,11 +270,13 @@
 		E57BC0DD1D34DE2500488F18 /* Main */ = {
 			isa = PBXGroup;
 			children = (
-				DF43F5CA1D3741BC005E4C02 /* LoginService.h */,
-				DF43F5CB1D3741BC005E4C02 /* LoginService.m */,
-				E57BC0DB1D34DD2400488F18 /* LoginVC.m */,
 				E57BC0AD1D34CF3A00488F18 /* Main.storyboard */,
+				E57BC0DB1D34DD2400488F18 /* LoginVC.m */,
 				E57BC0DA1D34DD2400488F18 /* LoginVC.h */,
+				DF971FA81E52B6730035738E /* registerVC.h */,
+				DF971FA91E52B6730035738E /* registerVC.m */,
+				E5DE13191E54591D002732F0 /* ConfirmSignUpVC.h */,
+				E5DE131A1E54591D002732F0 /* ConfirmSignUpVC.m */,
 			);
 			name = Main;
 			sourceTree = "<group>";
@@ -263,9 +284,9 @@
 		E57BC0DE1D34DE5F00488F18 /* Portal */ = {
 			isa = PBXGroup;
 			children = (
+				E57BC0DF1D34DEC100488F18 /* Portal.storyboard */,
 				DF0974761D3CB3A900889EE4 /* MainMenuVC.h */,
 				DF0974771D3CB3A900889EE4 /* MainMenuVC.m */,
-				E57BC0DF1D34DEC100488F18 /* Portal.storyboard */,
 				DF2116971D47514500A00A32 /* ToolsVC.h */,
 				DF2116981D47514500A00A32 /* ToolsVC.m */,
 			);
@@ -340,6 +361,7 @@
 					E57BC0A01D34CF3A00488F18 = {
 						CreatedOnToolsVersion = 7.3.1;
 						DevelopmentTeam = EVC7K5F9LC;
+						LastSwiftMigration = 0820;
 						ProvisioningStyle = Automatic;
 					};
 					E57BC0B91D34CF3A00488F18 = {
@@ -409,16 +431,17 @@
 			buildActionMask = 2147483647;
 			files = (
 				DF9892761D618921003ABA96 /* Pushups.m in Sources */,
-				E57BC0AC1D34CF3A00488F18 /* ViewController.m in Sources */,
-				DF43F5CC1D3741BC005E4C02 /* LoginService.m in Sources */,
+				E5DE131B1E54591D002732F0 /* ConfirmSignUpVC.m in Sources */,
 				DF9892791D618F70003ABA96 /* Crunches.m in Sources */,
 				DF98927C1D6192A0003ABA96 /* SquatJumps.m in Sources */,
 				DF9892821D61995F003ABA96 /* HealthyFoods.m in Sources */,
 				DF2116991D47514500A00A32 /* ToolsVC.m in Sources */,
 				E57BC0A91D34CF3A00488F18 /* AppDelegate.m in Sources */,
 				DFB80E771E48431B00B651DF /* FindAGymViewController.m in Sources */,
+				E548BEE11E54429400A484F9 /* UserCredentials+CoreDataProperties.m in Sources */,
 				DFB5626B1D5C32580055D236 /* Supermans.m in Sources */,
 				DFB3785D1D4F330400C94498 /* HomeWorkoutsTVC.m in Sources */,
+				E548BEE01E54429400A484F9 /* UserCredentials+CoreDataClass.m in Sources */,
 				DF45C0D71D41B824007D4E5A /* LearnTVC.m in Sources */,
 				E57BC0DC1D34DD2400488F18 /* LoginVC.m in Sources */,
 				DF9A63E01D45DE5500A12B5A /* BMIViewController.m in Sources */,
@@ -426,8 +449,10 @@
 				E5CE8A9D1E4ADC9300966617 /* CustomAnnotation.m in Sources */,
 				DF9A63E31D45E5A900A12B5A /* BMICalculation.m in Sources */,
 				DFB3785A1D4F179F00C94498 /* KeepFitTVC.m in Sources */,
+				DF971FAA1E52B6730035738E /* registerVC.m in Sources */,
 				E57BC0A61D34CF3A00488F18 /* main.m in Sources */,
 				DF98927F1D6195A5003ABA96 /* ForwardLunge.m in Sources */,
+				DF971F991E52A6EC0035738E /* ccfitness_db.xcdatamodeld in Sources */,
 				E55647D81E4DB8C3001726B6 /* GymDetailsVC.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -571,15 +596,18 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				DEVELOPMENT_TEAM = EVC7K5F9LC;
 				INFOPLIST_FILE = "CC Fitness/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "sg.edu.ite.CC-Fitness";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.hx2.CC-Fitness";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
 		};
@@ -587,15 +615,17 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				DEVELOPMENT_TEAM = EVC7K5F9LC;
 				INFOPLIST_FILE = "CC Fitness/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "sg.edu.ite.CC-Fitness";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.hx2.CC-Fitness";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
 		};
@@ -685,6 +715,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		DF971F971E52A6EC0035738E /* ccfitness_db.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				DF971F981E52A6EC0035738E /* ccfitness_db.xcdatamodel */,
+			);
+			currentVersion = DF971F981E52A6EC0035738E /* ccfitness_db.xcdatamodel */;
+			path = ccfitness_db.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = E57BC0991D34CF3A00488F18 /* Project object */;
 }

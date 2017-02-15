@@ -25,13 +25,6 @@
 }
 
 
--(void) alertStatus:(NSString *)msg :(NSString *)title : (int)tag {
-    UIAlertView *alertView = [[UIAlertView alloc]initWithTitle:title message:msg delegate:self cancelButtonTitle:@"Ok" otherButtonTitles:nil, nil];
-    
-    alertView.tag = tag;
-    [alertView show];
-}
-
 /*
 #pragma mark - Navigation
 
@@ -71,7 +64,15 @@
 
 - (IBAction)btnOther:(id)sender {
     
-    [self alertStatus:@"Copyright © CC Fitness 2016. All Rights Reserved." :@"About" :0];
+    UIAlertController* alert = [UIAlertController alertControllerWithTitle:@"About"
+                                                                   message:@"Copyright © CC Fitness 2016. All Rights Reserved."
+                                                            preferredStyle:UIAlertControllerStyleAlert];
+    
+    UIAlertAction* defaultAction = [UIAlertAction actionWithTitle:@"OK" style:UIAlertActionStyleDefault
+                                                          handler:^(UIAlertAction * action) {}];
+    
+    [alert addAction:defaultAction];
+    [self presentViewController:alert animated:YES completion:nil];
     
     
 }
