@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		DF0974781D3CB3A900889EE4 /* MainMenuVC.m in Sources */ = {isa = PBXBuildFile; fileRef = DF0974771D3CB3A900889EE4 /* MainMenuVC.m */; };
 		DF2116991D47514500A00A32 /* ToolsVC.m in Sources */ = {isa = PBXBuildFile; fileRef = DF2116981D47514500A00A32 /* ToolsVC.m */; };
-		DF43F5CC1D3741BC005E4C02 /* LoginService.m in Sources */ = {isa = PBXBuildFile; fileRef = DF43F5CB1D3741BC005E4C02 /* LoginService.m */; };
 		DF45C0D41D41B7C8007D4E5A /* Learn.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DF45C0D31D41B7C8007D4E5A /* Learn.storyboard */; };
 		DF45C0D71D41B824007D4E5A /* LearnTVC.m in Sources */ = {isa = PBXBuildFile; fileRef = DF45C0D61D41B824007D4E5A /* LearnTVC.m */; };
 		DF971F991E52A6EC0035738E /* ccfitness_db.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = DF971F971E52A6EC0035738E /* ccfitness_db.xcdatamodeld */; };
@@ -65,8 +64,6 @@
 		DF0974771D3CB3A900889EE4 /* MainMenuVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MainMenuVC.m; path = ../MainMenuVC.m; sourceTree = "<group>"; };
 		DF2116971D47514500A00A32 /* ToolsVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ToolsVC.h; sourceTree = "<group>"; };
 		DF2116981D47514500A00A32 /* ToolsVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ToolsVC.m; sourceTree = "<group>"; };
-		DF43F5CA1D3741BC005E4C02 /* LoginService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginService.h; sourceTree = "<group>"; };
-		DF43F5CB1D3741BC005E4C02 /* LoginService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginService.m; sourceTree = "<group>"; };
 		DF45C0D31D41B7C8007D4E5A /* Learn.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Learn.storyboard; sourceTree = "<group>"; };
 		DF45C0D51D41B824007D4E5A /* LearnTVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LearnTVC.h; sourceTree = "<group>"; };
 		DF45C0D61D41B824007D4E5A /* LearnTVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LearnTVC.m; sourceTree = "<group>"; };
@@ -273,10 +270,8 @@
 		E57BC0DD1D34DE2500488F18 /* Main */ = {
 			isa = PBXGroup;
 			children = (
-				DF43F5CA1D3741BC005E4C02 /* LoginService.h */,
-				DF43F5CB1D3741BC005E4C02 /* LoginService.m */,
-				E57BC0DB1D34DD2400488F18 /* LoginVC.m */,
 				E57BC0AD1D34CF3A00488F18 /* Main.storyboard */,
+				E57BC0DB1D34DD2400488F18 /* LoginVC.m */,
 				E57BC0DA1D34DD2400488F18 /* LoginVC.h */,
 				DF971FA81E52B6730035738E /* registerVC.h */,
 				DF971FA91E52B6730035738E /* registerVC.m */,
@@ -289,9 +284,9 @@
 		E57BC0DE1D34DE5F00488F18 /* Portal */ = {
 			isa = PBXGroup;
 			children = (
+				E57BC0DF1D34DEC100488F18 /* Portal.storyboard */,
 				DF0974761D3CB3A900889EE4 /* MainMenuVC.h */,
 				DF0974771D3CB3A900889EE4 /* MainMenuVC.m */,
-				E57BC0DF1D34DEC100488F18 /* Portal.storyboard */,
 				DF2116971D47514500A00A32 /* ToolsVC.h */,
 				DF2116981D47514500A00A32 /* ToolsVC.m */,
 			);
@@ -437,7 +432,6 @@
 			files = (
 				DF9892761D618921003ABA96 /* Pushups.m in Sources */,
 				E5DE131B1E54591D002732F0 /* ConfirmSignUpVC.m in Sources */,
-				DF43F5CC1D3741BC005E4C02 /* LoginService.m in Sources */,
 				DF9892791D618F70003ABA96 /* Crunches.m in Sources */,
 				DF98927C1D6192A0003ABA96 /* SquatJumps.m in Sources */,
 				DF9892821D61995F003ABA96 /* HealthyFoods.m in Sources */,

@@ -7,6 +7,8 @@
 //
 
 #import "LoginVC.h"
+#import "UserCredentials+CoreDataClass.h"
+#import "AppDelegate.h"
 
 @interface LoginVC ()
 
@@ -18,8 +20,49 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     
-    self.checkLogin = [[LoginService alloc]init];
+    context = ((AppDelegate*)[[UIApplication sharedApplication] delegate]).persistentContainer.viewContext;
     
+    /*
+     //This code is to delete all users in the UserCredentials entity.
+     
+     NSFetchRequest *fetchRequest = [[NSFetchRequest alloc]
+                                    initWithEntityName:@"UserCredentials"];
+    
+    NSError *requestError = nil;
+    
+    // Fetch data from Persons table into NSArray
+    NSArray *persons = [context
+                        executeFetchRequest:fetchRequest
+                        error:&requestError];
+    // Make sure we get the array
+    if([persons count] > 0)
+    {
+        
+        for(UserCredentials *thisPerson in persons)
+        {
+            [context deleteObject:thisPerson];
+            
+        }
+        
+        NSError *savingError = nil;
+        
+        if([context save:&savingError])
+        {
+            NSLog(@"Successfully deleted all persons in array");
+        }
+        else
+        {
+            NSLog(@"Unable to delete all persons in array");
+        }
+    }
+    else
+    {
+        
+        NSLog(@"Could not find any Person entities in the context");
+     
+    }
+     */
+
 }
 
 - (void)didReceiveMemoryWarning {
@@ -27,14 +70,6 @@
     // Dispose of any resources that can be recreated.
 }
 
-
-
--(void) alertStatus:(NSString *)msg :(NSString *)title : (int)tag {
-    UIAlertView *alertView = [[UIAlertView alloc]initWithTitle:title message:msg delegate:self cancelButtonTitle:@"Ok" otherButtonTitles:nil, nil];
-    
-    alertView.tag = tag;
-    [alertView show];
-}
 
 
 /*
@@ -49,30 +84,25 @@
 
 - (IBAction)btnLogin:(id)sender {
     
-    if ([self.txtUsername.text isEqualToString:@""] || [self.txtPassword.text isEqualToString:@""])
+    if ([self loginAuth])
     {
-        [self alertStatus:@"Username and/or Password cannot be blank!" :@"Login Failed" :0];
+        UIStoryboard *PortalStoryboard = [UIStoryboard storyboardWithName:@"Portal" bundle:nil];
+        UIViewController *PortalVC = [PortalStoryboard instantiateViewControllerWithIdentifier:@"Portal"];
+        PortalVC.modalTransitionStyle = UIModalTransitionStyleCoverVertical;
+        [self presentViewController:PortalVC animated:YES completion:nil];
+
     }
     else
     {
-        self.checkLogin.strUsername = self.txtUsername.text;
-        self.checkLogin.strPassword = self.txtPassword.text;
+        UIAlertController* alert = [UIAlertController alertControllerWithTitle:@"Login Failed"
+                                                                       message:@"You have entered a wrong username and/or password. Please try again."
+                                                                preferredStyle:UIAlertControllerStyleAlert];
         
-        BOOL lgs = self.checkLogin.success;
+        UIAlertAction* defaultAction = [UIAlertAction actionWithTitle:@"OK" style:UIAlertActionStyleDefault
+                                                              handler:^(UIAlertAction * action) {}];
         
-        if (lgs == 1)
-        {
-            //transition to next slideshow
-            
-            UIStoryboard *PortalStoryboard = [UIStoryboard storyboardWithName:@"Portal" bundle:nil];
-            UIViewController *PortalVC = [PortalStoryboard instantiateViewControllerWithIdentifier:@"Portal"];
-            PortalVC.modalTransitionStyle = UIModalTransitionStyleCoverVertical;
-            [self presentViewController:PortalVC animated:YES completion:nil];
-        }
-        else
-        {
-            [self alertStatus:@"Wrong Username and/or Password!" :@"Login Failed" :0];
-        }
+        [alert addAction:defaultAction];
+        [self presentViewController:alert animated:YES completion:nil];
     }
     
 }
@@ -82,5 +112,29 @@
     [self.txtPassword resignFirstResponder];
     [[self.view window] endEditing:YES];
 }
+
+
+- (BOOL)loginAuth
+{
+    //Fetch the selected username to NSArray and check if there it exists
+
+    NSFetchRequest *fetchRequest = [[NSFetchRequest alloc]initWithEntityName:@"UserCredentials"];
+    NSError *requestError = nil;
+    
+    NSEntityDescription *entity = [NSEntityDescription entityForName:@"UserCredentials" inManagedObjectContext:context];
+    NSPredicate *predicate =[NSPredicate predicateWithFormat:@"dbUsername==%@ AND dbPassword==%@",self.txtUsername.text, self.txtPassword.text];
+    [fetchRequest setEntity:entity];
+    [fetchRequest setPredicate:predicate];
+    
+    NSArray *user = [context executeFetchRequest:fetchRequest error:&requestError];
+    
+    if (!([user count] == 1))
+    {
+        return NO;
+    }
+
+    return YES;
+}
+
 
 @end

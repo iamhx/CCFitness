@@ -116,7 +116,9 @@
                 
                 [self presentViewController:alert animated:YES completion:nil];
                 
-                /*//debug purposes
+                /*
+                 
+                //debug purposes
                 
                 NSFetchRequest *fetchRequest = [[NSFetchRequest alloc]initWithEntityName:@"UserCredentials"];
                 NSError *requestError = nil;
@@ -126,7 +128,9 @@
                 for (UserCredentials *user in usernames)
                 {
                     NSLog(@"%@, %@", user.dbUsername, user.dbPassword);
-                }*/
+                }
+                 
+                */
                 
             }
         }

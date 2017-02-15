@@ -7,14 +7,13 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "LoginService.h"
 @interface LoginVC : UIViewController
+{
+    NSManagedObjectContext *context;
+}
 
 @property (weak, nonatomic) IBOutlet UITextField *txtUsername;
 @property (weak, nonatomic) IBOutlet UITextField *txtPassword;
 - (IBAction)btnLogin:(id)sender;
-
-
-@property (strong, nonatomic) LoginService *checkLogin;
 
 @end
