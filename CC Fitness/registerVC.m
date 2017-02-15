@@ -7,6 +7,8 @@
 //
 
 #import "registerVC.h"
+#import "UserCredentials+CoreDataClass.h"
+#import "AppDelegate.h"
 
 @interface registerVC ()
 
@@ -34,7 +36,7 @@
 }
 */
 
--(void) touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event {
+- (void) touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event {
     [self.lblregName resignFirstResponder];
     [self.lblregPassword resignFirstResponder];
     [self.lblconfirmPass resignFirstResponder];
@@ -42,7 +44,64 @@
 }
 
 
+- (BOOL) checkForExistingUserName
+{
+    //Fetch all usernames to array and check if there is existing username
+    
+    NSManagedObjectContext *context = ((AppDelegate*)[[UIApplication sharedApplication] delegate]).persistentContainer.viewContext;
+    NSFetchRequest *fetchRequest = [[NSFetchRequest alloc]initWithEntityName:@"UserCredentials"];
+    NSError *requestError = nil;
+    
+    NSArray *usernames = [context executeFetchRequest:fetchRequest error:&requestError];
+    
+    for (UserCredentials *user in usernames)
+    {
+        if (user.dbUsername == self.lblregName.text)
+        {
+            return NO;
+        }
+    }
+    
+    return YES;
+}
+
 
 - (IBAction)btnContinue:(id)sender {
+    
+    if (self.lblregName.text.length < 6)
+    {
+        UIAlertController* alert = [UIAlertController alertControllerWithTitle:@"Invalid username"
+                                                                       message:@"Username must be at least six characters or more. Please try again."
+                                                                preferredStyle:UIAlertControllerStyleAlert];
+        
+        UIAlertAction* defaultAction = [UIAlertAction actionWithTitle:@"OK" style:UIAlertActionStyleDefault
+                                                              handler:^(UIAlertAction * action) {}];
+        
+        [alert addAction:defaultAction];
+        [self presentViewController:alert animated:YES completion:nil];
+    }
+    else
+    {
+        if (![self checkForExistingUserName])
+        {
+            UIAlertController* alert = [UIAlertController alertControllerWithTitle:@"Invalid username"
+                                                                           message:@"This username is taken. Please enter a different username."
+                                                                    preferredStyle:UIAlertControllerStyleAlert];
+            
+            UIAlertAction* defaultAction = [UIAlertAction actionWithTitle:@"OK" style:UIAlertActionStyleDefault
+                                                                  handler:^(UIAlertAction * action) {}];
+            
+            [alert addAction:defaultAction];
+            [self presentViewController:alert animated:YES completion:nil];
+        }
+        
+        else
+        {
+            [self performSegueWithIdentifier:@"segueContinue" sender:self];
+        }
+    }
+    
+}
+- (IBAction)btnSignUp:(id)sender {
 }
 @end

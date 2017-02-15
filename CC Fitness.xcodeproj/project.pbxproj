@@ -13,8 +13,6 @@
 		DF45C0D41D41B7C8007D4E5A /* Learn.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DF45C0D31D41B7C8007D4E5A /* Learn.storyboard */; };
 		DF45C0D71D41B824007D4E5A /* LearnTVC.m in Sources */ = {isa = PBXBuildFile; fileRef = DF45C0D61D41B824007D4E5A /* LearnTVC.m */; };
 		DF971F991E52A6EC0035738E /* ccfitness_db.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = DF971F971E52A6EC0035738E /* ccfitness_db.xcdatamodeld */; };
-		DF971FA31E52A9AD0035738E /* UserCredentials+CoreDataClass.m in Sources */ = {isa = PBXBuildFile; fileRef = DF971FA01E52A9AD0035738E /* UserCredentials+CoreDataClass.m */; };
-		DF971FA41E52A9AD0035738E /* UserCredentials+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = DF971FA21E52A9AD0035738E /* UserCredentials+CoreDataProperties.m */; };
 		DF971FAA1E52B6730035738E /* registerVC.m in Sources */ = {isa = PBXBuildFile; fileRef = DF971FA91E52B6730035738E /* registerVC.m */; };
 		DF9892761D618921003ABA96 /* Pushups.m in Sources */ = {isa = PBXBuildFile; fileRef = DF9892751D618921003ABA96 /* Pushups.m */; };
 		DF9892791D618F70003ABA96 /* Crunches.m in Sources */ = {isa = PBXBuildFile; fileRef = DF9892781D618F70003ABA96 /* Crunches.m */; };
@@ -31,6 +29,8 @@
 		DFB80E771E48431B00B651DF /* FindAGymViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DFB80E761E48431B00B651DF /* FindAGymViewController.m */; };
 		DFB80E7A1E48483400B651DF /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DFB80E791E48483400B651DF /* CoreLocation.framework */; };
 		DFB80E7C1E48483800B651DF /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DFB80E7B1E48483800B651DF /* MapKit.framework */; };
+		E548BEE01E54429400A484F9 /* UserCredentials+CoreDataClass.m in Sources */ = {isa = PBXBuildFile; fileRef = E548BEDD1E54429400A484F9 /* UserCredentials+CoreDataClass.m */; };
+		E548BEE11E54429400A484F9 /* UserCredentials+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = E548BEDF1E54429400A484F9 /* UserCredentials+CoreDataProperties.m */; };
 		E55647D81E4DB8C3001726B6 /* GymDetailsVC.m in Sources */ = {isa = PBXBuildFile; fileRef = E55647D71E4DB8C3001726B6 /* GymDetailsVC.m */; };
 		E57BC0A61D34CF3A00488F18 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E57BC0A51D34CF3A00488F18 /* main.m */; };
 		E57BC0A91D34CF3A00488F18 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E57BC0A81D34CF3A00488F18 /* AppDelegate.m */; };
@@ -71,10 +71,6 @@
 		DF45C0D51D41B824007D4E5A /* LearnTVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LearnTVC.h; sourceTree = "<group>"; };
 		DF45C0D61D41B824007D4E5A /* LearnTVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LearnTVC.m; sourceTree = "<group>"; };
 		DF971F981E52A6EC0035738E /* ccfitness_db.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = ccfitness_db.xcdatamodel; sourceTree = "<group>"; };
-		DF971F9F1E52A9AD0035738E /* UserCredentials+CoreDataClass.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UserCredentials+CoreDataClass.h"; sourceTree = "<group>"; };
-		DF971FA01E52A9AD0035738E /* UserCredentials+CoreDataClass.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UserCredentials+CoreDataClass.m"; sourceTree = "<group>"; };
-		DF971FA11E52A9AD0035738E /* UserCredentials+CoreDataProperties.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UserCredentials+CoreDataProperties.h"; sourceTree = "<group>"; };
-		DF971FA21E52A9AD0035738E /* UserCredentials+CoreDataProperties.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UserCredentials+CoreDataProperties.m"; sourceTree = "<group>"; };
 		DF971FA81E52B6730035738E /* registerVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = registerVC.h; sourceTree = "<group>"; };
 		DF971FA91E52B6730035738E /* registerVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = registerVC.m; sourceTree = "<group>"; };
 		DF9892741D618921003ABA96 /* Pushups.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Pushups.h; sourceTree = "<group>"; };
@@ -103,6 +99,10 @@
 		DFB80E761E48431B00B651DF /* FindAGymViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FindAGymViewController.m; sourceTree = "<group>"; };
 		DFB80E791E48483400B651DF /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 		DFB80E7B1E48483800B651DF /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		E548BEDC1E54429400A484F9 /* UserCredentials+CoreDataClass.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UserCredentials+CoreDataClass.h"; sourceTree = "<group>"; };
+		E548BEDD1E54429400A484F9 /* UserCredentials+CoreDataClass.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UserCredentials+CoreDataClass.m"; sourceTree = "<group>"; };
+		E548BEDE1E54429400A484F9 /* UserCredentials+CoreDataProperties.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UserCredentials+CoreDataProperties.h"; sourceTree = "<group>"; };
+		E548BEDF1E54429400A484F9 /* UserCredentials+CoreDataProperties.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UserCredentials+CoreDataProperties.m"; sourceTree = "<group>"; };
 		E55647D61E4DB8C3001726B6 /* GymDetailsVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GymDetailsVC.h; sourceTree = "<group>"; };
 		E55647D71E4DB8C3001726B6 /* GymDetailsVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GymDetailsVC.m; sourceTree = "<group>"; };
 		E57BC0A11D34CF3A00488F18 /* CC Fitness.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "CC Fitness.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -180,10 +180,10 @@
 		DF971F9A1E52A7750035738E /* CoreData Files */ = {
 			isa = PBXGroup;
 			children = (
-				DF971F9F1E52A9AD0035738E /* UserCredentials+CoreDataClass.h */,
-				DF971FA01E52A9AD0035738E /* UserCredentials+CoreDataClass.m */,
-				DF971FA11E52A9AD0035738E /* UserCredentials+CoreDataProperties.h */,
-				DF971FA21E52A9AD0035738E /* UserCredentials+CoreDataProperties.m */,
+				E548BEDC1E54429400A484F9 /* UserCredentials+CoreDataClass.h */,
+				E548BEDD1E54429400A484F9 /* UserCredentials+CoreDataClass.m */,
+				E548BEDE1E54429400A484F9 /* UserCredentials+CoreDataProperties.h */,
+				E548BEDF1E54429400A484F9 /* UserCredentials+CoreDataProperties.m */,
 				DF971F971E52A6EC0035738E /* ccfitness_db.xcdatamodeld */,
 			);
 			name = "CoreData Files";
@@ -365,7 +365,7 @@
 				TargetAttributes = {
 					E57BC0A01D34CF3A00488F18 = {
 						CreatedOnToolsVersion = 7.3.1;
-						DevelopmentTeam = 2JXQK2V99D;
+						DevelopmentTeam = EVC7K5F9LC;
 						LastSwiftMigration = 0820;
 						ProvisioningStyle = Automatic;
 					};
@@ -444,8 +444,10 @@
 				DF2116991D47514500A00A32 /* ToolsVC.m in Sources */,
 				E57BC0A91D34CF3A00488F18 /* AppDelegate.m in Sources */,
 				DFB80E771E48431B00B651DF /* FindAGymViewController.m in Sources */,
+				E548BEE11E54429400A484F9 /* UserCredentials+CoreDataProperties.m in Sources */,
 				DFB5626B1D5C32580055D236 /* Supermans.m in Sources */,
 				DFB3785D1D4F330400C94498 /* HomeWorkoutsTVC.m in Sources */,
+				E548BEE01E54429400A484F9 /* UserCredentials+CoreDataClass.m in Sources */,
 				DF45C0D71D41B824007D4E5A /* LearnTVC.m in Sources */,
 				E57BC0DC1D34DD2400488F18 /* LoginVC.m in Sources */,
 				DF9A63E01D45DE5500A12B5A /* BMIViewController.m in Sources */,
@@ -454,12 +456,10 @@
 				DF9A63E31D45E5A900A12B5A /* BMICalculation.m in Sources */,
 				DFB3785A1D4F179F00C94498 /* KeepFitTVC.m in Sources */,
 				DF971FAA1E52B6730035738E /* registerVC.m in Sources */,
-				DF971FA31E52A9AD0035738E /* UserCredentials+CoreDataClass.m in Sources */,
 				E57BC0A61D34CF3A00488F18 /* main.m in Sources */,
 				DF98927F1D6195A5003ABA96 /* ForwardLunge.m in Sources */,
 				DF971F991E52A6EC0035738E /* ccfitness_db.xcdatamodeld in Sources */,
 				E55647D81E4DB8C3001726B6 /* GymDetailsVC.m in Sources */,
-				DF971FA41E52A9AD0035738E /* UserCredentials+CoreDataProperties.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -605,11 +605,11 @@
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				DEVELOPMENT_TEAM = 2JXQK2V99D;
+				DEVELOPMENT_TEAM = EVC7K5F9LC;
 				INFOPLIST_FILE = "CC Fitness/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.hx.CC-Fitness";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.hx2.CC-Fitness";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
@@ -624,11 +624,11 @@
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				DEVELOPMENT_TEAM = 2JXQK2V99D;
+				DEVELOPMENT_TEAM = EVC7K5F9LC;
 				INFOPLIST_FILE = "CC Fitness/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.hx.CC-Fitness";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.hx2.CC-Fitness";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 				SWIFT_VERSION = 3.0;

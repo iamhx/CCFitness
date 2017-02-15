@@ -13,5 +13,6 @@
 - (IBAction)btnContinue:(id)sender;
 @property (weak, nonatomic) IBOutlet UITextField *lblregPassword;
 @property (weak, nonatomic) IBOutlet UITextField *lblconfirmPass;
+- (IBAction)btnSignUp:(id)sender;
 
 @end

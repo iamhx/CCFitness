@@ -88,7 +88,7 @@
                                          handler:^(UIAlertAction * action) {
                                              NSURL *url = [NSURL URLWithString:UIApplicationOpenSettingsURLString];
                                              
-                                             [[UIApplication sharedApplication]openURL:url];
+                                             [[UIApplication sharedApplication]openURL:url options:@{} completionHandler:nil];
                                          }];
         
         [alert addAction:settingsButton];

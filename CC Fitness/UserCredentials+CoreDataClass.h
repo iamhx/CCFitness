@@ -2,7 +2,7 @@
 //  UserCredentials+CoreDataClass.h
 //  CC Fitness
 //
-//  Created by Student2 on 14/2/17.
+//  Created by Hongxuan on 15/2/17.
 //  Copyright © 2017 Hongxuan. All rights reserved.
 //
 
@@ -14,6 +14,8 @@ NS_ASSUME_NONNULL_BEGIN
 @interface UserCredentials : NSManagedObject
 
 @end
+
+
 
 NS_ASSUME_NONNULL_END
 

@@ -55,7 +55,7 @@
         
         NSString *directionsURLGoogle = [NSString stringWithFormat:@"comgooglemaps://?saddr=My%%20Location&daddr=%f,%f", self.pointCoordinate.latitude, self.pointCoordinate.longitude];
         
-        [[UIApplication sharedApplication] openURL: [NSURL URLWithString:directionsURLGoogle]];
+        [[UIApplication sharedApplication] openURL: [NSURL URLWithString:directionsURLGoogle] options:@{} completionHandler:nil];
 
     }
     
@@ -64,7 +64,7 @@
     {
         NSString* directionsURLApple = [NSString stringWithFormat:@"http://maps.apple.com/?saddr=Current%%20Location&daddr=%f,%f", self.pointCoordinate.latitude, self.pointCoordinate.longitude];
         
-        [[UIApplication sharedApplication] openURL: [NSURL URLWithString: directionsURLApple]];
+        [[UIApplication sharedApplication] openURL: [NSURL URLWithString: directionsURLApple] options:@{} completionHandler:nil];
         
     }
     

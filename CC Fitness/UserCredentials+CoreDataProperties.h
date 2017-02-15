@@ -2,7 +2,7 @@
 //  UserCredentials+CoreDataProperties.h
 //  CC Fitness
 //
-//  Created by Student2 on 14/2/17.
+//  Created by Hongxuan on 15/2/17.
 //  Copyright © 2017 Hongxuan. All rights reserved.
 //
 
@@ -15,8 +15,8 @@ NS_ASSUME_NONNULL_BEGIN
 
 + (NSFetchRequest<UserCredentials *> *)fetchRequest;
 
-@property (nullable, nonatomic, copy) NSString *username;
-@property (nullable, nonatomic, copy) NSString *password;
+@property (nullable, nonatomic, copy) NSString *dbPassword;
+@property (nullable, nonatomic, copy) NSString *dbUsername;
 
 @end
 

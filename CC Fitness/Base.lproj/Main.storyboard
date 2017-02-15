@@ -1,5 +1,5 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16C67" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="vsQ-gx-out">
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="vsQ-gx-out">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -227,7 +227,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1770" y="230"/>
+            <point key="canvasLocation" x="1879" y="230"/>
         </scene>
         <!--RegisterVC-->
         <scene sceneID="ccc-CU-IOM">
@@ -264,7 +264,6 @@
                                 </userDefinedRuntimeAttributes>
                                 <connections>
                                     <action selector="btnContinue:" destination="1EF-Lu-zWj" eventType="touchUpInside" id="oWp-LA-XIU"/>
-                                    <segue destination="tCz-Nx-Mro" kind="show" id="aVP-Mv-dRi"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RDL-jz-Ocg">
@@ -313,11 +312,12 @@
                     <navigationItem key="navigationItem" id="rts-5P-u0R"/>
                     <connections>
                         <outlet property="lblregName" destination="HQM-YU-eWY" id="gWv-nD-Tb1"/>
+                        <segue destination="tCz-Nx-Mro" kind="show" identifier="segueContinue" id="OHt-eo-89g"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="WDu-La-jkK" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2615" y="230"/>
+            <point key="canvasLocation" x="3161" y="-376"/>
         </scene>
         <!--RegisterVC-->
         <scene sceneID="wfz-h5-Urb">
@@ -349,6 +349,9 @@
                                         <integer key="value" value="10"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="btnSignUp:" destination="tCz-Nx-Mro" eventType="touchUpInside" id="aAR-mY-oc0"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2OI-7V-nab">
                                 <rect key="frame" x="97" y="629" width="180" height="30"/>
@@ -410,11 +413,12 @@
                     <connections>
                         <outlet property="lblconfirmPass" destination="WOV-oN-xdg" id="TEn-De-UFr"/>
                         <outlet property="lblregPassword" destination="GtQ-nz-d9e" id="UFT-lm-kcZ"/>
+                        <segue destination="BYZ-38-t0r" kind="show" identifier="segueSignUp" id="gcg-HO-hK0"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="JMR-0C-at1" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3412" y="230"/>
+            <point key="canvasLocation" x="4190" y="-376"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="zhu-CB-yXp">
@@ -432,7 +436,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="jGi-eg-Mwc" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="850.39999999999998" y="229.83508245877064"/>
+            <point key="canvasLocation" x="1060" y="230"/>
         </scene>
     </scenes>
     <resources>
@@ -440,6 +444,6 @@
         <image name="loginbg3" width="2126" height="1412"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="djL-9r-fyd"/>
+        <segue reference="gcg-HO-hK0"/>
     </inferredMetricsTieBreakers>
 </document>
