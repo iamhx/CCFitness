@@ -38,6 +38,7 @@
 		E57BC0B41D34CF3A00488F18 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E57BC0B21D34CF3A00488F18 /* LaunchScreen.storyboard */; };
 		E57BC0DC1D34DD2400488F18 /* LoginVC.m in Sources */ = {isa = PBXBuildFile; fileRef = E57BC0DB1D34DD2400488F18 /* LoginVC.m */; };
 		E57BC0E01D34DEC100488F18 /* Portal.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E57BC0DF1D34DEC100488F18 /* Portal.storyboard */; };
+		E582D1731E55704A00BBE6B3 /* PushupTrainer.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E582D1721E55704A00BBE6B3 /* PushupTrainer.storyboard */; };
 		E5CE8A9D1E4ADC9300966617 /* CustomAnnotation.m in Sources */ = {isa = PBXBuildFile; fileRef = E5CE8A9C1E4ADC9300966617 /* CustomAnnotation.m */; };
 		E5DE131B1E54591D002732F0 /* ConfirmSignUpVC.m in Sources */ = {isa = PBXBuildFile; fileRef = E5DE131A1E54591D002732F0 /* ConfirmSignUpVC.m */; };
 /* End PBXBuildFile section */
@@ -115,6 +116,7 @@
 		E57BC0DA1D34DD2400488F18 /* LoginVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LoginVC.h; path = ../LoginVC.h; sourceTree = "<group>"; };
 		E57BC0DB1D34DD2400488F18 /* LoginVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = LoginVC.m; path = ../LoginVC.m; sourceTree = "<group>"; };
 		E57BC0DF1D34DEC100488F18 /* Portal.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Portal.storyboard; sourceTree = "<group>"; };
+		E582D1721E55704A00BBE6B3 /* PushupTrainer.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = PushupTrainer.storyboard; sourceTree = "<group>"; };
 		E5CE8A9B1E4ADC9300966617 /* CustomAnnotation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomAnnotation.h; sourceTree = "<group>"; };
 		E5CE8A9C1E4ADC9300966617 /* CustomAnnotation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomAnnotation.m; sourceTree = "<group>"; };
 		E5DE13191E54591D002732F0 /* ConfirmSignUpVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ConfirmSignUpVC.h; sourceTree = "<group>"; };
@@ -243,6 +245,7 @@
 		E57BC0A31D34CF3A00488F18 /* CC Fitness */ = {
 			isa = PBXGroup;
 			children = (
+				E582D1711E55702A00BBE6B3 /* Push-Up Trainer */,
 				DF971F9A1E52A7750035738E /* CoreData Files */,
 				DFB80E721E4842D600B651DF /* Find A Gym */,
 				DF9A63DB1D45DE0100A12B5A /* BMI Calculator */,
@@ -291,6 +294,14 @@
 				DF2116981D47514500A00A32 /* ToolsVC.m */,
 			);
 			name = Portal;
+			sourceTree = "<group>";
+		};
+		E582D1711E55702A00BBE6B3 /* Push-Up Trainer */ = {
+			isa = PBXGroup;
+			children = (
+				E582D1721E55704A00BBE6B3 /* PushupTrainer.storyboard */,
+			);
+			name = "Push-Up Trainer";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -400,6 +411,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				E57BC0B41D34CF3A00488F18 /* LaunchScreen.storyboard in Resources */,
+				E582D1731E55704A00BBE6B3 /* PushupTrainer.storyboard in Resources */,
 				E57BC0B11D34CF3A00488F18 /* Assets.xcassets in Resources */,
 				DF45C0D41D41B7C8007D4E5A /* Learn.storyboard in Resources */,
 				DFB80E741E4842F400B651DF /* FindAGym.storyboard in Resources */,
