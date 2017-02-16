@@ -45,5 +45,7 @@
     
     portalVC.modalTransitionStyle = UIModalTransitionStyleFlipHorizontal;
     [self presentViewController:portalVC animated:YES completion:nil];
+    
+    //Test OK
 }
 @end
