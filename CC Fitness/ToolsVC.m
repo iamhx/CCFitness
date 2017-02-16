@@ -58,4 +58,14 @@
     [self presentViewController:gymVC animated:YES completion:nil];
 
 }
+
+- (IBAction)btnPushUp:(id)sender {
+    
+    UIStoryboard *findAGymStoryboard = [UIStoryboard storyboardWithName:@"PushUpTrainer" bundle:nil];
+    UIViewController *gymVC = [findAGymStoryboard instantiateViewControllerWithIdentifier:@"PushUpTrainerID"];
+    
+    gymVC.modalTransitionStyle = UIModalTransitionStyleFlipHorizontal;
+    [self presentViewController:gymVC animated:YES completion:nil];
+
+}
 @end

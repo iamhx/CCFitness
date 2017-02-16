@@ -6,6 +6,52 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
-    <scenes/>
+    <scenes>
+        <!--Push-Up Trainer-->
+        <scene sceneID="soI-nD-DYx">
+            <objects>
+                <viewController id="QLB-FZ-Foy" customClass="PushUpTrainerVC" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="T7x-dd-Jib"/>
+                        <viewControllerLayoutGuide type="bottom" id="k99-aD-rkO"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Vlo-M8-J5o">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Push-Up Trainer" id="veN-5E-vXw">
+                        <barButtonItem key="leftBarButtonItem" title="Back" id="4G6-dq-bIt">
+                            <connections>
+                                <action selector="btnBack:" destination="QLB-FZ-Foy" id="UB9-C0-YEZ"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" title="Help" id="t5i-83-Crt"/>
+                    </navigationItem>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="o9B-eA-RoZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-215" y="178"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="MXO-iV-Rom">
+            <objects>
+                <navigationController storyboardIdentifier="PushUpTrainerID" automaticallyAdjustsScrollViewInsets="NO" id="YLl-pm-shK" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="4lz-6g-R47">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="QLB-FZ-Foy" kind="relationship" relationship="rootViewController" id="3jk-ba-RxI"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ELX-eK-SSR" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-996" y="178"/>
+        </scene>
+    </scenes>
 </document>
