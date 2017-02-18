@@ -91,20 +91,17 @@
 
 - (void)timerTickGetReady
 {
-    //increment the timer (in this case, decrement)
     timeTick--;
-    //if we wanted to count down we could have done "timeTick--"
     
     NSString *timeString =[[NSString alloc] initWithFormat:@"%i", timeTick];
     
     self.lblCount.text = timeString;
     
-    //if we want the timer to stop after a certain number of seconds we can do
     if (timeTick == 0)
     {
         started = YES;
         
-        //stop the timer after 0 seconds
+        //stop the timer when it reaches 0
         [timer invalidate];
         
         self.lblAlertTimer.text = @"00:00:00";

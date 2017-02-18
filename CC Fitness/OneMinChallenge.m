@@ -89,23 +89,22 @@
 
 - (void)timerTickGetReady
 {
-    //increment the timer (in this case, decrement)
+    //Each tick decrement by one
     timeTick--;
-    //if we wanted to count down we could have done "timeTick--"
     
+    //Update time each tick
     NSString *timeString =[[NSString alloc] initWithFormat:@"%i", timeTick];
-    
     self.lblCount.text = timeString;
     
-    //if we want the timer to stop after a certain number of seconds we can do
     if (timeTick == 0)
     {
         started = YES;
         
-        //stop the timer after 0 seconds
+        //Stop the timer when it reaches 0
         [timer invalidate];
         
-        timeTick = 60; //reset to 1 minute
+        //reset timer to 1 minute
+        timeTick = 60;
         
         self.lblAlertTimer.text = @"60 SECONDS";
         
@@ -118,7 +117,7 @@
         // Proximity Sensor Notification
         [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(proximityChanged:) name:@"UIDeviceProximityStateDidChangeNotification" object:device]; //Create an observer to detect proximity changes
         
-        //Begin 1 minute timer
+        //Begin timer
         timer = [NSTimer scheduledTimerWithTimeInterval:1.0 target:self selector:@selector(timerTickStart) userInfo:nil repeats:YES];
     }
 
@@ -244,7 +243,6 @@
 
 /*
  #pragma mark - Navigation
-
 
 // In a storyboard-based application, you will often want to do a little preparation before navigation
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
