@@ -14,6 +14,7 @@
     int timeTick;
     NSTimer *timer;
     BOOL started;
+    int pushUpCount;
 }
 
 @end

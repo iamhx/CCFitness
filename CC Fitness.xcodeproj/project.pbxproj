@@ -43,6 +43,7 @@
 		E5CE8A9D1E4ADC9300966617 /* CustomAnnotation.m in Sources */ = {isa = PBXBuildFile; fileRef = E5CE8A9C1E4ADC9300966617 /* CustomAnnotation.m */; };
 		E5DE131B1E54591D002732F0 /* ConfirmSignUpVC.m in Sources */ = {isa = PBXBuildFile; fileRef = E5DE131A1E54591D002732F0 /* ConfirmSignUpVC.m */; };
 		E5EAEB4B1E58309E004F6D13 /* OneMinChallenge.m in Sources */ = {isa = PBXBuildFile; fileRef = E5EAEB4A1E58309E004F6D13 /* OneMinChallenge.m */; };
+		E5EAEB4D1E585B36004F6D13 /* CoreMotion.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E5EAEB4C1E585B36004F6D13 /* CoreMotion.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -127,6 +128,7 @@
 		E5DE131A1E54591D002732F0 /* ConfirmSignUpVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ConfirmSignUpVC.m; sourceTree = "<group>"; };
 		E5EAEB491E58309E004F6D13 /* OneMinChallenge.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OneMinChallenge.h; sourceTree = "<group>"; };
 		E5EAEB4A1E58309E004F6D13 /* OneMinChallenge.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OneMinChallenge.m; sourceTree = "<group>"; };
+		E5EAEB4C1E585B36004F6D13 /* CoreMotion.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMotion.framework; path = System/Library/Frameworks/CoreMotion.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -134,6 +136,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E5EAEB4D1E585B36004F6D13 /* CoreMotion.framework in Frameworks */,
 				DFB80E7C1E48483800B651DF /* MapKit.framework in Frameworks */,
 				DFB80E7A1E48483400B651DF /* CoreLocation.framework in Frameworks */,
 			);
@@ -223,6 +226,7 @@
 		DFB80E781E48483300B651DF /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				E5EAEB4C1E585B36004F6D13 /* CoreMotion.framework */,
 				DFB80E7B1E48483800B651DF /* MapKit.framework */,
 				DFB80E791E48483400B651DF /* CoreLocation.framework */,
 			);
