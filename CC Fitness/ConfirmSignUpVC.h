@@ -19,6 +19,6 @@
 
 @property (nonatomic, copy) NSString *myUsername;
 - (IBAction)btnSignUp:(id)sender;
-- (IBAction)btnBack:(id)sender;
+- (IBAction)btnBack2:(id)sender;
 
 @end

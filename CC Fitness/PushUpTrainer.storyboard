@@ -38,6 +38,9 @@
                                         <integer key="value" value="5"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <segue destination="3FJ-eL-Vvk" kind="show" id="KO2-BV-DlK"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XV5-IV-ARQ">
                                 <rect key="frame" x="81" y="344" width="212" height="50"/>
@@ -64,7 +67,6 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <navigationItem key="navigationItem" title="Push-Up Trainer" id="veN-5E-vXw">
-                        <barButtonItem key="backBarButtonItem" title="Back" id="rjB-52-oU4"/>
                         <barButtonItem key="leftBarButtonItem" title="Back" id="4G6-dq-bIt">
                             <connections>
                                 <action selector="btnBack:" destination="QLB-FZ-Foy" id="UB9-C0-YEZ"/>

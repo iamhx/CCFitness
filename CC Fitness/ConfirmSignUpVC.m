@@ -141,9 +141,10 @@
 
 }
 
-- (IBAction)btnBack:(id)sender {
+- (IBAction)btnBack2:(id)sender {
     
     [self.navigationController popToRootViewControllerAnimated:NO];
 
 }
+
 @end
