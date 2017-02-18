@@ -64,6 +64,7 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <navigationItem key="navigationItem" title="Push-Up Trainer" id="veN-5E-vXw">
+                        <barButtonItem key="backBarButtonItem" title="Back" id="rjB-52-oU4"/>
                         <barButtonItem key="leftBarButtonItem" title="Back" id="4G6-dq-bIt">
                             <connections>
                                 <action selector="btnBack:" destination="QLB-FZ-Foy" id="UB9-C0-YEZ"/>
@@ -78,10 +79,10 @@
             </objects>
             <point key="canvasLocation" x="-215.19999999999999" y="177.66116941529236"/>
         </scene>
-        <!--View Controller-->
+        <!--One Minute Challenge-->
         <scene sceneID="DYk-Ct-fFa">
             <objects>
-                <viewController id="3FJ-eL-Vvk" sceneMemberID="viewController">
+                <viewController title="One Minute Challenge" id="3FJ-eL-Vvk" customClass="OneMinChallenge" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="Pjb-c9-pFb"/>
                         <viewControllerLayoutGuide type="bottom" id="4kA-pY-oz5"/>
@@ -89,12 +90,44 @@
                     <view key="view" contentMode="scaleToFill" id="IwG-pG-Dme">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="gradient-wallpaper-background-404-453-hd-wallpapers" translatesAutoresizingMaskIntoConstraints="NO" id="mVb-GS-3Nf">
+                                <rect key="frame" x="0.0" y="64" width="375" height="603"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="5" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RK2-lq-igm">
+                                <rect key="frame" x="0.0" y="290" width="375" height="150"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="50"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" alpha="0.0" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="PUSH-UPS" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9HK-Wa-4Jy">
+                                <rect key="frame" x="0.0" y="411" width="375" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="GET READY" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UVN-d8-86e">
+                                <rect key="frame" x="0.0" y="228" width="375" height="34"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="25"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
+                    <connections>
+                        <outlet property="lblAlertTimer" destination="UVN-d8-86e" id="B1U-10-T88"/>
+                        <outlet property="lblCount" destination="RK2-lq-igm" id="nxg-xh-TEP"/>
+                        <outlet property="lblPushUps" destination="9HK-Wa-4Jy" id="gb5-T8-BtY"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="mjo-6H-sdD" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="604" y="666"/>
+            <point key="canvasLocation" x="604" y="665.21739130434787"/>
         </scene>
         <!--Help-->
         <scene sceneID="wh4-ZT-uJk">

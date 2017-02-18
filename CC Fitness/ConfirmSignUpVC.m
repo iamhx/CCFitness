@@ -106,10 +106,13 @@
                 UIAlertAction* defaultAction = [UIAlertAction actionWithTitle:@"OK" style:UIAlertActionStyleDefault
                                                                       handler:^(UIAlertAction * action) {
                                                                           
-                                                                          UIStoryboard *loginStoryboard = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
+                                                                          /*UIStoryboard *loginStoryboard = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
                                                                           UIViewController *LoginVC = [loginStoryboard instantiateViewControllerWithIdentifier:@"Main"];
                                                                           
-                                                                          [self.navigationController pushViewController:LoginVC animated:YES];
+                                                                          [self.navigationController pushViewController:LoginVC animated:YES];*/
+                                                                          
+                                                                          [self.navigationController popToRootViewControllerAnimated:NO];
+
                                                                       }];
                 
                 [alert addAction:defaultAction];
@@ -135,6 +138,12 @@
             }
         }
     }
+
+}
+
+- (IBAction)btnBack:(id)sender {
+    
+    [self.navigationController popToRootViewControllerAnimated:NO];
 
 }
 @end
