@@ -19,8 +19,8 @@
     // Do any additional setup after loading the view.
     
     UIButton *helpButton = [UIButton buttonWithType:UIButtonTypeInfoLight];
+    [helpButton addTarget:self action:@selector(showHelp) forControlEvents:UIControlEventTouchUpInside];
     self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc]initWithCustomView:helpButton];
-    
 }
 
 - (void)didReceiveMemoryWarning {
@@ -46,6 +46,11 @@
     portalVC.modalTransitionStyle = UIModalTransitionStyleFlipHorizontal;
     [self presentViewController:portalVC animated:YES completion:nil];
     
-    //Test OK
 }
+
+- (void)showHelp {
+    
+    [self performSegueWithIdentifier:@"showHelp" sender:self];
+}
+
 @end
