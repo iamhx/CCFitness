@@ -44,6 +44,7 @@
 		E5DE131B1E54591D002732F0 /* ConfirmSignUpVC.m in Sources */ = {isa = PBXBuildFile; fileRef = E5DE131A1E54591D002732F0 /* ConfirmSignUpVC.m */; };
 		E5EAEB4B1E58309E004F6D13 /* OneMinChallenge.m in Sources */ = {isa = PBXBuildFile; fileRef = E5EAEB4A1E58309E004F6D13 /* OneMinChallenge.m */; };
 		E5EAEB4D1E585B36004F6D13 /* CoreMotion.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E5EAEB4C1E585B36004F6D13 /* CoreMotion.framework */; };
+		E5EAEB501E586CC6004F6D13 /* FreestyleChallenge.m in Sources */ = {isa = PBXBuildFile; fileRef = E5EAEB4F1E586CC6004F6D13 /* FreestyleChallenge.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -129,6 +130,8 @@
 		E5EAEB491E58309E004F6D13 /* OneMinChallenge.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OneMinChallenge.h; sourceTree = "<group>"; };
 		E5EAEB4A1E58309E004F6D13 /* OneMinChallenge.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OneMinChallenge.m; sourceTree = "<group>"; };
 		E5EAEB4C1E585B36004F6D13 /* CoreMotion.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMotion.framework; path = System/Library/Frameworks/CoreMotion.framework; sourceTree = SDKROOT; };
+		E5EAEB4E1E586CC6004F6D13 /* FreestyleChallenge.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FreestyleChallenge.h; sourceTree = "<group>"; };
+		E5EAEB4F1E586CC6004F6D13 /* FreestyleChallenge.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FreestyleChallenge.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -314,6 +317,8 @@
 				E582D1751E5573EB00BBE6B3 /* PushUpTrainerVC.m */,
 				E5EAEB491E58309E004F6D13 /* OneMinChallenge.h */,
 				E5EAEB4A1E58309E004F6D13 /* OneMinChallenge.m */,
+				E5EAEB4E1E586CC6004F6D13 /* FreestyleChallenge.h */,
+				E5EAEB4F1E586CC6004F6D13 /* FreestyleChallenge.m */,
 			);
 			name = "Push-Up Trainer";
 			sourceTree = "<group>";
@@ -474,6 +479,7 @@
 				DF9A63E01D45DE5500A12B5A /* BMIViewController.m in Sources */,
 				DF0974781D3CB3A900889EE4 /* MainMenuVC.m in Sources */,
 				E5EAEB4B1E58309E004F6D13 /* OneMinChallenge.m in Sources */,
+				E5EAEB501E586CC6004F6D13 /* FreestyleChallenge.m in Sources */,
 				E5CE8A9D1E4ADC9300966617 /* CustomAnnotation.m in Sources */,
 				DF9A63E31D45E5A900A12B5A /* BMICalculation.m in Sources */,
 				DFB3785A1D4F179F00C94498 /* KeepFitTVC.m in Sources */,

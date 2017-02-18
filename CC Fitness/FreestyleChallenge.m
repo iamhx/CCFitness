@@ -1,14 +1,14 @@
 //
-//  OneMinChallenge.m
+//  FreestyleChallenge.m
 //  CC Fitness
 //
 //  Created by Hongxuan on 18/2/17.
 //  Copyright © 2017 Hongxuan. All rights reserved.
 //
 
-#import "OneMinChallenge.h"
+#import "FreestyleChallenge.h"
 
-@interface OneMinChallenge ()
+@interface FreestyleChallenge ()
 {
     int timeTick;
     NSTimer *timer;
@@ -18,7 +18,7 @@
 
 @end
 
-@implementation OneMinChallenge
+@implementation FreestyleChallenge
 
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -31,7 +31,7 @@
                                                                      target:self action:@selector(goBackSegue:)];
     self.navigationItem.leftBarButtonItem= newBackButton;
     
-
+    
     //Initialize timer
     timeTick = 5;
     
@@ -50,6 +50,7 @@
     timer = [NSTimer scheduledTimerWithTimeInterval:1.0 target:self selector:@selector(timerTickGetReady) userInfo:nil repeats:YES];
 }
 
+
 - (void)goBackSegue:(UIBarButtonItem *)sender
 {
     [timer invalidate];
@@ -61,14 +62,14 @@
     
     UIAlertAction* defaultAction = [UIAlertAction actionWithTitle:@"Yes" style:UIAlertActionStyleDefault
                                                           handler:^(UIAlertAction * action) {
-                                                          
+                                                              
                                                               [self.navigationController popToRootViewControllerAnimated:YES];
                                                               
                                                           }];
     
     UIAlertAction* cancelAction = [UIAlertAction actionWithTitle:@"No" style:UIAlertActionStyleCancel
                                                          handler:^(UIAlertAction * action) {
-                                                         
+                                                             
                                                              if (!started)
                                                              {
                                                                  timer = [NSTimer scheduledTimerWithTimeInterval:1.0 target:self selector:@selector(timerTickGetReady) userInfo:nil repeats:YES];
@@ -76,16 +77,17 @@
                                                              else
                                                              {
                                                                  device.proximityMonitoringEnabled = YES;
-
+                                                                 
                                                                  timer = [NSTimer scheduledTimerWithTimeInterval:1.0 target:self selector:@selector(timerTickStart) userInfo:nil repeats:YES];
                                                              }
-                                                         
+                                                             
                                                          }];
     
     [alert addAction:defaultAction];
     [alert addAction:cancelAction];
     [self presentViewController:alert animated:YES completion:nil];
 }
+
 
 - (void)timerTickGetReady
 {
@@ -105,11 +107,10 @@
         //stop the timer after 0 seconds
         [timer invalidate];
         
-        timeTick = 60; //reset to 1 minute
-        
-        self.lblAlertTimer.text = @"60 SECONDS";
-        
+        self.lblAlertTimer.text = @"00:00:00";
         self.lblPushUps.alpha = 1.0; //Show lblPushUps
+        self.lblEndWorkout.alpha = 1.0; //Show btnEndWorkout
+        self.lblEndWorkout.enabled = YES;
         
         //Enable the proximity sensor to use it
         device = [UIDevice currentDevice];
@@ -118,32 +119,32 @@
         // Proximity Sensor Notification
         [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(proximityChanged:) name:@"UIDeviceProximityStateDidChangeNotification" object:device]; //Create an observer to detect proximity changes
         
-        //Begin 1 minute timer
+        //Begin the timer
         timer = [NSTimer scheduledTimerWithTimeInterval:1.0 target:self selector:@selector(timerTickStart) userInfo:nil repeats:YES];
     }
-
+    
 }
+
 
 -(void)timerTickStart
 {
-    timeTick--;
+    timeTick++;
     
-    NSString *timeString =[[NSString alloc] initWithFormat:@"%i SECONDS", timeTick];
-
-    self.lblAlertTimer.text = timeString;
+    self.lblAlertTimer.text = [self formattedTime: timeTick];
     
-    if (timeTick == 0)
-    {
-        [timer invalidate];
-        
-        [self alertFinalScore];
-    }
 }
 
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+
+- (NSString *)formattedTime:(int)totalSeconds
+{
+    
+    int seconds = totalSeconds % 60;
+    int minutes = (totalSeconds / 60) % 60;
+    int hours = totalSeconds / 3600;
+    
+    return [NSString stringWithFormat:@"%02d:%02d:%02d",hours, minutes, seconds];
 }
+
 
 - (void) viewDidDisappear:(BOOL)animated
 {
@@ -165,11 +166,34 @@
 }
 
 
+- (void)didReceiveMemoryWarning {
+    [super didReceiveMemoryWarning];
+    // Dispose of any resources that can be recreated.
+}
+
+/*
+#pragma mark - Navigation
+
+// In a storyboard-based application, you will often want to do a little preparation before navigation
+- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
+    // Get the new view controller using [segue destinationViewController].
+    // Pass the selected object to the new view controller.
+}
+*/
+
+- (IBAction)btnEndWorkout:(id)sender {
+    
+    [timer invalidate];
+    
+    [self alertFinalScore];
+}
+
+
 - (void)alertFinalScore
 {
-    NSString *displayScore = [NSString stringWithFormat:@"Score: %i\nWould you like to save your result of the attempt?", pushUpCount];
+    NSString *displayScore = [NSString stringWithFormat:@"Time: %@\nScore: %i\nWould you like to save your result of the attempt?", self.lblAlertTimer.text, pushUpCount];
     
-    UIAlertController* alert = [UIAlertController alertControllerWithTitle:@"Challenge complete!"
+    UIAlertController* alert = [UIAlertController alertControllerWithTitle:@"Workout complete!"
                                                                    message:displayScore
                                                             preferredStyle:UIAlertControllerStyleAlert];
     
@@ -221,7 +245,7 @@
                                                              [self.navigationController popToRootViewControllerAnimated:YES];
                                                              
                                                          }];
-
+    
     
     [alert addAction:defaultAction];
     [alert addAction:cancelAction];
@@ -240,18 +264,6 @@
         okAction.enabled = someTextField.text.length >= 2;
     }
 }
-
-
-/*
- #pragma mark - Navigation
-
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
-}
-*/
 
 
 @end

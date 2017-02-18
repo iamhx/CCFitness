@@ -1,5 +1,5 @@
 //
-//  OneMinChallenge.h
+//  FreestyleChallenge.h
 //  CC Fitness
 //
 //  Created by Hongxuan on 18/2/17.
@@ -8,12 +8,13 @@
 
 #import <UIKit/UIKit.h>
 
-@interface OneMinChallenge : UIViewController
+@interface FreestyleChallenge : UIViewController
 {
     UIDevice *device;
 }
 @property (weak, nonatomic) IBOutlet UILabel *lblAlertTimer;
 @property (weak, nonatomic) IBOutlet UILabel *lblCount;
 @property (weak, nonatomic) IBOutlet UILabel *lblPushUps;
-
+- (IBAction)btnEndWorkout:(id)sender;
+@property (weak, nonatomic) IBOutlet UIButton *lblEndWorkout;
 @end
