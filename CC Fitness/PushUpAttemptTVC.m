@@ -25,12 +25,12 @@
     
 
     
+    //Create a dynamic table view
     UITableView *tableView = [[UITableView alloc] initWithFrame:[[UIScreen mainScreen] bounds] style:UITableViewStylePlain];
     tableView.autoresizingMask = UIViewAutoresizingFlexibleHeight|UIViewAutoresizingFlexibleWidth;
     tableView.delegate = self;
     tableView.dataSource = self;
     [tableView reloadData];
-    
     self.view = tableView;
     
     
@@ -45,14 +45,15 @@
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     
+    // Configure the cell...
     
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"pushUpCell"];
     
-    // Configure the cell...
     if (cell == nil) {
         cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleSubtitle reuseIdentifier:@"pushUpCell"];
     }
     
+    //Customize cells
     cell.textLabel.text = @"Name";
     cell.detailTextLabel.text = @"Score: 0";
     cell.accessoryType = UITableViewCellAccessoryDisclosureIndicator;
@@ -62,12 +63,15 @@
 
 -(NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
     
+    //Return the array's count
     return 3;
     
 }
 
 - (void) tableView: (UITableView *) tableView didSelectRowAtIndexPath: (NSIndexPath *) indexPath {
     
+    
+    //Change segue's back button title
     UIBarButtonItem *newBackButton =
     [[UIBarButtonItem alloc] initWithTitle:@"Back"
                                      style:UIBarButtonItemStylePlain

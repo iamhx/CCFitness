@@ -7,6 +7,8 @@
 //
 
 #import "FreestyleChallenge.h"
+#import "AppDelegate.h"
+#import "PushUpLog+CoreDataClass.h"
 
 @interface FreestyleChallenge ()
 {
@@ -23,6 +25,8 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+    
+    context = ((AppDelegate*)[[UIApplication sharedApplication] delegate]).persistentContainer.viewContext;
     
     //Initialize bool flag for UIAlertController event.
     started = NO;
@@ -229,8 +233,17 @@
     
     UIAlertAction *defaultAction = [UIAlertAction actionWithTitle:@"Submit" style:UIAlertActionStyleDefault
                                                           handler:^(UIAlertAction * action) {
-                                                              
-                                                              //insertion of data here
+                                                                                                                            
+                                                              //Insertion of data here
+                                                              UITextField *userName = alert.textFields.firstObject;
+                                                              if ([self insertEntryWithName:userName.text andScore:pushUpCount])
+                                                              {
+                                                                  [self.navigationController popToRootViewControllerAnimated:YES];
+                                                              }
+                                                              else
+                                                              {
+                                                                  NSLog(@"Debug: Check text field value %@", userName.text);
+                                                              }
                                                               
                                                           }];
     
@@ -260,6 +273,48 @@
         UIAlertAction *okAction = alertController.actions.firstObject;
         okAction.enabled = someTextField.text.length >= 2;
     }
+}
+
+- (BOOL)insertEntryWithName: (NSString *)name andScore:(int)score
+{
+    //PushUpLog only saves 20 entries. The last entry will be deleted.
+    
+    NSFetchRequest *fetchRequest = [[NSFetchRequest alloc]initWithEntityName:@"PushUpLog"];
+    NSError *requestError = nil;
+    
+    NSArray *entries = [context executeFetchRequest:fetchRequest error:&requestError];
+    PushUpLog *firstEntry = entries.firstObject;
+    
+    if ([entries count] > 20)
+    {
+        [context deleteObject:firstEntry];
+    }
+    
+    
+    PushUpLog *newEntry = [NSEntityDescription insertNewObjectForEntityForName:@"PushUpLog" inManagedObjectContext:context];
+    
+    if (newEntry == nil)
+    {
+        NSLog(@"Failed to create new entry.");
+        return NO;
+    }
+    
+    newEntry.userName = name;
+    newEntry.numOfReps = score;
+    newEntry.attemptCategory = @"Freestyle";
+    newEntry.timeElapsed = self.lblAlertTimer.text;
+    newEntry.attemptDate = [NSDate date];
+    
+    NSError *savingError = nil;
+    
+    if (![context save:&savingError])
+    {
+        NSLog(@"Failed to save the new entry. Error: %@", savingError);
+        return NO;
+    }
+    
+    return YES;
+    
 }
 
 

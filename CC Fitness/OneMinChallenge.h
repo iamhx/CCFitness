@@ -11,6 +11,8 @@
 @interface OneMinChallenge : UIViewController
 {
     UIDevice *device;
+    NSManagedObjectContext *context;
+    
 }
 @property (weak, nonatomic) IBOutlet UILabel *lblAlertTimer;
 @property (weak, nonatomic) IBOutlet UILabel *lblCount;
