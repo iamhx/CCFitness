@@ -73,11 +73,15 @@
                                 <state key="normal" title="View All Attempts">
                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
+                                <connections>
+                                    <segue destination="Zzz-0O-YNN" kind="show" id="byO-5d-7w7"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <navigationItem key="navigationItem" title="Push-Up Trainer" id="veN-5E-vXw">
+                        <barButtonItem key="backBarButtonItem" title="Back" id="Uiy-IF-ttF"/>
                         <barButtonItem key="leftBarButtonItem" title="Back" id="4G6-dq-bIt">
                             <connections>
                                 <action selector="btnBack:" destination="QLB-FZ-Foy" id="UB9-C0-YEZ"/>
@@ -209,6 +213,36 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="VXL-kh-Rrh" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1258" y="665"/>
+        </scene>
+        <!--Push Up AttemptTVC-->
+        <scene sceneID="7BQ-yE-FYJ">
+            <objects>
+                <tableViewController id="Zzz-0O-YNN" customClass="PushUpAttemptTVC" sceneMemberID="viewController">
+                    <connections>
+                        <segue destination="Hax-4X-KiB" kind="show" identifier="attemptDetails" id="ztH-ZP-d9C"/>
+                    </connections>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="6hn-c3-Ttb" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1313" y="-25"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="2LC-o2-mKt">
+            <objects>
+                <viewController id="Hax-4X-KiB" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="fsM-vs-Jgn"/>
+                        <viewControllerLayoutGuide type="bottom" id="jEu-J9-kxl"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="bbs-Qe-7IK">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Cq6-yx-Jof" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2087" y="-24"/>
         </scene>
         <!--Help-->
         <scene sceneID="wh4-ZT-uJk">

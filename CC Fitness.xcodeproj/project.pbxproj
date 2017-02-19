@@ -45,6 +45,7 @@
 		E5EAEB4B1E58309E004F6D13 /* OneMinChallenge.m in Sources */ = {isa = PBXBuildFile; fileRef = E5EAEB4A1E58309E004F6D13 /* OneMinChallenge.m */; };
 		E5EAEB4D1E585B36004F6D13 /* CoreMotion.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E5EAEB4C1E585B36004F6D13 /* CoreMotion.framework */; };
 		E5EAEB501E586CC6004F6D13 /* FreestyleChallenge.m in Sources */ = {isa = PBXBuildFile; fileRef = E5EAEB4F1E586CC6004F6D13 /* FreestyleChallenge.m */; };
+		E5FB048D1E59C54A0006EC13 /* PushUpAttemptTVC.m in Sources */ = {isa = PBXBuildFile; fileRef = E5FB048C1E59C54A0006EC13 /* PushUpAttemptTVC.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -132,6 +133,8 @@
 		E5EAEB4C1E585B36004F6D13 /* CoreMotion.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMotion.framework; path = System/Library/Frameworks/CoreMotion.framework; sourceTree = SDKROOT; };
 		E5EAEB4E1E586CC6004F6D13 /* FreestyleChallenge.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FreestyleChallenge.h; sourceTree = "<group>"; };
 		E5EAEB4F1E586CC6004F6D13 /* FreestyleChallenge.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FreestyleChallenge.m; sourceTree = "<group>"; };
+		E5FB048B1E59C54A0006EC13 /* PushUpAttemptTVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PushUpAttemptTVC.h; sourceTree = "<group>"; };
+		E5FB048C1E59C54A0006EC13 /* PushUpAttemptTVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PushUpAttemptTVC.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -319,6 +322,8 @@
 				E5EAEB4A1E58309E004F6D13 /* OneMinChallenge.m */,
 				E5EAEB4E1E586CC6004F6D13 /* FreestyleChallenge.h */,
 				E5EAEB4F1E586CC6004F6D13 /* FreestyleChallenge.m */,
+				E5FB048B1E59C54A0006EC13 /* PushUpAttemptTVC.h */,
+				E5FB048C1E59C54A0006EC13 /* PushUpAttemptTVC.m */,
 			);
 			name = "Push-Up Trainer";
 			sourceTree = "<group>";
@@ -463,6 +468,7 @@
 			files = (
 				DF9892761D618921003ABA96 /* Pushups.m in Sources */,
 				E582D1761E5573EB00BBE6B3 /* PushUpTrainerVC.m in Sources */,
+				E5FB048D1E59C54A0006EC13 /* PushUpAttemptTVC.m in Sources */,
 				E5DE131B1E54591D002732F0 /* ConfirmSignUpVC.m in Sources */,
 				DF9892791D618F70003ABA96 /* Crunches.m in Sources */,
 				DF98927C1D6192A0003ABA96 /* SquatJumps.m in Sources */,

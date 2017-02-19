@@ -27,7 +27,7 @@
     //Initialize bool flag for UIAlertController event.
     started = NO;
     //Create back button to handle UIAlertController event.
-    UIBarButtonItem *newBackButton = [[UIBarButtonItem alloc] initWithTitle:@"Back" style:UIBarButtonItemStylePlain
+    UIBarButtonItem *newBackButton = [[UIBarButtonItem alloc] initWithTitle:@"Quit" style:UIBarButtonItemStylePlain
                                                                      target:self action:@selector(goBackSegue:)];
     self.navigationItem.leftBarButtonItem= newBackButton;
     
