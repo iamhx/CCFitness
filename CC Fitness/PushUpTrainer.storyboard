@@ -74,7 +74,7 @@
                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
                                 <connections>
-                                    <segue destination="Zzz-0O-YNN" kind="show" id="byO-5d-7w7"/>
+                                    <action selector="btnViewAttempt:" destination="QLB-FZ-Foy" eventType="touchUpInside" id="YCh-uK-bsm"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -90,6 +90,7 @@
                     </navigationItem>
                     <connections>
                         <segue destination="B0G-3R-11V" kind="show" identifier="showHelp" id="Bz1-go-tIh"/>
+                        <segue destination="Zzz-0O-YNN" kind="show" identifier="showViewAttempt" id="QRx-Z6-FL6"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="o9B-eA-RoZ" userLabel="First Responder" sceneMemberID="firstResponder"/>

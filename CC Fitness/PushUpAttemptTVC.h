@@ -10,4 +10,6 @@
 
 @interface PushUpAttemptTVC : UITableViewController
 
+@property (nonatomic, copy) NSArray *attemptEntries;
+
 @end

@@ -7,6 +7,7 @@
 //
 
 #import "PushUpAttemptTVC.h"
+#import "PushUpLog+CoreDataClass.h"
 
 @interface PushUpAttemptTVC ()
 
@@ -23,8 +24,6 @@
     // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
     // self.navigationItem.rightBarButtonItem = self.editButtonItem;
     
-
-    
     //Create a dynamic table view
     UITableView *tableView = [[UITableView alloc] initWithFrame:[[UIScreen mainScreen] bounds] style:UITableViewStylePlain];
     tableView.autoresizingMask = UIViewAutoresizingFlexibleHeight|UIViewAutoresizingFlexibleWidth;
@@ -32,7 +31,6 @@
     tableView.dataSource = self;
     [tableView reloadData];
     self.view = tableView;
-    
     
     
 }
@@ -54,8 +52,9 @@
     }
     
     //Customize cells
-    cell.textLabel.text = @"Name";
-    cell.detailTextLabel.text = @"Score: 0";
+    PushUpLog *entry = [self.attemptEntries objectAtIndex:indexPath.row];
+    cell.textLabel.text = [NSString stringWithFormat:@"%@", entry.userName];
+    cell.detailTextLabel.text = [NSString stringWithFormat:@"Score: %i", entry.numOfReps];
     cell.accessoryType = UITableViewCellAccessoryDisclosureIndicator;
     
     return cell;
@@ -64,7 +63,7 @@
 -(NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
     
     //Return the array's count
-    return 3;
+    return [self.attemptEntries count];
     
 }
 
@@ -82,6 +81,7 @@
     [self performSegueWithIdentifier:@"attemptDetails" sender:self];
     
 }
+
 
 
 //- (NSString *)tableView:(UITableView *)tableView titleForHeaderInSection:(NSInteger)section {

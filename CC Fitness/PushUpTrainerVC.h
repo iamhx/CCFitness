@@ -9,6 +9,12 @@
 #import <UIKit/UIKit.h>
 
 @interface PushUpTrainerVC : UIViewController
+{
+    NSManagedObjectContext *context;
+}
 - (IBAction)btnBack:(id)sender;
+- (IBAction)btnViewAttempt:(id)sender;
+
+@property (nonatomic, copy) NSArray *attemptEntries;
 
 @end
