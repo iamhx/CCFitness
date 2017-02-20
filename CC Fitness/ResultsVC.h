@@ -11,7 +11,7 @@
 
 @interface ResultsVC : UIViewController
 
-@property (nonatomic, retain) PushUpLog *selectedEntry;
+@property (nonatomic, strong) PushUpLog *selectedEntry;
 @property (weak, nonatomic) IBOutlet UILabel *lblName;
 @property (weak, nonatomic) IBOutlet UILabel *lblScore;
 @property (weak, nonatomic) IBOutlet UILabel *lblCategory;
