@@ -42,14 +42,13 @@
     // Get the new view controller using [segue destinationViewController].
     // Pass the selected object to the new view controller.
     
-    if([segue.identifier isEqualToString: @"showViewAttempt"])
+    if ([segue.identifier isEqualToString: @"showViewAttempt"])
     {
         PushUpAttemptTVC *vc = segue.destinationViewController;
         vc.attemptEntries = self.attemptEntries;
     }
     
 }
-
 
 
 - (IBAction)btnBack:(id)sender {
@@ -84,8 +83,6 @@
         [self performSegueWithIdentifier:@"showViewAttempt" sender:self];
         
     }
-
-    
 }
 
 - (void)showHelp {

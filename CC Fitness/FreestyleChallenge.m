@@ -192,7 +192,7 @@
 
 - (void)alertFinalScore
 {
-    NSString *displayScore = [NSString stringWithFormat:@"Time: %@\nScore: %i\nWould you like to save your result of the attempt?", self.lblAlertTimer.text, pushUpCount];
+    NSString *displayScore = [NSString stringWithFormat:@"Time: %@\nScore: %i\nWould you like to save the result of your attempt?", self.lblAlertTimer.text, pushUpCount];
     
     UIAlertController* alert = [UIAlertController alertControllerWithTitle:@"Workout complete!"
                                                                    message:displayScore
@@ -271,7 +271,7 @@
     {
         UITextField *someTextField = alertController.textFields.firstObject;
         UIAlertAction *okAction = alertController.actions.firstObject;
-        okAction.enabled = someTextField.text.length >= 2;
+        okAction.enabled = someTextField.text.length >= 2 && someTextField.text.length <= 25;
     }
 }
 

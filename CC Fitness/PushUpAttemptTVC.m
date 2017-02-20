@@ -8,8 +8,12 @@
 
 #import "PushUpAttemptTVC.h"
 #import "PushUpLog+CoreDataClass.h"
+#import "ResultsVC.h"
 
 @interface PushUpAttemptTVC ()
+{
+    PushUpLog *selectedEntry;
+}
 
 @end
 
@@ -70,6 +74,8 @@
 - (void) tableView: (UITableView *) tableView didSelectRowAtIndexPath: (NSIndexPath *) indexPath {
     
     
+    selectedEntry = [self.attemptEntries objectAtIndex:indexPath.row];
+    
     //Change segue's back button title
     UIBarButtonItem *newBackButton =
     [[UIBarButtonItem alloc] initWithTitle:@"Back"
@@ -77,7 +83,7 @@
                                     target:nil
                                     action:nil];
     [[self navigationItem] setBackBarButtonItem:newBackButton];
-    
+
     [self performSegueWithIdentifier:@"attemptDetails" sender:self];
     
 }
@@ -125,14 +131,22 @@
 }
 */
 
-/*
+
 #pragma mark - Navigation
 
 // In a storyboard-based application, you will often want to do a little preparation before navigation
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
     // Get the new view controller using [segue destinationViewController].
     // Pass the selected object to the new view controller.
+    
+    if ([segue.identifier isEqualToString:@"attemptDetails"])
+    {
+        ResultsVC *vc = segue.destinationViewController;
+        vc.selectedEntry = selectedEntry;
+
+    }
+    
 }
-*/
+
 
 @end

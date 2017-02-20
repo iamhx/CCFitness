@@ -170,7 +170,7 @@
 
 - (void)alertFinalScore
 {
-    NSString *displayScore = [NSString stringWithFormat:@"Score: %i\nWould you like to save your result of the attempt?", pushUpCount];
+    NSString *displayScore = [NSString stringWithFormat:@"Score: %i\nWould you like to save the result of your attempt?", pushUpCount];
     
     UIAlertController* alert = [UIAlertController alertControllerWithTitle:@"Challenge complete!"
                                                                    message:displayScore
