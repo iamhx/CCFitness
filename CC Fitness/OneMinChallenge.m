@@ -249,7 +249,7 @@
     {
         UITextField *someTextField = alertController.textFields.firstObject;
         UIAlertAction *okAction = alertController.actions.firstObject;
-        okAction.enabled = someTextField.text.length >= 2;
+        okAction.enabled = someTextField.text.length >= 2 && someTextField.text.length <= 25;
     }
 }
 
