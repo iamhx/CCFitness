@@ -228,7 +228,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1879" y="230"/>
+            <point key="canvasLocation" x="2318" y="-376"/>
         </scene>
         <!--RegisterVC-->
         <scene sceneID="ccc-CU-IOM">
@@ -274,7 +274,7 @@
                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
                                 <connections>
-                                    <segue destination="BYZ-38-t0r" kind="show" animates="NO" id="Lnn-mR-ACy"/>
+                                    <action selector="btnBack:" destination="1EF-Lu-zWj" eventType="touchUpInside" id="rIQ-qD-Zrt"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Enter your username" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="t2G-Tc-jca">
@@ -362,7 +362,7 @@
                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
                                 <connections>
-                                    <segue destination="BYZ-38-t0r" kind="show" animates="NO" id="djL-9r-fyd"/>
+                                    <action selector="btnBack2:" destination="tCz-Nx-Mro" eventType="touchUpInside" id="YmS-cd-Mvt"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Choose your password" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tHy-9I-WOP">
@@ -418,7 +418,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="JMR-0C-at1" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4190" y="-376"/>
+            <point key="canvasLocation" x="3974" y="-376"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="zhu-CB-yXp">
@@ -436,14 +436,11 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="jGi-eg-Mwc" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1060" y="230"/>
+            <point key="canvasLocation" x="1463" y="-376"/>
         </scene>
     </scenes>
     <resources>
         <image name="cclogo3" width="1071" height="1071"/>
         <image name="loginbg3" width="2126" height="1412"/>
     </resources>
-    <inferredMetricsTieBreakers>
-        <segue reference="djL-9r-fyd"/>
-    </inferredMetricsTieBreakers>
 </document>

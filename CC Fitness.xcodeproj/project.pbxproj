@@ -38,8 +38,17 @@
 		E57BC0B41D34CF3A00488F18 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E57BC0B21D34CF3A00488F18 /* LaunchScreen.storyboard */; };
 		E57BC0DC1D34DD2400488F18 /* LoginVC.m in Sources */ = {isa = PBXBuildFile; fileRef = E57BC0DB1D34DD2400488F18 /* LoginVC.m */; };
 		E57BC0E01D34DEC100488F18 /* Portal.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E57BC0DF1D34DEC100488F18 /* Portal.storyboard */; };
+		E582D1731E55704A00BBE6B3 /* PushUpTrainer.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E582D1721E55704A00BBE6B3 /* PushUpTrainer.storyboard */; };
+		E582D1761E5573EB00BBE6B3 /* PushUpTrainerVC.m in Sources */ = {isa = PBXBuildFile; fileRef = E582D1751E5573EB00BBE6B3 /* PushUpTrainerVC.m */; };
 		E5CE8A9D1E4ADC9300966617 /* CustomAnnotation.m in Sources */ = {isa = PBXBuildFile; fileRef = E5CE8A9C1E4ADC9300966617 /* CustomAnnotation.m */; };
 		E5DE131B1E54591D002732F0 /* ConfirmSignUpVC.m in Sources */ = {isa = PBXBuildFile; fileRef = E5DE131A1E54591D002732F0 /* ConfirmSignUpVC.m */; };
+		E5E885F41E5AF7C500133F7B /* ResultsVC.m in Sources */ = {isa = PBXBuildFile; fileRef = E5E885F31E5AF7C500133F7B /* ResultsVC.m */; };
+		E5EAEB4B1E58309E004F6D13 /* OneMinChallenge.m in Sources */ = {isa = PBXBuildFile; fileRef = E5EAEB4A1E58309E004F6D13 /* OneMinChallenge.m */; };
+		E5EAEB4D1E585B36004F6D13 /* CoreMotion.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E5EAEB4C1E585B36004F6D13 /* CoreMotion.framework */; };
+		E5EAEB501E586CC6004F6D13 /* FreestyleChallenge.m in Sources */ = {isa = PBXBuildFile; fileRef = E5EAEB4F1E586CC6004F6D13 /* FreestyleChallenge.m */; };
+		E5FB048D1E59C54A0006EC13 /* PushUpAttemptTVC.m in Sources */ = {isa = PBXBuildFile; fileRef = E5FB048C1E59C54A0006EC13 /* PushUpAttemptTVC.m */; };
+		E5FB04921E59EC180006EC13 /* PushUpLog+CoreDataClass.m in Sources */ = {isa = PBXBuildFile; fileRef = E5FB048F1E59EC180006EC13 /* PushUpLog+CoreDataClass.m */; };
+		E5FB04931E59EC180006EC13 /* PushUpLog+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = E5FB04911E59EC180006EC13 /* PushUpLog+CoreDataProperties.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -115,10 +124,26 @@
 		E57BC0DA1D34DD2400488F18 /* LoginVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LoginVC.h; path = ../LoginVC.h; sourceTree = "<group>"; };
 		E57BC0DB1D34DD2400488F18 /* LoginVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = LoginVC.m; path = ../LoginVC.m; sourceTree = "<group>"; };
 		E57BC0DF1D34DEC100488F18 /* Portal.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Portal.storyboard; sourceTree = "<group>"; };
+		E582D1721E55704A00BBE6B3 /* PushUpTrainer.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = PushUpTrainer.storyboard; sourceTree = "<group>"; };
+		E582D1741E5573EB00BBE6B3 /* PushUpTrainerVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PushUpTrainerVC.h; sourceTree = "<group>"; };
+		E582D1751E5573EB00BBE6B3 /* PushUpTrainerVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PushUpTrainerVC.m; sourceTree = "<group>"; };
 		E5CE8A9B1E4ADC9300966617 /* CustomAnnotation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomAnnotation.h; sourceTree = "<group>"; };
 		E5CE8A9C1E4ADC9300966617 /* CustomAnnotation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomAnnotation.m; sourceTree = "<group>"; };
 		E5DE13191E54591D002732F0 /* ConfirmSignUpVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ConfirmSignUpVC.h; sourceTree = "<group>"; };
 		E5DE131A1E54591D002732F0 /* ConfirmSignUpVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ConfirmSignUpVC.m; sourceTree = "<group>"; };
+		E5E885F21E5AF7C500133F7B /* ResultsVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ResultsVC.h; sourceTree = "<group>"; };
+		E5E885F31E5AF7C500133F7B /* ResultsVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ResultsVC.m; sourceTree = "<group>"; };
+		E5EAEB491E58309E004F6D13 /* OneMinChallenge.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OneMinChallenge.h; sourceTree = "<group>"; };
+		E5EAEB4A1E58309E004F6D13 /* OneMinChallenge.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OneMinChallenge.m; sourceTree = "<group>"; };
+		E5EAEB4C1E585B36004F6D13 /* CoreMotion.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMotion.framework; path = System/Library/Frameworks/CoreMotion.framework; sourceTree = SDKROOT; };
+		E5EAEB4E1E586CC6004F6D13 /* FreestyleChallenge.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FreestyleChallenge.h; sourceTree = "<group>"; };
+		E5EAEB4F1E586CC6004F6D13 /* FreestyleChallenge.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FreestyleChallenge.m; sourceTree = "<group>"; };
+		E5FB048B1E59C54A0006EC13 /* PushUpAttemptTVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PushUpAttemptTVC.h; sourceTree = "<group>"; };
+		E5FB048C1E59C54A0006EC13 /* PushUpAttemptTVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PushUpAttemptTVC.m; sourceTree = "<group>"; };
+		E5FB048E1E59EC180006EC13 /* PushUpLog+CoreDataClass.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "PushUpLog+CoreDataClass.h"; sourceTree = "<group>"; };
+		E5FB048F1E59EC180006EC13 /* PushUpLog+CoreDataClass.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "PushUpLog+CoreDataClass.m"; sourceTree = "<group>"; };
+		E5FB04901E59EC180006EC13 /* PushUpLog+CoreDataProperties.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "PushUpLog+CoreDataProperties.h"; sourceTree = "<group>"; };
+		E5FB04911E59EC180006EC13 /* PushUpLog+CoreDataProperties.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "PushUpLog+CoreDataProperties.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -126,6 +151,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E5EAEB4D1E585B36004F6D13 /* CoreMotion.framework in Frameworks */,
 				DFB80E7C1E48483800B651DF /* MapKit.framework in Frameworks */,
 				DFB80E7A1E48483400B651DF /* CoreLocation.framework in Frameworks */,
 			);
@@ -177,6 +203,10 @@
 		DF971F9A1E52A7750035738E /* CoreData Files */ = {
 			isa = PBXGroup;
 			children = (
+				E5FB048E1E59EC180006EC13 /* PushUpLog+CoreDataClass.h */,
+				E5FB048F1E59EC180006EC13 /* PushUpLog+CoreDataClass.m */,
+				E5FB04901E59EC180006EC13 /* PushUpLog+CoreDataProperties.h */,
+				E5FB04911E59EC180006EC13 /* PushUpLog+CoreDataProperties.m */,
 				E548BEDC1E54429400A484F9 /* UserCredentials+CoreDataClass.h */,
 				E548BEDD1E54429400A484F9 /* UserCredentials+CoreDataClass.m */,
 				E548BEDE1E54429400A484F9 /* UserCredentials+CoreDataProperties.h */,
@@ -215,6 +245,7 @@
 		DFB80E781E48483300B651DF /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				E5EAEB4C1E585B36004F6D13 /* CoreMotion.framework */,
 				DFB80E7B1E48483800B651DF /* MapKit.framework */,
 				DFB80E791E48483400B651DF /* CoreLocation.framework */,
 			);
@@ -243,6 +274,7 @@
 		E57BC0A31D34CF3A00488F18 /* CC Fitness */ = {
 			isa = PBXGroup;
 			children = (
+				E582D1711E55702A00BBE6B3 /* Push-Up Trainer */,
 				DF971F9A1E52A7750035738E /* CoreData Files */,
 				DFB80E721E4842D600B651DF /* Find A Gym */,
 				DF9A63DB1D45DE0100A12B5A /* BMI Calculator */,
@@ -291,6 +323,24 @@
 				DF2116981D47514500A00A32 /* ToolsVC.m */,
 			);
 			name = Portal;
+			sourceTree = "<group>";
+		};
+		E582D1711E55702A00BBE6B3 /* Push-Up Trainer */ = {
+			isa = PBXGroup;
+			children = (
+				E582D1721E55704A00BBE6B3 /* PushUpTrainer.storyboard */,
+				E582D1741E5573EB00BBE6B3 /* PushUpTrainerVC.h */,
+				E582D1751E5573EB00BBE6B3 /* PushUpTrainerVC.m */,
+				E5EAEB491E58309E004F6D13 /* OneMinChallenge.h */,
+				E5EAEB4A1E58309E004F6D13 /* OneMinChallenge.m */,
+				E5EAEB4E1E586CC6004F6D13 /* FreestyleChallenge.h */,
+				E5EAEB4F1E586CC6004F6D13 /* FreestyleChallenge.m */,
+				E5FB048B1E59C54A0006EC13 /* PushUpAttemptTVC.h */,
+				E5FB048C1E59C54A0006EC13 /* PushUpAttemptTVC.m */,
+				E5E885F21E5AF7C500133F7B /* ResultsVC.h */,
+				E5E885F31E5AF7C500133F7B /* ResultsVC.m */,
+			);
+			name = "Push-Up Trainer";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -400,6 +450,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				E57BC0B41D34CF3A00488F18 /* LaunchScreen.storyboard in Resources */,
+				E582D1731E55704A00BBE6B3 /* PushUpTrainer.storyboard in Resources */,
 				E57BC0B11D34CF3A00488F18 /* Assets.xcassets in Resources */,
 				DF45C0D41D41B7C8007D4E5A /* Learn.storyboard in Resources */,
 				DFB80E741E4842F400B651DF /* FindAGym.storyboard in Resources */,
@@ -431,6 +482,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				DF9892761D618921003ABA96 /* Pushups.m in Sources */,
+				E582D1761E5573EB00BBE6B3 /* PushUpTrainerVC.m in Sources */,
+				E5FB048D1E59C54A0006EC13 /* PushUpAttemptTVC.m in Sources */,
 				E5DE131B1E54591D002732F0 /* ConfirmSignUpVC.m in Sources */,
 				DF9892791D618F70003ABA96 /* Crunches.m in Sources */,
 				DF98927C1D6192A0003ABA96 /* SquatJumps.m in Sources */,
@@ -446,14 +499,19 @@
 				E57BC0DC1D34DD2400488F18 /* LoginVC.m in Sources */,
 				DF9A63E01D45DE5500A12B5A /* BMIViewController.m in Sources */,
 				DF0974781D3CB3A900889EE4 /* MainMenuVC.m in Sources */,
+				E5E885F41E5AF7C500133F7B /* ResultsVC.m in Sources */,
+				E5EAEB4B1E58309E004F6D13 /* OneMinChallenge.m in Sources */,
+				E5EAEB501E586CC6004F6D13 /* FreestyleChallenge.m in Sources */,
 				E5CE8A9D1E4ADC9300966617 /* CustomAnnotation.m in Sources */,
 				DF9A63E31D45E5A900A12B5A /* BMICalculation.m in Sources */,
 				DFB3785A1D4F179F00C94498 /* KeepFitTVC.m in Sources */,
 				DF971FAA1E52B6730035738E /* registerVC.m in Sources */,
 				E57BC0A61D34CF3A00488F18 /* main.m in Sources */,
+				E5FB04931E59EC180006EC13 /* PushUpLog+CoreDataProperties.m in Sources */,
 				DF98927F1D6195A5003ABA96 /* ForwardLunge.m in Sources */,
 				DF971F991E52A6EC0035738E /* ccfitness_db.xcdatamodeld in Sources */,
 				E55647D81E4DB8C3001726B6 /* GymDetailsVC.m in Sources */,
+				E5FB04921E59EC180006EC13 /* PushUpLog+CoreDataClass.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

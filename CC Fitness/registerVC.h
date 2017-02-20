@@ -14,5 +14,6 @@
 }
 @property (weak, nonatomic) IBOutlet UITextField *lblregName;
 - (IBAction)btnContinue:(id)sender;
+- (IBAction)btnBack:(id)sender;
 
 @end
