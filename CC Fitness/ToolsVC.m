@@ -61,11 +61,21 @@
 
 - (IBAction)btnPushUp:(id)sender {
     
-    UIStoryboard *findAGymStoryboard = [UIStoryboard storyboardWithName:@"PushUpTrainer" bundle:nil];
-    UIViewController *gymVC = [findAGymStoryboard instantiateViewControllerWithIdentifier:@"PushUpTrainerID"];
+    UIStoryboard *pushUpStoryboard = [UIStoryboard storyboardWithName:@"PushUpTrainer" bundle:nil];
+    UIViewController *pushupVC = [pushUpStoryboard instantiateViewControllerWithIdentifier:@"PushUpTrainerID"];
     
-    gymVC.modalTransitionStyle = UIModalTransitionStyleFlipHorizontal;
-    [self presentViewController:gymVC animated:YES completion:nil];
+    pushupVC.modalTransitionStyle = UIModalTransitionStyleFlipHorizontal;
+    [self presentViewController:pushupVC animated:YES completion:nil];
+
+}
+
+- (IBAction)btnSitUp:(id)sender {
+    
+    UIStoryboard *sitUpStoryboard = [UIStoryboard storyboardWithName:@"SitUpTrainer" bundle:nil];
+    UIViewController *sitUpVC = [sitUpStoryboard instantiateViewControllerWithIdentifier:@"SitUpTrainerID"];
+    
+    sitUpVC.modalTransitionStyle = UIModalTransitionStyleFlipHorizontal;
+    [self presentViewController:sitUpVC animated:YES completion:nil];
 
 }
 @end

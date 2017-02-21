@@ -138,6 +138,7 @@
     if (timeTick == 0)
     {
         [timer invalidate];
+        device.proximityMonitoringEnabled = NO;
         
         [self alertFinalScore];
     }
