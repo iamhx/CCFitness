@@ -258,10 +258,10 @@ Be sure to do a proper sit-up by going high enough, so the accelerometer can reg
             </objects>
             <point key="canvasLocation" x="807" y="-199"/>
         </scene>
-        <!--Push Up AttemptTVC-->
+        <!--Sit-Up Trainer-->
         <scene sceneID="CnA-3s-6bn">
             <objects>
-                <tableViewController id="Kj2-4W-JzN" customClass="PushUpAttemptTVC" sceneMemberID="viewController">
+                <tableViewController title="Sit-Up Trainer" id="Kj2-4W-JzN" customClass="SitUpAttemptTVC" sceneMemberID="viewController">
                     <connections>
                         <segue destination="ZQo-jp-tG4" kind="show" identifier="attemptDetails" id="BEc-Tl-3pm"/>
                     </connections>
