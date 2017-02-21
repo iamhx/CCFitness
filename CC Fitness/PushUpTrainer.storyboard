@@ -215,10 +215,10 @@
             </objects>
             <point key="canvasLocation" x="1258" y="665"/>
         </scene>
-        <!--Push Up AttemptTVC-->
+        <!--Push-Up Trainer-->
         <scene sceneID="7BQ-yE-FYJ">
             <objects>
-                <tableViewController id="Zzz-0O-YNN" customClass="PushUpAttemptTVC" sceneMemberID="viewController">
+                <tableViewController title="Push-Up Trainer" id="Zzz-0O-YNN" customClass="PushUpAttemptTVC" sceneMemberID="viewController">
                     <connections>
                         <segue destination="Hax-4X-KiB" kind="show" identifier="attemptDetails" id="ztH-ZP-d9C"/>
                     </connections>
@@ -312,7 +312,7 @@
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" scrollEnabled="NO" editable="NO" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Iog-yY-lvG">
                                 <rect key="frame" x="16" y="141" width="343" height="189"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <string key="text">Push-Up Trainer uses the device's proximity sensor to count a push up.
+                                <string key="text">Push-Up Trainer uses the device's proximity sensor to count a push-up.
 
 All you need to do is place your device on a flat ground and get close to the device as you do a push-up!
 

@@ -13,5 +13,6 @@
 - (IBAction)btnBMICalc:(id)sender;
 - (IBAction)btnFind:(id)sender;
 - (IBAction)btnPushUp:(id)sender;
+- (IBAction)btnSitUp:(id)sender;
 
 @end
