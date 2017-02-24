@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		18F0C76B1E603ED500EAFB0C /* mapicon.png in Resources */ = {isa = PBXBuildFile; fileRef = 18F0C76A1E603ED400EAFB0C /* mapicon.png */; };
+		18F0C76E1E60426E00EAFB0C /* map.png in Resources */ = {isa = PBXBuildFile; fileRef = 18F0C76C1E60426E00EAFB0C /* map.png */; };
+		18F0C76F1E60426E00EAFB0C /* muscle.png in Resources */ = {isa = PBXBuildFile; fileRef = 18F0C76D1E60426E00EAFB0C /* muscle.png */; };
 		DF0974781D3CB3A900889EE4 /* MainMenuVC.m in Sources */ = {isa = PBXBuildFile; fileRef = DF0974771D3CB3A900889EE4 /* MainMenuVC.m */; };
 		DF2116991D47514500A00A32 /* ToolsVC.m in Sources */ = {isa = PBXBuildFile; fileRef = DF2116981D47514500A00A32 /* ToolsVC.m */; };
 		DF45C0D41D41B7C8007D4E5A /* Learn.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DF45C0D31D41B7C8007D4E5A /* Learn.storyboard */; };
@@ -77,6 +80,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		18F0C76A1E603ED400EAFB0C /* mapicon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = mapicon.png; sourceTree = "<group>"; };
+		18F0C76C1E60426E00EAFB0C /* map.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = map.png; sourceTree = "<group>"; };
+		18F0C76D1E60426E00EAFB0C /* muscle.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = muscle.png; sourceTree = "<group>"; };
 		DF0974761D3CB3A900889EE4 /* MainMenuVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MainMenuVC.h; path = ../MainMenuVC.h; sourceTree = "<group>"; };
 		DF0974771D3CB3A900889EE4 /* MainMenuVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MainMenuVC.m; path = ../MainMenuVC.m; sourceTree = "<group>"; };
 		DF2116971D47514500A00A32 /* ToolsVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ToolsVC.h; sourceTree = "<group>"; };
@@ -258,6 +264,9 @@
 		DFB80E721E4842D600B651DF /* Find A Gym */ = {
 			isa = PBXGroup;
 			children = (
+				18F0C76C1E60426E00EAFB0C /* map.png */,
+				18F0C76D1E60426E00EAFB0C /* muscle.png */,
+				18F0C76A1E603ED400EAFB0C /* mapicon.png */,
 				DFB80E731E4842F400B651DF /* FindAGym.storyboard */,
 				DFB80E751E48431B00B651DF /* FindAGymViewController.h */,
 				DFB80E761E48431B00B651DF /* FindAGymViewController.m */,
@@ -456,7 +465,7 @@
 				TargetAttributes = {
 					E57BC0A01D34CF3A00488F18 = {
 						CreatedOnToolsVersion = 7.3.1;
-						DevelopmentTeam = EVC7K5F9LC;
+						DevelopmentTeam = 9TT35ME53D;
 						LastSwiftMigration = 0820;
 						ProvisioningStyle = Automatic;
 					};
@@ -496,9 +505,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				E57BC0B41D34CF3A00488F18 /* LaunchScreen.storyboard in Resources */,
+				18F0C76B1E603ED500EAFB0C /* mapicon.png in Resources */,
 				E582D1731E55704A00BBE6B3 /* PushUpTrainer.storyboard in Resources */,
 				E57BC0B11D34CF3A00488F18 /* Assets.xcassets in Resources */,
 				DF45C0D41D41B7C8007D4E5A /* Learn.storyboard in Resources */,
+				18F0C76E1E60426E00EAFB0C /* map.png in Resources */,
+				18F0C76F1E60426E00EAFB0C /* muscle.png in Resources */,
 				E5E9AB391E5C223C001E4523 /* SitUpTrainer.storyboard in Resources */,
 				DFB80E741E4842F400B651DF /* FindAGym.storyboard in Resources */,
 				DF9A63DD1D45DE1B00A12B5A /* BMI.storyboard in Resources */,
@@ -711,11 +723,11 @@
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				DEVELOPMENT_TEAM = EVC7K5F9LC;
+				DEVELOPMENT_TEAM = 9TT35ME53D;
 				INFOPLIST_FILE = "CC Fitness/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.hx2.CC-Fitness";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.pleasee.CC-Fitness";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
@@ -730,11 +742,11 @@
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				DEVELOPMENT_TEAM = EVC7K5F9LC;
+				DEVELOPMENT_TEAM = 9TT35ME53D;
 				INFOPLIST_FILE = "CC Fitness/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.hx2.CC-Fitness";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.pleasee.CC-Fitness";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 				SWIFT_VERSION = 3.0;
