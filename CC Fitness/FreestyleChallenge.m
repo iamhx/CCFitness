@@ -52,6 +52,59 @@
     //set repeat to yes meaning it should run continiously, not just once
     
     timer = [NSTimer scheduledTimerWithTimeInterval:1.0 target:self selector:@selector(timerTickGetReady) userInfo:nil repeats:YES];
+    
+    //Add observer for app resigning to background and returning to foreground
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(pauseTimer) name:UIApplicationWillResignActiveNotification object:nil];
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(resumeTimer) name:UIApplicationWillEnterForegroundNotification object:nil];
+}
+
+- (void)pauseTimer {
+    
+    [timer invalidate];
+    device.proximityMonitoringEnabled = NO;
+    
+}
+
+- (void)resumeTimer {
+    
+    if (![self.navigationController.visibleViewController isKindOfClass:[UIAlertController class]]) {
+        
+        if (!started)
+        {
+            timer = [NSTimer scheduledTimerWithTimeInterval:1.0 target:self selector:@selector(timerTickGetReady) userInfo:nil repeats:YES];
+        }
+        else
+        {
+            UIBarButtonItem *resumeButton = [[UIBarButtonItem alloc]initWithBarButtonSystemItem:UIBarButtonSystemItemPlay target:self action:@selector(resumeButtonTimer)];
+            
+            self.navigationItem.rightBarButtonItem = resumeButton;
+        }
+    }
+}
+
+
+- (void)pauseButtonTimer {
+    
+    
+    [timer invalidate];
+    device.proximityMonitoringEnabled = NO;
+    
+    UIBarButtonItem *resumeButton = [[UIBarButtonItem alloc]initWithBarButtonSystemItem:UIBarButtonSystemItemPlay target:self action:@selector(resumeButtonTimer)];
+    
+    self.navigationItem.rightBarButtonItem = resumeButton;
+    
+    
+}
+
+- (void)resumeButtonTimer {
+    
+    device.proximityMonitoringEnabled = YES;
+    timer = [NSTimer scheduledTimerWithTimeInterval:1.0 target:self selector:@selector(timerTickStart) userInfo:nil repeats:YES];
+    
+    UIBarButtonItem *pauseButton = [[UIBarButtonItem alloc]initWithBarButtonSystemItem:UIBarButtonSystemItemPause target:self action:@selector(pauseButtonTimer)];
+    
+    self.navigationItem.rightBarButtonItem = pauseButton;
+    
 }
 
 
@@ -77,6 +130,10 @@
                                                                  device.proximityMonitoringEnabled = YES;
                                                                  
                                                                  timer = [NSTimer scheduledTimerWithTimeInterval:1.0 target:self selector:@selector(timerTickStart) userInfo:nil repeats:YES];
+                                                             
+                                                                 UIBarButtonItem *pauseButton = [[UIBarButtonItem alloc]initWithBarButtonSystemItem:UIBarButtonSystemItemPause target:self action:@selector(pauseButtonTimer)];
+                                                                 
+                                                                 self.navigationItem.rightBarButtonItem = pauseButton;
       
                                                          }];
     
@@ -113,6 +170,10 @@
                                                                  device.proximityMonitoringEnabled = YES;
                                                                  
                                                                  timer = [NSTimer scheduledTimerWithTimeInterval:1.0 target:self selector:@selector(timerTickStart) userInfo:nil repeats:YES];
+                                                                 
+                                                                 UIBarButtonItem *pauseButton = [[UIBarButtonItem alloc]initWithBarButtonSystemItem:UIBarButtonSystemItemPause target:self action:@selector(pauseButtonTimer)];
+                                                                 
+                                                                 self.navigationItem.rightBarButtonItem = pauseButton;
                                                              }
                                                              
                                                          }];
@@ -152,6 +213,10 @@
         
         //Begin the timer
         timer = [NSTimer scheduledTimerWithTimeInterval:1.0 target:self selector:@selector(timerTickStart) userInfo:nil repeats:YES];
+        
+        UIBarButtonItem *pauseButton = [[UIBarButtonItem alloc]initWithBarButtonSystemItem:UIBarButtonSystemItemPause target:self action:@selector(pauseButtonTimer)];
+        
+        self.navigationItem.rightBarButtonItem = pauseButton;
     }
     
 }
@@ -182,6 +247,8 @@
     device.proximityMonitoringEnabled = NO;
     [timer invalidate];
     timer = nil;
+    [[NSNotificationCenter defaultCenter] removeObserver:self name:UIApplicationWillResignActiveNotification object:nil];
+    [[NSNotificationCenter defaultCenter] removeObserver:self name:UIApplicationWillEnterForegroundNotification object:nil];
 }
 
 - (void)proximityChanged:(NSNotification *)notification

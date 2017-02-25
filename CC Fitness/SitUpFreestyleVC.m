@@ -76,7 +76,6 @@
         
         if (!started)
         {
-            [self startSitUpSensor];
             timer = [NSTimer scheduledTimerWithTimeInterval:1.0 target:self selector:@selector(timerTickGetReady) userInfo:nil repeats:YES];
         }
         else
@@ -138,6 +137,10 @@
                                                              
                                                              timer = [NSTimer scheduledTimerWithTimeInterval:1.0 target:self selector:@selector(timerTickStart) userInfo:nil repeats:YES];
                                                              
+                                                             UIBarButtonItem *pauseButton = [[UIBarButtonItem alloc]initWithBarButtonSystemItem:UIBarButtonSystemItemPause target:self action:@selector(pauseButtonTimer)];
+                                                             
+                                                             self.navigationItem.rightBarButtonItem = pauseButton;
+                                                             
                                                          }];
     
     [alert addAction:defaultAction];
@@ -171,9 +174,13 @@
                                                              }
                                                              else
                                                              {
-                                                                 UIBarButtonItem *resumeButton = [[UIBarButtonItem alloc]initWithBarButtonSystemItem:UIBarButtonSystemItemPlay target:self action:@selector(resumeButtonTimer)];
+                                                                 [self startSitUpSensor];
                                                                  
-                                                                 self.navigationItem.rightBarButtonItem = resumeButton;
+                                                                 timer = [NSTimer scheduledTimerWithTimeInterval:1.0 target:self selector:@selector(timerTickStart) userInfo:nil repeats:YES];
+                                                                 
+                                                                 UIBarButtonItem *pauseButton = [[UIBarButtonItem alloc]initWithBarButtonSystemItem:UIBarButtonSystemItemPause target:self action:@selector(pauseButtonTimer)];
+                                                                 
+                                                                 self.navigationItem.rightBarButtonItem = pauseButton;
                                                              }
                                                              
                                                          }];
