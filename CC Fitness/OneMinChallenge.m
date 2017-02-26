@@ -34,7 +34,6 @@
     UIBarButtonItem *newBackButton = [[UIBarButtonItem alloc] initWithTitle:@"Quit" style:UIBarButtonItemStylePlain
                                                                      target:self action:@selector(goBackSegue:)];
     self.navigationItem.leftBarButtonItem= newBackButton;
-    
 
     //Initialize timer
     timeTick = 5;
@@ -52,6 +51,34 @@
     //set repeat to yes meaning it should run continiously, not just once
     
     timer = [NSTimer scheduledTimerWithTimeInterval:1.0 target:self selector:@selector(timerTickGetReady) userInfo:nil repeats:YES];
+    
+    //Add observer for app resigning to background and returning to foreground
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(pauseTimer) name:UIApplicationWillResignActiveNotification object:nil];
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(resumeTimer) name:UIApplicationWillEnterForegroundNotification object:nil];
+}
+
+- (void)pauseTimer {
+    
+    [timer invalidate];
+    device.proximityMonitoringEnabled = NO;
+
+}
+
+- (void)resumeTimer {
+    
+    if (![self.navigationController.visibleViewController isKindOfClass:[UIAlertController class]]) {
+        
+        if (!started)
+        {
+            timer = [NSTimer scheduledTimerWithTimeInterval:1.0 target:self selector:@selector(timerTickGetReady) userInfo:nil repeats:YES];
+            
+        }
+        else
+        {
+            device.proximityMonitoringEnabled = YES;
+            timer = [NSTimer scheduledTimerWithTimeInterval:1.0 target:self selector:@selector(timerTickStart) userInfo:nil repeats:YES];
+        }
+    }
 }
 
 - (void)goBackSegue:(UIBarButtonItem *)sender
@@ -154,6 +181,8 @@
     device.proximityMonitoringEnabled = NO;
     [timer invalidate];
     timer = nil;
+    [[NSNotificationCenter defaultCenter] removeObserver:self name:UIApplicationWillResignActiveNotification object:nil];
+    [[NSNotificationCenter defaultCenter] removeObserver:self name:UIApplicationWillEnterForegroundNotification object:nil];
 }
 
 - (void)proximityChanged:(NSNotification *)notification

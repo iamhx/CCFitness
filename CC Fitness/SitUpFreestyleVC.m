@@ -40,8 +40,6 @@
                                                                      target:self action:@selector(goBackSegue:)];
     self.navigationItem.leftBarButtonItem= newBackButton;
     
-    
-    
     //Initialize timer
     timeTick = 5;
     
@@ -58,8 +56,63 @@
     //set repeat to yes meaning it should run continiously, not just once
     
     timer = [NSTimer scheduledTimerWithTimeInterval:1.0 target:self selector:@selector(timerTickGetReady) userInfo:nil repeats:YES];
+    
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(pauseTimer) name:UIApplicationWillResignActiveNotification object:nil];
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(resumeTimer) name:UIApplicationWillEnterForegroundNotification object:nil];
+
 
 }
+
+- (void)pauseTimer {
+    
+    [timer invalidate];
+    [motionManager stopDeviceMotionUpdates];
+    
+}
+
+- (void)resumeTimer {
+    
+    if (![self.navigationController.visibleViewController isKindOfClass:[UIAlertController class]]) {
+        
+        if (!started)
+        {
+            timer = [NSTimer scheduledTimerWithTimeInterval:1.0 target:self selector:@selector(timerTickGetReady) userInfo:nil repeats:YES];
+        }
+        else
+        {
+            UIBarButtonItem *resumeButton = [[UIBarButtonItem alloc]initWithBarButtonSystemItem:UIBarButtonSystemItemPlay target:self action:@selector(resumeButtonTimer)];
+            
+            self.navigationItem.rightBarButtonItem = resumeButton;
+
+        }
+    }
+}
+
+
+- (void)pauseButtonTimer {
+    
+    
+    [timer invalidate];
+    [motionManager stopDeviceMotionUpdates];
+    
+    UIBarButtonItem *resumeButton = [[UIBarButtonItem alloc]initWithBarButtonSystemItem:UIBarButtonSystemItemPlay target:self action:@selector(resumeButtonTimer)];
+    
+    self.navigationItem.rightBarButtonItem = resumeButton;
+
+    
+}
+
+- (void)resumeButtonTimer {
+    
+    [self startSitUpSensor];
+    timer = [NSTimer scheduledTimerWithTimeInterval:1.0 target:self selector:@selector(timerTickStart) userInfo:nil repeats:YES];
+    
+    UIBarButtonItem *pauseButton = [[UIBarButtonItem alloc]initWithBarButtonSystemItem:UIBarButtonSystemItemPause target:self action:@selector(pauseButtonTimer)];
+    
+    self.navigationItem.rightBarButtonItem = pauseButton;
+
+}
+
 
 - (void)confirmEndWorkout
 {
@@ -83,6 +136,10 @@
                                                              [self startSitUpSensor];
                                                              
                                                              timer = [NSTimer scheduledTimerWithTimeInterval:1.0 target:self selector:@selector(timerTickStart) userInfo:nil repeats:YES];
+                                                             
+                                                             UIBarButtonItem *pauseButton = [[UIBarButtonItem alloc]initWithBarButtonSystemItem:UIBarButtonSystemItemPause target:self action:@selector(pauseButtonTimer)];
+                                                             
+                                                             self.navigationItem.rightBarButtonItem = pauseButton;
                                                              
                                                          }];
     
@@ -120,6 +177,10 @@
                                                                  [self startSitUpSensor];
                                                                  
                                                                  timer = [NSTimer scheduledTimerWithTimeInterval:1.0 target:self selector:@selector(timerTickStart) userInfo:nil repeats:YES];
+                                                                 
+                                                                 UIBarButtonItem *pauseButton = [[UIBarButtonItem alloc]initWithBarButtonSystemItem:UIBarButtonSystemItemPause target:self action:@selector(pauseButtonTimer)];
+                                                                 
+                                                                 self.navigationItem.rightBarButtonItem = pauseButton;
                                                              }
                                                              
                                                          }];
@@ -149,6 +210,11 @@
         self.lblSitUps.alpha = 1.0; //Show lblSitUps
         self.lblEndWorkout.alpha = 1.0; //Show btnEndWorkout
         self.lblEndWorkout.enabled = YES;
+        
+        //Create a pause button for manual pausing or applicationWillResignActive
+        UIBarButtonItem *pauseButton = [[UIBarButtonItem alloc]initWithBarButtonSystemItem:UIBarButtonSystemItemPause target:self action:@selector(pauseButtonTimer)];
+        
+        self.navigationItem.rightBarButtonItem = pauseButton;
         
         [self startSitUpSensor];
         
@@ -182,6 +248,8 @@
     [motionManager stopDeviceMotionUpdates];
     [timer invalidate];
     timer = nil;
+    [[NSNotificationCenter defaultCenter] removeObserver:self name:UIApplicationWillResignActiveNotification object:nil];
+    [[NSNotificationCenter defaultCenter] removeObserver:self name:UIApplicationWillEnterForegroundNotification object:nil];
 }
 
 - (void)didReceiveMemoryWarning {
