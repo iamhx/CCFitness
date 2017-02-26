@@ -465,7 +465,7 @@
 				TargetAttributes = {
 					E57BC0A01D34CF3A00488F18 = {
 						CreatedOnToolsVersion = 7.3.1;
-						DevelopmentTeam = 9TT35ME53D;
+						DevelopmentTeam = EVC7K5F9LC;
 						LastSwiftMigration = 0820;
 						ProvisioningStyle = Automatic;
 					};
@@ -723,11 +723,11 @@
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				DEVELOPMENT_TEAM = 9TT35ME53D;
+				DEVELOPMENT_TEAM = EVC7K5F9LC;
 				INFOPLIST_FILE = "CC Fitness/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.pleasee.CC-Fitness";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.hx2.CC-Fitness";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
@@ -742,11 +742,11 @@
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				DEVELOPMENT_TEAM = 9TT35ME53D;
+				DEVELOPMENT_TEAM = EVC7K5F9LC;
 				INFOPLIST_FILE = "CC Fitness/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.pleasee.CC-Fitness";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.hx2.CC-Fitness";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 				SWIFT_VERSION = 3.0;
